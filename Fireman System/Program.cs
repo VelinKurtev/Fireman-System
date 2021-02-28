@@ -16,7 +16,7 @@ namespace Fireman_Systemn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FireSys());
+            Application.Run(new MainMenu());
         }
     }
 }

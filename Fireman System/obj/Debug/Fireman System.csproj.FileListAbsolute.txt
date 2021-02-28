@@ -3,8 +3,24 @@ D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.exe
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.pdb
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csprojAssemblyReference.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.Properties.Resources.resources
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.FireSys.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.GenerateResource.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CoreCompileInputs.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman Systemn.exe
 D:\GitHub\Fireman System\obj\Debug\Fireman Systemn.pdb
+D:\GitHub\Fireman System\obj\Debug\Fireman Systemn.exe.config
+D:\GitHub\Fireman System\bin\Debug\MySql.Data.dll
+D:\GitHub\Fireman System\bin\Debug\Google.Protobuf.dll
+D:\GitHub\Fireman System\bin\Debug\Zstandard.Net.dll
+D:\GitHub\Fireman System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\GitHub\Fireman System\bin\Debug\BouncyCastle.Crypto.dll
+D:\GitHub\Fireman System\bin\Debug\Ubiety.Dns.Core.dll
+D:\GitHub\Fireman System\bin\Debug\Renci.SshNet.dll
+D:\GitHub\Fireman System\bin\Debug\System.Memory.dll
+D:\GitHub\Fireman System\bin\Debug\System.Buffers.dll
+D:\GitHub\Fireman System\bin\Debug\K4os.Compression.LZ4.dll
+D:\GitHub\Fireman System\bin\Debug\K4os.Hash.xxHash.dll
+D:\GitHub\Fireman System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GitHub\Fireman System\bin\Debug\MySql.Data.xml
+D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CopyComplete
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.Teams_and_Employees.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenu.resources
