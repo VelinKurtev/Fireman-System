@@ -28,21 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FireSys));
+            this.btn_view_database = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_view_database
+            // 
+            this.btn_view_database.Location = new System.Drawing.Point(59, 77);
+            this.btn_view_database.Name = "btn_view_database";
+            this.btn_view_database.Size = new System.Drawing.Size(97, 44);
+            this.btn_view_database.TabIndex = 0;
+            this.btn_view_database.Text = "Преглед";
+            this.btn_view_database.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(366, 77);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(358, 348);
+            this.dataGridView1.TabIndex = 1;
             // 
             // FireSys
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(855, 512);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_view_database);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FireSys";
             this.Text = "Fireman System";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_view_database;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
