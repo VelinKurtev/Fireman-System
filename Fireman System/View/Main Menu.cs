@@ -19,13 +19,14 @@ namespace Fireman_Systemn
             InitializeComponent();
         }
 
-        private void btn_view_database_Click(object sender, EventArgs e)
+        private void Btn_view_teams(object sender, EventArgs e)
         {
             this.Close();
             thread = new Thread(OpenTeamsAndEmployees);
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
         }
+
         private void OpenTeamsAndEmployees(object obj)
         {
             Application.Run(new Teams_and_Employees());
@@ -38,9 +39,28 @@ namespace Fireman_Systemn
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
         }
-        private void OpenCases(object obj)
+
+        private void OpenCases()
         {
-            
+            Application.Run(new View.Cases());
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            FormLayout.FormLoad(this);
+        }
+
+        private void btn_view_firetrucks_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            thread = new Thread(OpenFireTrucksManagment);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        private void OpenFireTrucksManagment()
+        {
+            Application.Run(new View.FireTrucks());
         }
     }
 }

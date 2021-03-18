@@ -9,15 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Fireman_Systemn
+namespace Fireman_Systemn.View
 {
-    public partial class Teams_and_Employees : Form
+    public partial class Cases : Form
     {
         Thread thread;
-        public Teams_and_Employees()
+        public Cases()
         {
             InitializeComponent();
         }
+
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,9 +32,9 @@ namespace Fireman_Systemn
             Application.Run(new MainMenu());
         }
 
-        private void Teams_and_Employees_Load(object sender, EventArgs e)
+        private void Cases_Load(object sender, EventArgs e)
         {
-            FormLayout.FormLoad(this);
+            FormLayout.FormLoad(this);            
         }
     }
 }
