@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Fireman_Systemn.View
 {
@@ -15,6 +16,16 @@ namespace Fireman_Systemn.View
         public FireTrucks()
         {
             InitializeComponent();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new MainMenu());
+        }        
+
+        private void FireTrucks_Load(object sender, EventArgs e)
+        {
+            FormLayout.FormLoad(this);
         }
     }
 }

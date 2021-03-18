@@ -9,26 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Fireman_Systemn
+namespace Fireman_Systemn.View
 {
     public partial class Teams_and_Employees : Form
     {
-        Thread thread;
         public Teams_and_Employees()
         {
             InitializeComponent();
         }
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            thread = new Thread(GoBack);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-        }
-
-        private void GoBack()
-        {
-            Application.Run(new MainMenu());
+            FormLayout.NavigateForms(this, new MainMenu());
         }
 
         private void Teams_and_Employees_Load(object sender, EventArgs e)

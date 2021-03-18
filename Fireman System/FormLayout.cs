@@ -8,14 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Fireman_Systemn
 {
     public class FormLayout
     {
-        public static void FormLoad(Form form) 
+        public static int x;
+        public static int y;
+
+        public static void NavigateForms(Form currentForm, Form navForm) 
         {
-           form.Location = new Point(200, 200);
+            x = currentForm.Location.X;
+            y = currentForm.Location.Y;
+            currentForm.Close();
+            var thread = new Thread(() => 
+            {
+                Application.Run(navForm); 
+            });
+            thread.Start();
+        }
+
+        public static void FormLoad(Form form)
+        {
+            form.Location = new Point(x, y);
         }
     }
-}
+}       

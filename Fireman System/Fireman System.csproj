@@ -103,6 +103,9 @@
     <EmbeddedResource Include="View\Cases.resx">
       <DependentUpon>Cases.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Fire Trucks.resx">
+      <DependentUpon>Fire Trucks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Teams and Employees.resx">
       <DependentUpon>Teams and Employees.cs</DependentUpon>
     </EmbeddedResource>

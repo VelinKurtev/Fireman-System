@@ -13,7 +13,6 @@ namespace Fireman_Systemn.View
 {
     public partial class Cases : Form
     {
-        Thread thread;
         public Cases()
         {
             InitializeComponent();
@@ -21,15 +20,7 @@ namespace Fireman_Systemn.View
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            thread = new Thread(GoBack);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-        }
-
-        private void GoBack()
-        {
-            Application.Run(new MainMenu());
+            FormLayout.NavigateForms(this, new MainMenu());
         }
 
         private void Cases_Load(object sender, EventArgs e)

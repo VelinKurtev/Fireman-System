@@ -1,4 +1,4 @@
-﻿namespace Fireman_Systemn
+﻿namespace Fireman_Systemn.View
 {
     partial class Teams_and_Employees
     {
@@ -64,7 +64,9 @@
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.lbl_teams_and_employees);
             this.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Teams_and_Employees";
             this.Text = "Fireman System";
             this.Load += new System.EventHandler(this.Teams_and_Employees_Load);
