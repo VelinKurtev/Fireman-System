@@ -22,5 +22,7 @@ D:\GitHub\Fireman System\bin\Debug\K4os.Hash.xxHash.dll
 D:\GitHub\Fireman System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\GitHub\Fireman System\bin\Debug\MySql.Data.xml
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CopyComplete
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.Teams_and_Employees.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenu.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Cases.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucks.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Teams_and_Employees.resources

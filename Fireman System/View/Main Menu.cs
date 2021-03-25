@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Fireman_Systemn.View;
 
 namespace Fireman_Systemn
 {
@@ -19,28 +20,24 @@ namespace Fireman_Systemn
             InitializeComponent();
         }
 
-        private void btn_view_database_Click(object sender, EventArgs e)
+        private void Btn_view_teams(object sender, EventArgs e)
         {
-            this.Close();
-            thread = new Thread(OpenTeamsAndEmployees);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-        }
-        private void OpenTeamsAndEmployees(object obj)
-        {
-            Application.Run(new Teams_and_Employees());
+            FormLayout.NavigateForms(this, new Teams_and_Employees());
         }
 
         private void btn_view_cases_Click(object sender, EventArgs e)
         {
-            this.Close();
-            thread = new Thread(OpenCases);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+            FormLayout.NavigateForms(this, new Cases());
         }
-        private void OpenCases(object obj)
+
+        private void btn_view_firetrucks_Click(object sender, EventArgs e)
         {
-            
+            FormLayout.NavigateForms(this, new FireTrucks());
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            FormLayout.FormLoad(this);
         }
     }
 }

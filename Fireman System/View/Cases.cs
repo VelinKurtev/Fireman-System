@@ -11,20 +11,21 @@ using System.Threading;
 
 namespace Fireman_Systemn.View
 {
-    public partial class Teams_and_Employees : Form
+    public partial class Cases : Form
     {
-        public Teams_and_Employees()
+        public Cases()
         {
             InitializeComponent();
         }
+
         private void btn_back_Click(object sender, EventArgs e)
         {
             FormLayout.NavigateForms(this, new MainMenu());
         }
 
-        private void Teams_and_Employees_Load(object sender, EventArgs e)
+        private void Cases_Load(object sender, EventArgs e)
         {
-            FormLayout.FormLoad(this);
+            FormLayout.FormLoad(this);            
         }
     }
 }
