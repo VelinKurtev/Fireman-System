@@ -27,5 +27,10 @@ namespace Fireman_Systemn.View
         {
             FormLayout.FormLoad(this);            
         }
+
+        private void btn_add_case_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new Add_Case());
+        }
     }
 }

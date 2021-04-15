@@ -65,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormLayout.cs" />
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\Add Case.cs">
       <SubType>Form</SubType>
     </Compile>

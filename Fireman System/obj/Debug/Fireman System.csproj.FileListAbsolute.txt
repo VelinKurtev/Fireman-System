@@ -1,7 +1,6 @@
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.exe.config
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.exe
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.pdb
-D:\GitHub\Fireman System\obj\Debug\Fireman System.csprojAssemblyReference.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.Properties.Resources.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.GenerateResource.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CoreCompileInputs.cache
@@ -27,3 +26,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Cases.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucks.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Teams_and_Employees.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Employees.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman System.csprojAssemblyReference.cache
