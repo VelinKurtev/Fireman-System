@@ -1,6 +1,6 @@
 ﻿namespace Fireman_Systemn.View
 {
-    partial class Teams_and_Employees
+    partial class Employees
     {
         /// <summary>
         /// Required designer variable.
@@ -20,29 +20,12 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+       
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teams_and_Employees));
-            this.lbl_teams_and_employees = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
+            this.lbl_employees = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lbl_teams_and_employees
-            // 
-            this.lbl_teams_and_employees.AutoSize = true;
-            this.lbl_teams_and_employees.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_teams_and_employees.ForeColor = System.Drawing.Color.Yellow;
-            this.lbl_teams_and_employees.Location = new System.Drawing.Point(238, 49);
-            this.lbl_teams_and_employees.Name = "lbl_teams_and_employees";
-            this.lbl_teams_and_employees.Size = new System.Drawing.Size(288, 33);
-            this.lbl_teams_and_employees.TabIndex = 2;
-            this.lbl_teams_and_employees.Text = "Екипи и Служители";
             // 
             // btn_back
             // 
@@ -50,34 +33,41 @@
             this.btn_back.Location = new System.Drawing.Point(12, 12);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(113, 59);
-            this.btn_back.TabIndex = 3;
+            this.btn_back.TabIndex = 4;
             this.btn_back.Text = "Обратно";
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // Teams_and_Employees
+            // lbl_employees
+            // 
+            this.lbl_employees.AutoSize = true;
+            this.lbl_employees.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employees.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_employees.Location = new System.Drawing.Point(290, 38);
+            this.lbl_employees.Name = "lbl_employees";
+            this.lbl_employees.Size = new System.Drawing.Size(178, 33);
+            this.lbl_employees.TabIndex = 2;
+            this.lbl_employees.Text = "Служители ";
+            // 
+            // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(748, 512);
+            this.Controls.Add(this.lbl_employees);
             this.Controls.Add(this.btn_back);
-            this.Controls.Add(this.lbl_teams_and_employees);
             this.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Teams_and_Employees";
+            this.Name = "Employees";
             this.Text = "Fireman System";
-            this.Load += new System.EventHandler(this.Teams_and_Employees_Load);
+            this.Load += new System.EventHandler(this.Employees_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
-        #endregion
-        private System.Windows.Forms.Label lbl_teams_and_employees;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Label lbl_employees;
     }
 }
-

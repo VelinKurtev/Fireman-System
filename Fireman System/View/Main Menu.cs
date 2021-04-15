@@ -39,5 +39,15 @@ namespace Fireman_Systemn
         {
             FormLayout.FormLoad(this);
         }
+
+        private void btn_view_employees_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new Employees());
+        }
+
+        private void btn_add_case_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new Add_Case());
+        }
     }
 }

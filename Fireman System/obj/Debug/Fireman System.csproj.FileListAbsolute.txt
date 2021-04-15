@@ -26,3 +26,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenu.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Cases.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucks.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Teams_and_Employees.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Employees.resources

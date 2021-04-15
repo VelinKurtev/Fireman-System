@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -65,11 +65,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormLayout.cs" />
+    <Compile Include="View\Add Case.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Add Case.Designer.cs">
+      <DependentUpon>Add Case.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Cases.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Cases.Designer.cs">
       <DependentUpon>Cases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Fire Trucks.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,9 @@
     </Compile>
     <EmbeddedResource Include="View\Cases.resx">
       <DependentUpon>Cases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Fire Trucks.resx">
       <DependentUpon>Fire Trucks.cs</DependentUpon>
