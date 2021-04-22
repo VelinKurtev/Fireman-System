@@ -43,23 +43,25 @@
             // 
             // lbl_main_menu
             // 
+            this.lbl_main_menu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_main_menu.AutoSize = true;
             this.lbl_main_menu.BackColor = System.Drawing.Color.Transparent;
             this.lbl_main_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_main_menu.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_main_menu.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_main_menu.Location = new System.Drawing.Point(250, 37);
+            this.lbl_main_menu.Location = new System.Drawing.Point(304, 43);
             this.lbl_main_menu.Name = "lbl_main_menu";
             this.lbl_main_menu.Size = new System.Drawing.Size(250, 42);
             this.lbl_main_menu.TabIndex = 2;
             this.lbl_main_menu.Text = "Главно меню";
+            this.lbl_main_menu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_view_teams
             // 
             this.btn_view_teams.BackColor = System.Drawing.Color.Beige;
             this.btn_view_teams.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_teams.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_teams.Location = new System.Drawing.Point(29, 126);
+            this.btn_view_teams.Location = new System.Drawing.Point(82, 126);
             this.btn_view_teams.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_teams.Name = "btn_view_teams";
             this.btn_view_teams.Size = new System.Drawing.Size(360, 52);
@@ -73,7 +75,7 @@
             this.btn_view_cases.BackColor = System.Drawing.Color.Beige;
             this.btn_view_cases.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_cases.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_cases.Location = new System.Drawing.Point(29, 186);
+            this.btn_view_cases.Location = new System.Drawing.Point(82, 186);
             this.btn_view_cases.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_cases.Name = "btn_view_cases";
             this.btn_view_cases.Size = new System.Drawing.Size(360, 52);
@@ -87,7 +89,7 @@
             this.btn_view_firetrucks.BackColor = System.Drawing.Color.Beige;
             this.btn_view_firetrucks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_firetrucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_firetrucks.Location = new System.Drawing.Point(29, 246);
+            this.btn_view_firetrucks.Location = new System.Drawing.Point(82, 246);
             this.btn_view_firetrucks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_firetrucks.Name = "btn_view_firetrucks";
             this.btn_view_firetrucks.Size = new System.Drawing.Size(360, 52);
@@ -101,7 +103,7 @@
             this.btn_view_employees.BackColor = System.Drawing.Color.Beige;
             this.btn_view_employees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_employees.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_employees.Location = new System.Drawing.Point(29, 306);
+            this.btn_view_employees.Location = new System.Drawing.Point(82, 306);
             this.btn_view_employees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_employees.Name = "btn_view_employees";
             this.btn_view_employees.Size = new System.Drawing.Size(360, 52);
@@ -115,7 +117,7 @@
             this.btn_add_case.BackColor = System.Drawing.Color.Beige;
             this.btn_add_case.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_add_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_case.Location = new System.Drawing.Point(29, 366);
+            this.btn_add_case.Location = new System.Drawing.Point(82, 366);
             this.btn_add_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_add_case.Name = "btn_add_case";
             this.btn_add_case.Size = new System.Drawing.Size(360, 52);
@@ -128,7 +130,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(411, 113);
+            this.pictureBox1.Location = new System.Drawing.Point(514, 126);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(325, 333);
@@ -151,7 +153,7 @@
             this.gradientBcgndMainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientBcgndMainMenu.Location = new System.Drawing.Point(0, 0);
             this.gradientBcgndMainMenu.Name = "gradientBcgndMainMenu";
-            this.gradientBcgndMainMenu.Size = new System.Drawing.Size(748, 512);
+            this.gradientBcgndMainMenu.Size = new System.Drawing.Size(861, 512);
             this.gradientBcgndMainMenu.TabIndex = 7;
             this.gradientBcgndMainMenu.TopColor = System.Drawing.Color.Black;
             // 
@@ -160,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(748, 512);
+            this.ClientSize = new System.Drawing.Size(861, 512);
             this.Controls.Add(this.gradientBcgndMainMenu);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

@@ -20,7 +20,7 @@ namespace Fireman_Systemn
 
         private void btn_view_cases_Click(object sender, EventArgs e)
         {
-            FormLayout.NavigateForms(this, new Cases());
+            FormLayout.NavigateForms(this, new CasesView());
         }
 
         private void btn_view_firetrucks_Click(object sender, EventArgs e)

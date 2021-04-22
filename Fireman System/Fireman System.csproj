@@ -48,10 +48,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,6 +73,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cases.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AddCasesController.cs" />
+    <Compile Include="FiremanSysModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiremanSysModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiremanSysModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="FormLayout.cs" />
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
@@ -74,11 +102,11 @@
     <Compile Include="View\Add Case.Designer.cs">
       <DependentUpon>Add Case.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Cases.cs">
+    <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Cases.Designer.cs">
-      <DependentUpon>Cases.cs</DependentUpon>
+    <Compile Include="View\CasesView.Designer.cs">
+      <DependentUpon>CasesView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Employees.cs">
       <SubType>Form</SubType>
@@ -115,8 +143,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Cases.resx">
-      <DependentUpon>Cases.cs</DependentUpon>
+    <EmbeddedResource Include="View\CasesView.resx">
+      <DependentUpon>CasesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Employees.resx">
       <DependentUpon>Employees.cs</DependentUpon>
@@ -130,6 +158,14 @@
     <EmbeddedResource Include="View\Main Menu.resx">
       <DependentUpon>Main Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="FiremanSysModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FiremanSysModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FiremanSysModel.edmx.diagram">
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -143,10 +179,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
@@ -158,6 +191,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FiremanSys.mdf" />
+    <Content Include="FiremanSysModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="FiremanSysModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>FiremanSysModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="FiremanSys_log.ldf">
+      <DependentUpon>FiremanSys.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
