@@ -23,7 +23,7 @@ namespace Fireman_Systemn.View
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            FormLayout.NavigateForms(this, new MainMenu());
+            FormLayout.NavigateForms(this, new MainMenuView());
         }
 
         private void Cases_Load(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Fireman_Systemn.View
 
         private void btn_add_case_Click(object sender, EventArgs e)
         {
-            FormLayout.NavigateForms(this, new Add_Case());
+            FormLayout.NavigateForms(this, new Add_Case_View());
         }
 
         private void Refresh_table()

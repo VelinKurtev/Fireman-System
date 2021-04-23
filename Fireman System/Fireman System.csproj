@@ -96,11 +96,11 @@
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\Add Case.cs">
+    <Compile Include="View\AddCaseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Add Case.Designer.cs">
-      <DependentUpon>Add Case.cs</DependentUpon>
+    <Compile Include="View\AddCaseView.Designer.cs">
+      <DependentUpon>AddCaseView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
@@ -108,29 +108,29 @@
     <Compile Include="View\CasesView.Designer.cs">
       <DependentUpon>CasesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Employees.cs">
+    <Compile Include="View\EmployeesView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Employees.Designer.cs">
-      <DependentUpon>Employees.cs</DependentUpon>
+    <Compile Include="View\EmployeesView.Designer.cs">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Fire Trucks.cs">
+    <Compile Include="View\FireTrucksView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Fire Trucks.Designer.cs">
-      <DependentUpon>Fire Trucks.cs</DependentUpon>
+    <Compile Include="View\FireTrucksView.Designer.cs">
+      <DependentUpon>FireTrucksView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Teams and Employees.cs">
+    <Compile Include="View\TeamsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Teams and Employees.Designer.cs">
-      <DependentUpon>Teams and Employees.cs</DependentUpon>
+    <Compile Include="View\TeamsView.Designer.cs">
+      <DependentUpon>TeamsView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Main Menu.cs">
+    <Compile Include="View\MainMenuView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Main Menu.Designer.cs">
-      <DependentUpon>Main Menu.cs</DependentUpon>
+    <Compile Include="View\MainMenuView.Designer.cs">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -143,20 +143,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\AddCaseView.resx">
+      <DependentUpon>AddCaseView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\CasesView.resx">
       <DependentUpon>CasesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Employees.resx">
-      <DependentUpon>Employees.cs</DependentUpon>
+    <EmbeddedResource Include="View\EmployeesView.resx">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Fire Trucks.resx">
-      <DependentUpon>Fire Trucks.cs</DependentUpon>
+    <EmbeddedResource Include="View\FireTrucksView.resx">
+      <DependentUpon>FireTrucksView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Teams and Employees.resx">
-      <DependentUpon>Teams and Employees.cs</DependentUpon>
+    <EmbeddedResource Include="View\TeamsView.resx">
+      <DependentUpon>TeamsView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Main Menu.resx">
-      <DependentUpon>Main Menu.cs</DependentUpon>
+    <EmbeddedResource Include="View\MainMenuView.resx">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="FiremanSysModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

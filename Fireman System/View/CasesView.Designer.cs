@@ -22,8 +22,11 @@
 
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CasesView));
-            this.gradientPanel1 = new Fireman_Systemn.GradientPanel();
+            this.gradientPanel = new Fireman_Systemn.GradientPanel();
             this.dgvCases = new System.Windows.Forms.DataGridView();
             this.lbl_id_picker = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -33,38 +36,67 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_add_case = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
-            this.gradientPanel1.SuspendLayout();
+            this.gradientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // gradientPanel1
+            // gradientPanel
             // 
-            this.gradientPanel1.Angle = 0F;
-            this.gradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gradientPanel1.BottomColor = System.Drawing.Color.DarkRed;
-            this.gradientPanel1.Controls.Add(this.dgvCases);
-            this.gradientPanel1.Controls.Add(this.lbl_id_picker);
-            this.gradientPanel1.Controls.Add(this.comboBox1);
-            this.gradientPanel1.Controls.Add(this.btn_delete_case);
-            this.gradientPanel1.Controls.Add(this.lbl_cases);
-            this.gradientPanel1.Controls.Add(this.btn_update_table);
-            this.gradientPanel1.Controls.Add(this.pictureBox1);
-            this.gradientPanel1.Controls.Add(this.btn_add_case);
-            this.gradientPanel1.Controls.Add(this.btn_back);
-            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(748, 512);
-            this.gradientPanel1.TabIndex = 10;
-            this.gradientPanel1.TopColor = System.Drawing.Color.Black;
+            this.gradientPanel.Angle = 0F;
+            this.gradientPanel.BackColor = System.Drawing.Color.Transparent;
+            this.gradientPanel.BottomColor = System.Drawing.Color.DarkRed;
+            this.gradientPanel.Controls.Add(this.dgvCases);
+            this.gradientPanel.Controls.Add(this.lbl_id_picker);
+            this.gradientPanel.Controls.Add(this.comboBox1);
+            this.gradientPanel.Controls.Add(this.btn_delete_case);
+            this.gradientPanel.Controls.Add(this.lbl_cases);
+            this.gradientPanel.Controls.Add(this.btn_update_table);
+            this.gradientPanel.Controls.Add(this.pictureBox1);
+            this.gradientPanel.Controls.Add(this.btn_add_case);
+            this.gradientPanel.Controls.Add(this.btn_back);
+            this.gradientPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanel.Name = "gradientPanel";
+            this.gradientPanel.Size = new System.Drawing.Size(748, 512);
+            this.gradientPanel.TabIndex = 10;
+            this.gradientPanel.TopColor = System.Drawing.Color.Black;
             // 
             // dgvCases
             // 
-            this.dgvCases.AllowUserToOrderColumns = true;
-            this.dgvCases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCases.AllowUserToAddRows = false;
+            this.dgvCases.AllowUserToDeleteRows = false;
+            this.dgvCases.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dgvCases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvCases.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvCases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCases.Location = new System.Drawing.Point(288, 124);
             this.dgvCases.Name = "dgvCases";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvCases.RowHeadersWidth = 20;
             this.dgvCases.Size = new System.Drawing.Size(448, 376);
             this.dgvCases.TabIndex = 12;
             // 
@@ -82,13 +114,11 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DisplayMember = "id_case";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(45, 269);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(206, 20);
             this.comboBox1.TabIndex = 10;
-            this.comboBox1.ValueMember = "id_case";
             // 
             // btn_delete_case
             // 
@@ -163,22 +193,22 @@
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
-            // Cases
+            // CasesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(748, 512);
-            this.Controls.Add(this.gradientPanel1);
+            this.Controls.Add(this.gradientPanel);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Cases";
+            this.Name = "CasesView";
             this.Text = "Fireman System - Cases";
             this.Load += new System.EventHandler(this.Cases_Load);
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
+            this.gradientPanel.ResumeLayout(false);
+            this.gradientPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCases)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -191,7 +221,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_update_table;
         private System.Windows.Forms.Button btn_delete_case;
-        private GradientPanel gradientPanel1;
+        private GradientPanel gradientPanel;
         private System.Windows.Forms.Label lbl_id_picker;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dgvCases;
