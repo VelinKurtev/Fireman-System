@@ -42,5 +42,12 @@ namespace Fireman_Systemn.View
             dgvCases.DataSource = addCasesController.GetAll();
         }
 
+        private void btn_delete_case_Click(object sender, EventArgs e)
+        {
+            var row = dgvCases.CurrentRow;
+            int id = int.Parse(row.Cells["Id"].Value.ToString());
+            addCasesController.Delete(id);
+            Refresh_table();
+        }
     }
 }

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Threading;
 using Fireman_Systemn.View;
 
 namespace Fireman_Systemn
 {
     public partial class MainMenuView : Form
     {
-        Thread thread;
         public MainMenuView()
         {
             InitializeComponent();

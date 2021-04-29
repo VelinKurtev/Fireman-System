@@ -26,5 +26,18 @@ namespace Fireman_Systemn.Controller
                 fse.SaveChanges();
             }
         }
+
+        public void Delete(int id)
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                var fireCase = fse.Cases.Where(c => c.Id == id).FirstOrDefault();
+                if (fireCase != null)
+                {
+                    fse.Cases.Remove(fireCase);
+                    fse.SaveChanges();
+                }
+            }
+        }
     }
 }

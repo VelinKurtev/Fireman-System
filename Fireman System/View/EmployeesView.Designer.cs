@@ -24,13 +24,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesView));
+            this.gradientPanelEmployees = new Fireman_Systemn.GradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_back = new System.Windows.Forms.Button();
             this.lbl_employees = new System.Windows.Forms.Label();
-            this.gradientPanel1 = new Fireman_Systemn.GradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gradientPanel1.SuspendLayout();
+            this.gradientPanelEmployees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // gradientPanelEmployees
+            // 
+            this.gradientPanelEmployees.Angle = 0F;
+            this.gradientPanelEmployees.BackColor = System.Drawing.Color.Transparent;
+            this.gradientPanelEmployees.BottomColor = System.Drawing.Color.DarkRed;
+            this.gradientPanelEmployees.Controls.Add(this.pictureBox1);
+            this.gradientPanelEmployees.Controls.Add(this.btn_back);
+            this.gradientPanelEmployees.Controls.Add(this.lbl_employees);
+            this.gradientPanelEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanelEmployees.Location = new System.Drawing.Point(0, 0);
+            this.gradientPanelEmployees.Name = "gradientPanelEmployees";
+            this.gradientPanelEmployees.Size = new System.Drawing.Size(861, 512);
+            this.gradientPanelEmployees.TabIndex = 5;
+            this.gradientPanelEmployees.TopColor = System.Drawing.Color.Black;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 382);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 118);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_back
             // 
@@ -46,61 +71,40 @@
             // 
             // lbl_employees
             // 
+            this.lbl_employees.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_employees.AutoSize = true;
             this.lbl_employees.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employees.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_employees.Location = new System.Drawing.Point(248, 39);
+            this.lbl_employees.Location = new System.Drawing.Point(304, 43);
             this.lbl_employees.Name = "lbl_employees";
             this.lbl_employees.Size = new System.Drawing.Size(223, 42);
             this.lbl_employees.TabIndex = 2;
             this.lbl_employees.Text = "Служители ";
-            // 
-            // gradientPanel1
-            // 
-            this.gradientPanel1.Angle = 0F;
-            this.gradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gradientPanel1.BottomColor = System.Drawing.Color.DarkRed;
-            this.gradientPanel1.Controls.Add(this.pictureBox1);
-            this.gradientPanel1.Controls.Add(this.btn_back);
-            this.gradientPanel1.Controls.Add(this.lbl_employees);
-            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(748, 512);
-            this.gradientPanel1.TabIndex = 5;
-            this.gradientPanel1.TopColor = System.Drawing.Color.Black;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 316);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 170);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.lbl_employees.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // EmployeesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(748, 512);
-            this.Controls.Add(this.gradientPanel1);
+            this.ClientSize = new System.Drawing.Size(861, 512);
+            this.Controls.Add(this.gradientPanelEmployees);
             this.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EmployeesView";
-            this.Text = "Fireman System - Employees";
+            this.Text = "Fireman System - Служители";
             this.Load += new System.EventHandler(this.Employees_Load);
-            this.gradientPanel1.ResumeLayout(false);
-            this.gradientPanel1.PerformLayout();
+            this.gradientPanelEmployees.ResumeLayout(false);
+            this.gradientPanelEmployees.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Label lbl_employees;
-        private GradientPanel gradientPanel1;
+        private GradientPanel gradientPanelEmployees;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
