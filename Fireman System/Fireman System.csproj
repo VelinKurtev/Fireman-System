@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,10 +48,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Activities" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,30 +73,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cases.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AddCasesController.cs" />
+    <Compile Include="FiremanSysModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiremanSysModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FiremanSysModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="FormLayout.cs" />
-    <Compile Include="View\Cases.cs">
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\AddCaseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Cases.Designer.cs">
-      <DependentUpon>Cases.cs</DependentUpon>
+    <Compile Include="View\AddCaseView.Designer.cs">
+      <DependentUpon>AddCaseView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Fire Trucks.cs">
+    <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Fire Trucks.Designer.cs">
-      <DependentUpon>Fire Trucks.cs</DependentUpon>
+    <Compile Include="View\CasesView.Designer.cs">
+      <DependentUpon>CasesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Teams and Employees.cs">
+    <Compile Include="View\EmployeesView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Teams and Employees.Designer.cs">
-      <DependentUpon>Teams and Employees.cs</DependentUpon>
+    <Compile Include="View\EmployeesView.Designer.cs">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Main Menu.cs">
+    <Compile Include="View\FireTrucksView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Main Menu.Designer.cs">
-      <DependentUpon>Main Menu.cs</DependentUpon>
+    <Compile Include="View\FireTrucksView.Designer.cs">
+      <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TeamsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TeamsView.Designer.cs">
+      <DependentUpon>TeamsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MainMenuView.Designer.cs">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,18 +143,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\Cases.resx">
-      <DependentUpon>Cases.cs</DependentUpon>
+    <EmbeddedResource Include="View\AddCaseView.resx">
+      <DependentUpon>AddCaseView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Fire Trucks.resx">
-      <DependentUpon>Fire Trucks.cs</DependentUpon>
+    <EmbeddedResource Include="View\CasesView.resx">
+      <DependentUpon>CasesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Teams and Employees.resx">
-      <DependentUpon>Teams and Employees.cs</DependentUpon>
+    <EmbeddedResource Include="View\EmployeesView.resx">
+      <DependentUpon>EmployeesView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Main Menu.resx">
-      <DependentUpon>Main Menu.cs</DependentUpon>
+    <EmbeddedResource Include="View\FireTrucksView.resx">
+      <DependentUpon>FireTrucksView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TeamsView.resx">
+      <DependentUpon>TeamsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MainMenuView.resx">
+      <DependentUpon>MainMenuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="FiremanSysModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FiremanSysModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FiremanSysModel.edmx.diagram">
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,10 +182,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
@@ -140,6 +194,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FiremanSys.mdf" />
+    <Content Include="FiremanSysModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="FiremanSysModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>FiremanSysModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="FiremanSys_log.ldf">
+      <DependentUpon>FiremanSys.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

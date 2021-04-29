@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FiremanSysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cases">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Region" Type="varchar(max)" Nullable="false" />
+    <Property Name="Town" Type="varchar(max)" Nullable="false" />
+    <Property Name="Street" Type="varchar(max)" Nullable="false" />
+    <Property Name="Neighborhood" Type="varchar(max)" Nullable="false" />
+    <Property Name="Address_number" Type="int" Nullable="false" />
+    <Property Name="Floor" Type="int" Nullable="false" />
+    <Property Name="Apartment" Type="int" />
+    <Property Name="Case_type" Type="varchar(max)" Nullable="false" />
+    <Property Name="Dangerous_substances_info" Type="varchar(max)" />
+    <Property Name="Selected_team" Type="int" Nullable="false" />
+    <Property Name="Date_time_of_case" Type="datetime" Nullable="false" />
+    <Property Name="End_date_time_of_case" Type="datetime" Nullable="false" />
+    <Property Name="Used_water_resources" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FiremanSysModelStoreContainer">
+    <EntitySet Name="Cases" EntityType="Self.Cases" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

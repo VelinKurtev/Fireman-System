@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FiremanSysModelStoreContainer" CdmEntityContainer="FiremanSysEntities">
+    <EntitySetMapping Name="Cases">
+      <EntityTypeMapping TypeName="FiremanSysModel.Cases">
+        <MappingFragment StoreEntitySet="Cases">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+          <ScalarProperty Name="Address_number" ColumnName="Address_number" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+          <ScalarProperty Name="Case_type" ColumnName="Case_type" />
+          <ScalarProperty Name="Dangerous_substances_info" ColumnName="Dangerous_substances_info" />
+          <ScalarProperty Name="Selected_team" ColumnName="Selected_team" />
+          <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />
+          <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
+          <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

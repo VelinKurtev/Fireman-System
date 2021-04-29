@@ -1,7 +1,6 @@
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.exe.config
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.exe
 D:\GitHub\Fireman System\bin\Debug\Fireman Systemn.pdb
-D:\GitHub\Fireman System\obj\Debug\Fireman System.csprojAssemblyReference.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.Properties.Resources.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.GenerateResource.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CoreCompileInputs.cache
@@ -22,7 +21,15 @@ D:\GitHub\Fireman System\bin\Debug\K4os.Hash.xxHash.dll
 D:\GitHub\Fireman System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\GitHub\Fireman System\bin\Debug\MySql.Data.xml
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.CopyComplete
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenu.resources
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Cases.resources
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucks.resources
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Teams_and_Employees.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman System.csprojAssemblyReference.cache
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.CasesView.resources
+D:\GitHub\Fireman System\bin\Debug\EntityFramework.dll
+D:\GitHub\Fireman System\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\Fireman System\bin\Debug\System.Numerics.Vectors.dll
+D:\GitHub\Fireman System\bin\Debug\EntityFramework.xml
+D:\GitHub\Fireman System\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Add_Case_View.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EmployeesView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucksView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.TeamsView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenuView.resources
