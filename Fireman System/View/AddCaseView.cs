@@ -24,5 +24,12 @@ namespace Fireman_Systemn.View
         {
             FormLayout.NavigateForms(this, new MainMenuView());
         }
+
+        private void btn_submit_case_Click(object sender, EventArgs e)
+        {
+            Cases Case = new Cases();
+            Case.Region = txt_box_region.Text;
+            
+        }
     }
 }

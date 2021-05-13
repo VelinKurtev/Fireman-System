@@ -17,12 +17,12 @@ namespace Fireman_Systemn.Controller
             }
         }
         
-        public void Insert(Cases c)
+        public void Insert(Cases Case)
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                c.Id = fse.Cases.Count() + 1;
-                fse.Cases.Add(c);
+                Case.Id = fse.Cases.Count() + 1;
+                fse.Cases.Add(Case);
                 fse.SaveChanges();
             }
         }
