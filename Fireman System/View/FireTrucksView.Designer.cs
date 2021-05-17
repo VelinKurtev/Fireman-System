@@ -76,13 +76,16 @@
             // 
             // lbl_Fire_Trucks
             // 
+            this.lbl_Fire_Trucks.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_Fire_Trucks.AutoSize = true;
+            this.lbl_Fire_Trucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Fire_Trucks.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(304, 43);
             this.lbl_Fire_Trucks.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(421, 96);
             this.lbl_Fire_Trucks.Name = "lbl_Fire_Trucks";
-            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(38, 13);
-            this.lbl_Fire_Trucks.TabIndex = 7;
-            this.lbl_Fire_Trucks.Text = "label1";
+            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(223, 42);
+            this.lbl_Fire_Trucks.TabIndex = 2;
+            this.lbl_Fire_Trucks.Text = "Пожарни коли";
             // 
             // FireTrucksView
             // 

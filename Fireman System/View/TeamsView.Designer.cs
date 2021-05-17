@@ -40,9 +40,9 @@
             this.lbl_teams_and_employees.ForeColor = System.Drawing.Color.Yellow;
             this.lbl_teams_and_employees.Location = new System.Drawing.Point(238, 49);
             this.lbl_teams_and_employees.Name = "lbl_teams_and_employees";
-            this.lbl_teams_and_employees.Size = new System.Drawing.Size(288, 33);
+            this.lbl_teams_and_employees.Size = new System.Drawing.Size(101, 33);
             this.lbl_teams_and_employees.TabIndex = 2;
-            this.lbl_teams_and_employees.Text = "Екипи и Служители";
+            this.lbl_teams_and_employees.Text = "Екипи";
             // 
             // btn_back
             // 
@@ -68,7 +68,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TeamsView";
-            this.Text = "Fireman System";
+            this.Text = "Fireman System - Екипи";
             this.Load += new System.EventHandler(this.Teams_and_Employees_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

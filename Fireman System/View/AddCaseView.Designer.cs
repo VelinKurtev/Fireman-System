@@ -34,7 +34,7 @@
             this.nud_floor = new System.Windows.Forms.NumericUpDown();
             this.nup_Apartment = new System.Windows.Forms.NumericUpDown();
             this.lbl_used_water_resources = new System.Windows.Forms.Label();
-            this.nup_Used_water_resources = new System.Windows.Forms.NumericUpDown();
+            this.nud_Used_water_resources = new System.Windows.Forms.NumericUpDown();
             this.btn_submit_case = new System.Windows.Forms.Button();
             this.end_date_case_time_picker = new System.Windows.Forms.DateTimePicker();
             this.lbl_end_date_of_case = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.gradientPanelAddCases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_Used_water_resources)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -93,7 +93,7 @@
             this.gradientPanelAddCases.Controls.Add(this.nud_floor);
             this.gradientPanelAddCases.Controls.Add(this.nup_Apartment);
             this.gradientPanelAddCases.Controls.Add(this.lbl_used_water_resources);
-            this.gradientPanelAddCases.Controls.Add(this.nup_Used_water_resources);
+            this.gradientPanelAddCases.Controls.Add(this.nud_Used_water_resources);
             this.gradientPanelAddCases.Controls.Add(this.btn_submit_case);
             this.gradientPanelAddCases.Controls.Add(this.end_date_case_time_picker);
             this.gradientPanelAddCases.Controls.Add(this.lbl_end_date_of_case);
@@ -155,13 +155,13 @@
             this.lbl_used_water_resources.TabIndex = 36;
             this.lbl_used_water_resources.Text = "Използвани водни ресурси";
             // 
-            // nup_Used_water_resources
+            // nud_Used_water_resources
             // 
-            this.nup_Used_water_resources.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nup_Used_water_resources.Location = new System.Drawing.Point(599, 131);
-            this.nup_Used_water_resources.Name = "nup_Used_water_resources";
-            this.nup_Used_water_resources.Size = new System.Drawing.Size(168, 23);
-            this.nup_Used_water_resources.TabIndex = 35;
+            this.nud_Used_water_resources.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_Used_water_resources.Location = new System.Drawing.Point(599, 131);
+            this.nud_Used_water_resources.Name = "nud_Used_water_resources";
+            this.nud_Used_water_resources.Size = new System.Drawing.Size(168, 23);
+            this.nud_Used_water_resources.TabIndex = 35;
             // 
             // btn_submit_case
             // 
@@ -179,10 +179,12 @@
             // end_date_case_time_picker
             // 
             this.end_date_case_time_picker.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end_date_case_time_picker.CustomFormat = "dd MMMM yyyy hh:mm";
+            this.end_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end_date_case_time_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.end_date_case_time_picker.Location = new System.Drawing.Point(393, 391);
             this.end_date_case_time_picker.Name = "end_date_case_time_picker";
-            this.end_date_case_time_picker.Size = new System.Drawing.Size(167, 23);
+            this.end_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
             this.end_date_case_time_picker.TabIndex = 33;
             this.end_date_case_time_picker.Value = new System.DateTime(2021, 5, 13, 9, 31, 50, 0);
             // 
@@ -201,10 +203,12 @@
             // start_date_case_time_picker
             // 
             this.start_date_case_time_picker.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_date_case_time_picker.CustomFormat = "dd MMMM yyyy hh:mm";
+            this.start_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_date_case_time_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.start_date_case_time_picker.Location = new System.Drawing.Point(393, 339);
             this.start_date_case_time_picker.Name = "start_date_case_time_picker";
-            this.start_date_case_time_picker.Size = new System.Drawing.Size(167, 23);
+            this.start_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
             this.start_date_case_time_picker.TabIndex = 31;
             this.start_date_case_time_picker.Value = new System.DateTime(2021, 5, 13, 9, 31, 50, 0);
             // 
@@ -484,7 +488,7 @@
             this.gradientPanelAddCases.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_Used_water_resources)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
@@ -524,7 +528,7 @@
         private System.Windows.Forms.Label lbl_end_date_of_case;
         private System.Windows.Forms.Button btn_submit_case;
         private System.Windows.Forms.Label lbl_used_water_resources;
-        private System.Windows.Forms.NumericUpDown nup_Used_water_resources;
+        private System.Windows.Forms.NumericUpDown nud_Used_water_resources;
         private System.Windows.Forms.NumericUpDown nud_floor;
         private System.Windows.Forms.NumericUpDown nup_Apartment;
     }
