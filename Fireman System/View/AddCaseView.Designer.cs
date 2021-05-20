@@ -157,8 +157,14 @@
             // 
             // nud_Used_water_resources
             // 
+            this.nud_Used_water_resources.DecimalPlaces = 2;
             this.nud_Used_water_resources.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_Used_water_resources.Location = new System.Drawing.Point(599, 131);
+            this.nud_Used_water_resources.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nud_Used_water_resources.Name = "nud_Used_water_resources";
             this.nud_Used_water_resources.Size = new System.Drawing.Size(168, 23);
             this.nud_Used_water_resources.TabIndex = 35;
@@ -325,6 +331,11 @@
             // 
             this.nud_building_number.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_building_number.Location = new System.Drawing.Point(189, 339);
+            this.nud_building_number.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nud_building_number.Name = "nud_building_number";
             this.nud_building_number.Size = new System.Drawing.Size(168, 23);
             this.nud_building_number.TabIndex = 17;

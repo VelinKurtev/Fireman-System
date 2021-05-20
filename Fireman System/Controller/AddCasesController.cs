@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
 
 namespace Fireman_Systemn.Controller
 {
     public class AddCasesController
     {
+        public List<int> FillCombo()
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                var teamIds = fse.Teams.Select(t => t.team_id).ToList();
+                cb_choosen_team.Items.Add(teamIds.ToString());
+                return teamIds;
+            }
+        }
+
         public List<Cases> GetAll()
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())

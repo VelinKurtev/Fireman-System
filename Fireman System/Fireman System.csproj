@@ -95,9 +95,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Fire_trucks.cs">
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="FormLayout.cs" />
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
