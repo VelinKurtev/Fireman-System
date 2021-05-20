@@ -45,7 +45,7 @@ namespace Fireman_Systemn.View
         private void btn_delete_case_Click(object sender, EventArgs e)
         {
             var row = dgvCases.CurrentRow;
-            int id = int.Parse(row.Cells["Id"].Value.ToString());
+            int id = int.Parse(row.Cells["Case_id"].Value.ToString());
             addCasesController.Delete(id);
             Refresh_table();
         }

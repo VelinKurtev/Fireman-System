@@ -5,7 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="45b90717abba4f66bc7fc312078670f2" Name="Diagram1">
-        <EntityTypeShape EntityType="FiremanSysModel.Cases" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FiremanSysModel.Employees" Width="1.5" PointX="3.5" PointY="0.75" />
+        <EntityTypeShape EntityType="FiremanSysModel.Fire_trucks" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FiremanSysModel.Teams" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="FiremanSysModel.Cases" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

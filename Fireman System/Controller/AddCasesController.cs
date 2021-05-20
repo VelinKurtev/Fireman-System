@@ -21,7 +21,7 @@ namespace Fireman_Systemn.Controller
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                Case.Id = fse.Cases.Count() + 1;
+                Case.Case_id = fse.Cases.Count() + 1;
                 fse.Cases.Add(Case);
                 fse.SaveChanges();
             }
@@ -31,7 +31,7 @@ namespace Fireman_Systemn.Controller
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                var fireCase = fse.Cases.Where(c => c.Id == id).FirstOrDefault();
+                var fireCase = fse.Cases.Where(c => c.Case_id == id).FirstOrDefault();
                 if (fireCase != null)
                 {
                     fse.Cases.Remove(fireCase);

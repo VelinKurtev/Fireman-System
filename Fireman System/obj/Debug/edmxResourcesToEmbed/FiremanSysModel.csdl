@@ -1,25 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FiremanSysModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="FiremanSysModel.Employees" />
+    <EntitySet Name="Fire_trucks" EntityType="FiremanSysModel.Fire_trucks" />
+    <EntitySet Name="Teams" EntityType="FiremanSysModel.Teams" />
+    <EntitySet Name="Cases" EntityType="FiremanSysModel.Cases" />
+  </EntityContainer>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="Int32" Nullable="false" />
+    <Property Name="first_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="middle_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="last_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="age" Type="Int32" Nullable="false" />
+    <Property Name="rank" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="personal_phone_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
+    <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
+    <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
+    <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
+    <Property Name="number_of_answered_cases" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Fire_trucks">
+    <Key>
+      <PropertyRef Name="fire_truck_id" />
+    </Key>
+    <Property Name="fire_truck_id" Type="Int32" Nullable="false" />
+    <Property Name="model" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="water_capacity" Type="Double" Nullable="false" />
+    <Property Name="available_seats" Type="Int32" Nullable="false" />
+    <Property Name="available_water_resources" Type="Double" Nullable="false" />
+    <Property Name="fuel_capacity" Type="Double" Nullable="false" />
+    <Property Name="available_fuel" Type="Double" Nullable="false" />
+    <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Teams">
+    <Key>
+      <PropertyRef Name="team_id" />
+    </Key>
+    <Property Name="team_id" Type="Int32" Nullable="false" />
+    <Property Name="team_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="number_of_members" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
+    <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
+    <Property Name="is_team_active" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="is_team_busy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
   <EntityType Name="Cases">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="Case_id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Region" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Town" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Neighborhood" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Address_number" Type="Int32" Nullable="false" />
-    <Property Name="Floor" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int32" />
     <Property Name="Apartment" Type="Int32" />
-    <Property Name="Case_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Case_type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Selected_team" Type="Int32" Nullable="false" />
     <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Used_water_resources" Type="Double" Nullable="false" />
+    <Property Name="Used_water_resources" Type="Double" />
   </EntityType>
-  <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Cases" EntityType="Self.Cases" />
-  </EntityContainer>
 </Schema>
