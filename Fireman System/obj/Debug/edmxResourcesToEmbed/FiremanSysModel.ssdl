@@ -37,25 +37,26 @@
     <Property Name="business_trip_start_date" Type="datetime" />
     <Property Name="buisiness_trip_start_date" Type="datetime" />
     <Property Name="number_of_answered_cases" Type="varchar(max)" Nullable="false" />
+    <Property Name="choosen_team" Type="int" />
   </EntityType>
-  <EntityType Name="Fire_trucks">
+  <EntityType Name="FireTrucks">
     <Key>
       <PropertyRef Name="fire_truck_id" />
     </Key>
-    <Property Name="fire_truck_id" Type="int" Nullable="false" />
+    <Property Name="fire_truck_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="model" Type="varchar(max)" Nullable="false" />
     <Property Name="water_capacity" Type="float" Nullable="false" />
-    <Property Name="available_seats" Type="int" Nullable="false" />
-    <Property Name="available_water_resources" Type="float" Nullable="false" />
+    <Property Name="staff_capacity" Type="float" Nullable="false" />
+    <Property Name="available_water" Type="float" Nullable="false" />
     <Property Name="fuel_capacity" Type="float" Nullable="false" />
     <Property Name="available_fuel" Type="float" Nullable="false" />
-    <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
+    <Property Name="answered_cases" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Teams">
     <Key>
       <PropertyRef Name="team_id" />
     </Key>
-    <Property Name="team_id" Type="int" Nullable="false" />
+    <Property Name="team_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="team_name" Type="varchar(max)" Nullable="false" />
     <Property Name="number_of_members" Type="varchar(max)" Nullable="false" />
     <Property Name="choosen_fire_truck" Type="int" Nullable="false" />
@@ -63,10 +64,42 @@
     <Property Name="is_team_active" Type="varchar(max)" Nullable="false" />
     <Property Name="is_team_busy" Type="varchar(max)" Nullable="false" />
   </EntityType>
+  <Association Name="FK_Cases_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="Cases" Type="Self.Cases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="team_id" />
+      </Principal>
+      <Dependent Role="Cases">
+        <PropertyRef Name="Selected_team" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Teams">
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="team_id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="choosen_team" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="FiremanSysModelStoreContainer">
     <EntitySet Name="Cases" EntityType="Self.Cases" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Fire_trucks" EntityType="Self.Fire_trucks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FireTrucks" EntityType="Self.FireTrucks" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Teams" EntityType="Self.Teams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Cases_Teams" Association="Self.FK_Cases_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Cases" EntitySet="Cases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Teams" Association="Self.FK_Employees_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

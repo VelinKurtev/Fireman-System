@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
+using Fireman_Systemn.Controller;
 
 namespace Fireman_Systemn.View
 {
     public partial class FireTrucksView : Form
     {
+        FireTrucksController fireTrucksController = new FireTrucksController();
         public FireTrucksView()
         {
             InitializeComponent();
@@ -26,6 +20,28 @@ namespace Fireman_Systemn.View
         private void FireTrucks_Load(object sender, EventArgs e)
         {
             FormLayout.FormLoad(this);
+            Refresh_table();
+        }
+
+        private void Refresh_table()
+        {
+            //Разкраси таблицата
+            dgvFireTrucks.DataSource = fireTrucksController.GetAll();
+        }
+
+        private void btn_delete_fire_truck_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var row = dgvFireTrucks.CurrentRow;
+                int id = int.Parse(row.Cells["Case_id"].Value.ToString());
+                fireTrucksController.Delete(id);
+                Refresh_table();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Invalid Row Selected!", ex);
+            }
         }
     }
 }

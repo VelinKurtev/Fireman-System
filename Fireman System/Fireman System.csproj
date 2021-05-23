@@ -76,7 +76,8 @@
     <Compile Include="Cases.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controller\AddCasesController.cs" />
+    <Compile Include="Controller\CasesController.cs" />
+    <Compile Include="Controller\FireTrucksController.cs" />
     <Compile Include="Employees.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
@@ -94,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FireTrucks.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
     <Compile Include="FormLayout.cs" />
     <Compile Include="GradientPanel.cs">

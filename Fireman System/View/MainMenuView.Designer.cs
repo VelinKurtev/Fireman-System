@@ -170,7 +170,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "MainMenuView";
-            this.Text = "Fireman System - Main menu";
+            this.Text = "Fireman System - Главно меню";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gradientBcgndMainMenu.ResumeLayout(false);

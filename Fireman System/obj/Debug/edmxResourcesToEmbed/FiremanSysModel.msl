@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Employees">
       <EntityTypeMapping TypeName="FiremanSysModel.Employees">
         <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
           <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
           <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
           <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
@@ -18,20 +19,6 @@
           <ScalarProperty Name="middle_name" ColumnName="middle_name" />
           <ScalarProperty Name="first_name" ColumnName="first_name" />
           <ScalarProperty Name="employee_id" ColumnName="employee_id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Fire_trucks">
-      <EntityTypeMapping TypeName="FiremanSysModel.Fire_trucks">
-        <MappingFragment StoreEntitySet="Fire_trucks">
-          <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
-          <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
-          <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
-          <ScalarProperty Name="available_water_resources" ColumnName="available_water_resources" />
-          <ScalarProperty Name="available_seats" ColumnName="available_seats" />
-          <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
-          <ScalarProperty Name="model" ColumnName="model" />
-          <ScalarProperty Name="fire_truck_id" ColumnName="fire_truck_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -65,6 +52,20 @@
           <ScalarProperty Name="Town" ColumnName="Town" />
           <ScalarProperty Name="Region" ColumnName="Region" />
           <ScalarProperty Name="Case_id" ColumnName="case_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FireTrucks">
+      <EntityTypeMapping TypeName="FiremanSysModel.FireTrucks">
+        <MappingFragment StoreEntitySet="FireTrucks">
+          <ScalarProperty Name="answered_cases" ColumnName="answered_cases" />
+          <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
+          <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
+          <ScalarProperty Name="available_water" ColumnName="available_water" />
+          <ScalarProperty Name="staff_capacity" ColumnName="staff_capacity" />
+          <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="fire_truck_id" ColumnName="fire_truck_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

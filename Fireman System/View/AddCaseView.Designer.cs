@@ -185,14 +185,14 @@
             // end_date_case_time_picker
             // 
             this.end_date_case_time_picker.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end_date_case_time_picker.CustomFormat = "dd MMMM yyyy hh:mm";
+            this.end_date_case_time_picker.CustomFormat = "dd MMMM yyyy HH:mm";
             this.end_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.end_date_case_time_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.end_date_case_time_picker.Location = new System.Drawing.Point(393, 391);
             this.end_date_case_time_picker.Name = "end_date_case_time_picker";
             this.end_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
             this.end_date_case_time_picker.TabIndex = 33;
-            this.end_date_case_time_picker.Value = new System.DateTime(2021, 5, 13, 9, 31, 50, 0);
+            this.end_date_case_time_picker.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // lbl_end_date_of_case
             // 
@@ -209,14 +209,14 @@
             // start_date_case_time_picker
             // 
             this.start_date_case_time_picker.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_date_case_time_picker.CustomFormat = "dd MMMM yyyy hh:mm";
+            this.start_date_case_time_picker.CustomFormat = "dd MMMM yyyy HH:mm";
             this.start_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_date_case_time_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.start_date_case_time_picker.Location = new System.Drawing.Point(393, 339);
             this.start_date_case_time_picker.Name = "start_date_case_time_picker";
             this.start_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
             this.start_date_case_time_picker.TabIndex = 31;
-            this.start_date_case_time_picker.Value = new System.DateTime(2021, 5, 13, 9, 31, 50, 0);
+            this.start_date_case_time_picker.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // lbl_start_date_of_Case
             // 
@@ -339,6 +339,11 @@
             this.nud_building_number.Name = "nud_building_number";
             this.nud_building_number.Size = new System.Drawing.Size(168, 23);
             this.nud_building_number.TabIndex = 17;
+            this.nud_building_number.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // txt_box_complex
             // 

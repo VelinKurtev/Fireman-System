@@ -14,6 +14,13 @@ namespace Fireman_Systemn
     
     public partial class Teams
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Teams()
+        {
+            this.Cases = new HashSet<Cases>();
+            this.Employees = new HashSet<Employees>();
+        }
+    
         public int team_id { get; set; }
         public string team_name { get; set; }
         public string number_of_members { get; set; }
@@ -21,5 +28,10 @@ namespace Fireman_Systemn
         public int number_of_answered_cases { get; set; }
         public string is_team_active { get; set; }
         public string is_team_busy { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cases> Cases { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employees> Employees { get; set; }
     }
 }

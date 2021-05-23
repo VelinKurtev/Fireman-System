@@ -28,5 +28,8 @@ namespace Fireman_Systemn
         public Nullable<System.DateTime> business_trip_start_date { get; set; }
         public Nullable<System.DateTime> buisiness_trip_start_date { get; set; }
         public string number_of_answered_cases { get; set; }
+        public Nullable<int> choosen_team { get; set; }
+    
+        public virtual Teams Teams { get; set; }
     }
 }
