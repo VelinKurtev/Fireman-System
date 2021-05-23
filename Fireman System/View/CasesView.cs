@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 using Fireman_Systemn.Controller;
 
 namespace Fireman_Systemn.View
 {
     public partial class CasesView : Form
     {
-        AddCasesController addCasesController = new AddCasesController();
+        CasesController CasesController = new CasesController();
         
         public CasesView()
         {
@@ -39,15 +31,26 @@ namespace Fireman_Systemn.View
 
         private void Refresh_table()
         {
-            dgvCases.DataSource = addCasesController.GetAll();
+            //DataGridView Default Error Dialog opens up 
+            dgvCases.DataSource = CasesController.GetAll();
         }
 
         private void btn_delete_case_Click(object sender, EventArgs e)
         {
-            var row = dgvCases.CurrentRow;
-            int id = int.Parse(row.Cells["Id"].Value.ToString());
-            addCasesController.Delete(id);
-            Refresh_table();
+            try
+            {
+                var row = dgvCases.CurrentRow;
+                int id = int.Parse(row.Cells["Case_id"].Value.ToString());
+                CasesController.Delete(id);
+                Refresh_table();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Invalid Row Selected!", ex);
+            }
         }
+
+        
+        
     }
 }

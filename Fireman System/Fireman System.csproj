@@ -76,7 +76,11 @@
     <Compile Include="Cases.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controller\AddCasesController.cs" />
+    <Compile Include="Controller\CasesController.cs" />
+    <Compile Include="Controller\FireTrucksController.cs" />
+    <Compile Include="Employees.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="FiremanSysModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,9 +96,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="FireTrucks.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="FormLayout.cs" />
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Teams.cs">
+      <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
     <Compile Include="View\AddCaseView.cs">
       <SubType>Form</SubType>

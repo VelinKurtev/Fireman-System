@@ -25,6 +25,9 @@ namespace Fireman_Systemn
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Teams> Teams { get; set; }
         public virtual DbSet<Cases> Cases { get; set; }
+        public virtual DbSet<FireTrucks> FireTrucks { get; set; }
     }
 }

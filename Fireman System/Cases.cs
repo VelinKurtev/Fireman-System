@@ -14,19 +14,21 @@ namespace Fireman_Systemn
     
     public partial class Cases
     {
-        public int Id { get; set; }
+        public int Case_id { get; set; }
         public string Region { get; set; }
         public string Town { get; set; }
         public string Street { get; set; }
         public string Neighborhood { get; set; }
         public int Address_number { get; set; }
-        public int Floor { get; set; }
+        public Nullable<int> Floor { get; set; }
         public Nullable<int> Apartment { get; set; }
         public string Case_type { get; set; }
         public string Dangerous_substances_info { get; set; }
         public int Selected_team { get; set; }
         public System.DateTime Date_time_of_case { get; set; }
         public System.DateTime End_date_time_of_case { get; set; }
-        public double Used_water_resources { get; set; }
+        public Nullable<double> Used_water_resources { get; set; }
+    
+        public virtual Teams Teams { get; set; }
     }
 }

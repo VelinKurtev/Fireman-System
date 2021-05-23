@@ -1,23 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="FiremanSysModelStoreContainer" CdmEntityContainer="FiremanSysEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="FiremanSysModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
+          <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
+          <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
+          <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
+          <ScalarProperty Name="vacation_end_date" ColumnName="vacation_end_date" />
+          <ScalarProperty Name="vacation_start_date" ColumnName="vacation_start_date" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="personal_phone_number" ColumnName="personal_phone_number" />
+          <ScalarProperty Name="home_address" ColumnName="home_address" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="FiremanSysModel.Teams">
+        <MappingFragment StoreEntitySet="Teams">
+          <ScalarProperty Name="is_team_busy" ColumnName="is_team_busy" />
+          <ScalarProperty Name="is_team_active" ColumnName="is_team_active" />
+          <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
+          <ScalarProperty Name="choosen_fire_truck" ColumnName="choosen_fire_truck" />
+          <ScalarProperty Name="number_of_members" ColumnName="number_of_members" />
+          <ScalarProperty Name="team_name" ColumnName="team_name" />
+          <ScalarProperty Name="team_id" ColumnName="team_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Cases">
       <EntityTypeMapping TypeName="FiremanSysModel.Cases">
         <MappingFragment StoreEntitySet="Cases">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Region" ColumnName="Region" />
-          <ScalarProperty Name="Town" ColumnName="Town" />
-          <ScalarProperty Name="Street" ColumnName="Street" />
-          <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
-          <ScalarProperty Name="Address_number" ColumnName="Address_number" />
-          <ScalarProperty Name="Floor" ColumnName="Floor" />
-          <ScalarProperty Name="Apartment" ColumnName="Apartment" />
-          <ScalarProperty Name="Case_type" ColumnName="Case_type" />
-          <ScalarProperty Name="Dangerous_substances_info" ColumnName="Dangerous_substances_info" />
-          <ScalarProperty Name="Selected_team" ColumnName="Selected_team" />
-          <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />
-          <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
           <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
+          <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
+          <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />
+          <ScalarProperty Name="Selected_team" ColumnName="Selected_team" />
+          <ScalarProperty Name="Dangerous_substances_info" ColumnName="Dangerous_substances_info" />
+          <ScalarProperty Name="Case_type" ColumnName="Case_type" />
+          <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="Address_number" ColumnName="Address_number" />
+          <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Case_id" ColumnName="case_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FireTrucks">
+      <EntityTypeMapping TypeName="FiremanSysModel.FireTrucks">
+        <MappingFragment StoreEntitySet="FireTrucks">
+          <ScalarProperty Name="answered_cases" ColumnName="answered_cases" />
+          <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
+          <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
+          <ScalarProperty Name="available_water" ColumnName="available_water" />
+          <ScalarProperty Name="staff_capacity" ColumnName="staff_capacity" />
+          <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="fire_truck_id" ColumnName="fire_truck_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
