@@ -38,6 +38,7 @@
     <EntitySetMapping Name="Cases">
       <EntityTypeMapping TypeName="FiremanSysModel.Cases">
         <MappingFragment StoreEntitySet="Cases">
+          <ScalarProperty Name="Used_fuel" ColumnName="Used_fuel" />
           <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
           <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
           <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />

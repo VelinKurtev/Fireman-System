@@ -49,8 +49,5 @@ namespace Fireman_Systemn.View
                 throw new Exception("Invalid Row Selected!", ex);
             }
         }
-
-        
-        
     }
 }

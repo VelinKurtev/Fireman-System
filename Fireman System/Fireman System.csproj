@@ -106,11 +106,17 @@
     <Compile Include="Teams.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="View\AddCaseView.cs">
+    <Compile Include="View\AddViews\AddCaseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\AddCaseView.Designer.cs">
+    <Compile Include="View\AddViews\AddCaseView.Designer.cs">
       <DependentUpon>AddCaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddFireTruckView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddFireTruckView.Designer.cs">
+      <DependentUpon>AddFireTruckView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
@@ -153,8 +159,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\AddCaseView.resx">
+    <EmbeddedResource Include="View\AddViews\AddCaseView.resx">
       <DependentUpon>AddCaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddFireTruckView.resx">
+      <DependentUpon>AddFireTruckView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CasesView.resx">
       <DependentUpon>CasesView.cs</DependentUpon>

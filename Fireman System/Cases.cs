@@ -28,6 +28,7 @@ namespace Fireman_Systemn
         public System.DateTime Date_time_of_case { get; set; }
         public System.DateTime End_date_time_of_case { get; set; }
         public Nullable<double> Used_water_resources { get; set; }
+        public double Used_fuel { get; set; }
     
         public virtual Teams Teams { get; set; }
     }

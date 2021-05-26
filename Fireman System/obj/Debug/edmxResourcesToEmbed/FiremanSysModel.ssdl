@@ -8,7 +8,7 @@
     <Property Name="Region" Type="varchar(max)" Nullable="false" />
     <Property Name="Town" Type="varchar(max)" Nullable="false" />
     <Property Name="Street" Type="varchar(max)" Nullable="false" />
-    <Property Name="Neighborhood" Type="varchar(max)" Nullable="false" />
+    <Property Name="Neighborhood" Type="varchar(max)" />
     <Property Name="Address_number" Type="int" Nullable="false" />
     <Property Name="Floor" Type="int" />
     <Property Name="Apartment" Type="int" />
@@ -18,6 +18,7 @@
     <Property Name="Date_time_of_case" Type="datetime" Nullable="false" />
     <Property Name="End_date_time_of_case" Type="datetime" Nullable="false" />
     <Property Name="Used_water_resources" Type="float" />
+    <Property Name="Used_fuel" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>

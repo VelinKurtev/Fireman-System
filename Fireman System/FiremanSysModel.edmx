@@ -13,7 +13,7 @@
           <Property Name="Region" Type="varchar(max)" Nullable="false" />
           <Property Name="Town" Type="varchar(max)" Nullable="false" />
           <Property Name="Street" Type="varchar(max)" Nullable="false" />
-          <Property Name="Neighborhood" Type="varchar(max)" Nullable="false" />
+          <Property Name="Neighborhood" Type="varchar(max)" />
           <Property Name="Address_number" Type="int" Nullable="false" />
           <Property Name="Floor" Type="int" />
           <Property Name="Apartment" Type="int" />
@@ -23,6 +23,7 @@
           <Property Name="Date_time_of_case" Type="datetime" Nullable="false" />
           <Property Name="End_date_time_of_case" Type="datetime" Nullable="false" />
           <Property Name="Used_water_resources" Type="float" />
+          <Property Name="Used_fuel" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="Employees">
           <Key>
@@ -168,7 +169,7 @@
           <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="Neighborhood" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="Address_number" Type="Int32" Nullable="false" />
           <Property Name="Floor" Type="Int32" />
           <Property Name="Apartment" Type="Int32" />
@@ -179,6 +180,7 @@
           <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Used_water_resources" Type="Double" />
           <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
+          <Property Name="Used_fuel" Type="Double" Nullable="false" />
         </EntityType>
         <EntityType Name="FireTrucks">
           <Key>
@@ -260,6 +262,7 @@
           <EntitySetMapping Name="Cases">
             <EntityTypeMapping TypeName="FiremanSysModel.Cases">
               <MappingFragment StoreEntitySet="Cases">
+                <ScalarProperty Name="Used_fuel" ColumnName="Used_fuel" />
                 <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
                 <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
                 <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />

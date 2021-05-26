@@ -33,3 +33,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EmployeesView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.FireTrucksView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.TeamsView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.MainMenuView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddFireTruckView.resources

@@ -57,7 +57,7 @@
     <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Neighborhood" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="Address_number" Type="Int32" Nullable="false" />
     <Property Name="Floor" Type="Int32" />
     <Property Name="Apartment" Type="Int32" />
@@ -68,6 +68,7 @@
     <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Used_water_resources" Type="Double" />
     <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
+    <Property Name="Used_fuel" Type="Double" Nullable="false" />
   </EntityType>
   <EntityType Name="FireTrucks">
     <Key>

@@ -28,34 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FireTrucksView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btn_back = new System.Windows.Forms.Button();
             this.gradientPanelFireTrucks = new Fireman_Systemn.GradientPanel();
-            this.lbl_Fire_Trucks = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.dgvFireTrucks = new System.Windows.Forms.DataGridView();
             this.btn_delete_fire_truck = new System.Windows.Forms.Button();
             this.btn_update_table = new System.Windows.Forms.Button();
             this.btn_add_fire_truck = new System.Windows.Forms.Button();
+            this.lbl_Fire_Trucks = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.gradientPanelFireTrucks.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFireTrucks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Beige;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 4;
-            this.btn_back.Text = "Обратно";
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // gradientPanelFireTrucks
             // 
@@ -69,35 +57,12 @@
             this.gradientPanelFireTrucks.Controls.Add(this.pictureBoxLogo);
             this.gradientPanelFireTrucks.Controls.Add(this.btn_back);
             this.gradientPanelFireTrucks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanelFireTrucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gradientPanelFireTrucks.Location = new System.Drawing.Point(0, 0);
             this.gradientPanelFireTrucks.Name = "gradientPanelFireTrucks";
             this.gradientPanelFireTrucks.Size = new System.Drawing.Size(861, 512);
             this.gradientPanelFireTrucks.TabIndex = 6;
             this.gradientPanelFireTrucks.TopColor = System.Drawing.Color.Black;
-            // 
-            // lbl_Fire_Trucks
-            // 
-            this.lbl_Fire_Trucks.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_Fire_Trucks.AutoSize = true;
-            this.lbl_Fire_Trucks.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Fire_Trucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Fire_Trucks.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(304, 43);
-            this.lbl_Fire_Trucks.Name = "lbl_Fire_Trucks";
-            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(268, 42);
-            this.lbl_Fire_Trucks.TabIndex = 2;
-            this.lbl_Fire_Trucks.Text = "Пожарни коли";
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 5;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // dgvFireTrucks
             // 
@@ -106,36 +71,36 @@
             this.dgvFireTrucks.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dgvFireTrucks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvFireTrucks.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFireTrucks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFireTrucks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFireTrucks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFireTrucks.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFireTrucks.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFireTrucks.Location = new System.Drawing.Point(311, 124);
             this.dgvFireTrucks.Name = "dgvFireTrucks";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rockwell", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFireTrucks.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFireTrucks.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFireTrucks.RowHeadersWidth = 20;
             this.dgvFireTrucks.Size = new System.Drawing.Size(538, 376);
-            this.dgvFireTrucks.TabIndex = 16;
+            this.dgvFireTrucks.TabIndex = 12;
             // 
             // btn_delete_fire_truck
             // 
@@ -176,6 +141,43 @@
             this.btn_add_fire_truck.TabIndex = 13;
             this.btn_add_fire_truck.Text = "Добави пожарен автомобил";
             this.btn_add_fire_truck.UseVisualStyleBackColor = false;
+            this.btn_add_fire_truck.Click += new System.EventHandler(this.btn_add_fire_truck_Click);
+            // 
+            // lbl_Fire_Trucks
+            // 
+            this.lbl_Fire_Trucks.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_Fire_Trucks.AutoSize = true;
+            this.lbl_Fire_Trucks.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Fire_Trucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Fire_Trucks.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(304, 43);
+            this.lbl_Fire_Trucks.Name = "lbl_Fire_Trucks";
+            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(268, 42);
+            this.lbl_Fire_Trucks.TabIndex = 2;
+            this.lbl_Fire_Trucks.Text = "Пожарни коли";
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Beige;
+            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 42);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.Text = "Обратно";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // FireTrucksView
             // 
@@ -193,8 +195,8 @@
             this.Load += new System.EventHandler(this.FireTrucks_Load);
             this.gradientPanelFireTrucks.ResumeLayout(false);
             this.gradientPanelFireTrucks.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFireTrucks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,9 +207,9 @@
         private GradientPanel gradientPanelFireTrucks;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Label lbl_Fire_Trucks;
-        private System.Windows.Forms.DataGridView dgvFireTrucks;
         private System.Windows.Forms.Button btn_delete_fire_truck;
         private System.Windows.Forms.Button btn_update_table;
         private System.Windows.Forms.Button btn_add_fire_truck;
+        private System.Windows.Forms.DataGridView dgvFireTrucks;
     }
 }
