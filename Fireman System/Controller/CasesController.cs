@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 
 namespace Fireman_Systemn.Controller
@@ -10,7 +11,7 @@ namespace Fireman_Systemn.Controller
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                var cases = fse.Cases.ToList();
+                var cases = fse.Cases.Include(c => c.Teams).ToList();
                 return cases;
             }
         }
@@ -45,5 +46,7 @@ namespace Fireman_Systemn.Controller
                 }
             }
         }
+
+
     }
 }
