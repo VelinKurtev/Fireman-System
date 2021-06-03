@@ -7,7 +7,6 @@ namespace Fireman_Systemn.View
     public partial class CasesView : Form
     {
         CasesController CasesController = new CasesController();
-        
         public CasesView()
         {
             InitializeComponent();
@@ -31,7 +30,6 @@ namespace Fireman_Systemn.View
 
         private void Refresh_table()
         {
-            //DataGridView Default Error Dialog opens up 
             dgvCases.DataSource = CasesController.GetAll();
         }
 
@@ -40,7 +38,7 @@ namespace Fireman_Systemn.View
             try
             {
                 var row = dgvCases.CurrentRow;
-                int id = int.Parse(row.Cells["Case_id"].Value.ToString());
+                int id = int.Parse(row.Cells["CaseID"].Value.ToString());
                 CasesController.Delete(id);
                 Refresh_table();
             }
@@ -48,6 +46,11 @@ namespace Fireman_Systemn.View
             {
                 throw new Exception("Invalid Row Selected!", ex);
             }
+        }
+
+        private void btn_update_table_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

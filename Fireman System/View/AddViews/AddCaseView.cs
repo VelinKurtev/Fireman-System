@@ -57,7 +57,6 @@ namespace Fireman_Systemn.View
             MessageBox.Show("Saved Data");
             
             FormLayout.NavigateForms(this, new CasesView());
-
         }
     }
 }

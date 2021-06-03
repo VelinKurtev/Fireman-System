@@ -78,6 +78,7 @@
     </Compile>
     <Compile Include="Controller\CasesController.cs" />
     <Compile Include="Controller\FireTrucksController.cs" />
+    <Compile Include="Controller\TeamsController.cs" />
     <Compile Include="Employees.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
@@ -117,6 +118,12 @@
     </Compile>
     <Compile Include="View\AddViews\AddFireTruckView.Designer.cs">
       <DependentUpon>AddFireTruckView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddTeamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddTeamView.Designer.cs">
+      <DependentUpon>AddTeamView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>

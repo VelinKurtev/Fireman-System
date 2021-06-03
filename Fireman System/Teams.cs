@@ -33,5 +33,6 @@ namespace Fireman_Systemn
         public virtual ICollection<Cases> Cases { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employees> Employees { get; set; }
+        public virtual FireTrucks FireTrucks { get; set; }
     }
 }

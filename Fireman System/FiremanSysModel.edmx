@@ -94,6 +94,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Teams_FireTrucks">
+          <End Role="FireTrucks" Type="Self.FireTrucks" Multiplicity="1" />
+          <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FireTrucks">
+              <PropertyRef Name="fire_truck_id" />
+            </Principal>
+            <Dependent Role="Teams">
+              <PropertyRef Name="choosen_fire_truck" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="FiremanSysModelStoreContainer">
           <EntitySet Name="Cases" EntityType="Self.Cases" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
@@ -106,6 +118,10 @@
           <AssociationSet Name="FK_Employees_Teams" Association="Self.FK_Employees_Teams">
             <End Role="Teams" EntitySet="Teams" />
             <End Role="Employees" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Teams_FireTrucks" Association="Self.FK_Teams_FireTrucks">
+            <End Role="FireTrucks" EntitySet="FireTrucks" />
+            <End Role="Teams" EntitySet="Teams" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -124,6 +140,10 @@
           <AssociationSet Name="FK_Employees_Teams" Association="FiremanSysModel.FK_Employees_Teams">
             <End Role="Teams" EntitySet="Teams" />
             <End Role="Employees" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Teams_FireTrucks" Association="FiremanSysModel.FK_Teams_FireTrucks">
+            <End Role="FireTrucks" EntitySet="FireTrucks" />
+            <End Role="Teams" EntitySet="Teams" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Employees">
@@ -160,6 +180,7 @@
           <Property Name="is_team_busy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Cases" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Teams" ToRole="Cases" />
           <NavigationProperty Name="Employees" Relationship="FiremanSysModel.FK_Employees_Teams" FromRole="Teams" ToRole="Employees" />
+          <NavigationProperty Name="FireTrucks" Relationship="FiremanSysModel.FK_Teams_FireTrucks" FromRole="Teams" ToRole="FireTrucks" />
         </EntityType>
         <EntityType Name="Cases">
           <Key>
@@ -194,6 +215,7 @@
           <Property Name="fuel_capacity" Type="Double" Nullable="false" />
           <Property Name="available_fuel" Type="Double" Nullable="false" />
           <Property Name="answered_cases" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Teams_FireTrucks" FromRole="FireTrucks" ToRole="Teams" />
         </EntityType>
         <Association Name="FK_Cases_Teams">
           <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="1" />
@@ -216,6 +238,18 @@
             </Principal>
             <Dependent Role="Employees">
               <PropertyRef Name="choosen_team" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Teams_FireTrucks">
+          <End Type="FiremanSysModel.FireTrucks" Role="FireTrucks" Multiplicity="1" />
+          <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FireTrucks">
+              <PropertyRef Name="fire_truck_id" />
+            </Principal>
+            <Dependent Role="Teams">
+              <PropertyRef Name="choosen_fire_truck" />
             </Dependent>
           </ReferentialConstraint>
         </Association>

@@ -11,6 +11,7 @@
         <EntityTypeShape EntityType="FiremanSysModel.FireTrucks" Width="1.5" PointX="8.375" PointY="1.25" />
         <AssociationConnector Association="FiremanSysModel.FK_Cases_Teams" />
         <AssociationConnector Association="FiremanSysModel.FK_Employees_Teams" />
+        <AssociationConnector Association="FiremanSysModel.FK_Teams_FireTrucks" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
