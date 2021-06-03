@@ -16,34 +16,34 @@ namespace Fireman_Systemn.Controller
             }
         }
 
-        public void Insert(Cases Case)
+        public void Insert(Teams Team)
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                Case.Case_id = fse.Cases.Count() + 1;
-                fse.Cases.Add(Case);
+                Team.team_id = fse.Teams.Count() + 1;
+                fse.Teams.Add(Team);
                 fse.SaveChanges();
             }
         }
 
-        public void Update(Cases Case)
-        {
-            using (FiremanSysEntities fse = new FiremanSysEntities())
-            {
-                fse.Cases.Attach(Case);
-                fse.Entry(Case).State = System.Data.Entity.EntityState.Modified;
-                fse.SaveChanges();
-            }
-        }
+        //public void Update(Cases Case)
+        //{
+        //    using (FiremanSysEntities fse = new FiremanSysEntities())
+        //    {
+        //        fse.Cases.Attach(Case);
+        //        fse.Entry(Case).State = System.Data.Entity.EntityState.Modified;
+        //        fse.SaveChanges();
+        //    }
+        //}
 
         public void Delete(int id)
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                var fireCase = fse.Cases.Where(c => c.Case_id == id).FirstOrDefault();
-                if (fireCase != null)
+                var team = fse.Teams.Where(t =>t.team_id == id).FirstOrDefault();
+                if (team != null)
                 {
-                    fse.Cases.Remove(fireCase);
+                    fse.Teams.Remove(team);
                     fse.SaveChanges();
                 }
             }
