@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="FiremanSysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="FiremanSysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cases">
           <Key>
             <PropertyRef Name="case_id" />
@@ -63,12 +63,12 @@
             <PropertyRef Name="team_id" />
           </Key>
           <Property Name="team_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="team_name" Type="varchar(max)" Nullable="false" />
-          <Property Name="number_of_members" Type="varchar(max)" Nullable="false" />
+          <Property Name="team_name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="number_of_members" Type="int" Nullable="false" />
           <Property Name="choosen_fire_truck" Type="int" Nullable="false" />
           <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
-          <Property Name="is_team_active" Type="varchar(max)" Nullable="false" />
-          <Property Name="is_team_busy" Type="varchar(max)" Nullable="false" />
+          <Property Name="is_team_active" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="is_team_busy" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
         <Association Name="FK_Cases_Teams">
           <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
@@ -124,102 +124,85 @@
             <End Role="Teams" EntitySet="Teams" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FiremanSysModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Employees" EntityType="FiremanSysModel.Employees" />
-          <EntitySet Name="Teams" EntityType="FiremanSysModel.Teams" />
-          <EntitySet Name="Cases" EntityType="FiremanSysModel.Cases" />
-          <EntitySet Name="FireTrucks" EntityType="FiremanSysModel.FireTrucks" />
-          <AssociationSet Name="FK_Cases_Teams" Association="FiremanSysModel.FK_Cases_Teams">
-            <End Role="Teams" EntitySet="Teams" />
-            <End Role="Cases" EntitySet="Cases" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Employees_Teams" Association="FiremanSysModel.FK_Employees_Teams">
-            <End Role="Teams" EntitySet="Teams" />
-            <End Role="Employees" EntitySet="Employees" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Teams_FireTrucks" Association="FiremanSysModel.FK_Teams_FireTrucks">
-            <End Role="FireTrucks" EntitySet="FireTrucks" />
-            <End Role="Teams" EntitySet="Teams" />
-          </AssociationSet>
-        </EntityContainer>
-        <EntityType Name="Employees">
-          <Key>
-            <PropertyRef Name="employee_id" />
-          </Key>
-          <Property Name="employee_id" Type="Int32" Nullable="false" />
-          <Property Name="first_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="middle_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="last_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="age" Type="Int32" Nullable="false" />
-          <Property Name="rank" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="personal_phone_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="email" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
-          <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
-          <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
-          <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
-          <Property Name="number_of_answered_cases" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="choosen_team" Type="Int32" />
-          <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />
-        </EntityType>
-        <EntityType Name="Teams">
-          <Key>
-            <PropertyRef Name="team_id" />
-          </Key>
-          <Property Name="team_id" Type="Int32" Nullable="false" />
-          <Property Name="team_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="number_of_members" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
-          <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
-          <Property Name="is_team_active" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="is_team_busy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Cases" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Teams" ToRole="Cases" />
-          <NavigationProperty Name="Employees" Relationship="FiremanSysModel.FK_Employees_Teams" FromRole="Teams" ToRole="Employees" />
-          <NavigationProperty Name="FireTrucks" Relationship="FiremanSysModel.FK_Teams_FireTrucks" FromRole="Teams" ToRole="FireTrucks" />
-        </EntityType>
         <EntityType Name="Cases">
           <Key>
-            <PropertyRef Name="Case_id" />
+            <PropertyRef Name="case_id" />
           </Key>
-          <Property Name="Case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Region" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Town" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address_number" Type="Int32" Nullable="false" />
           <Property Name="Floor" Type="Int32" />
           <Property Name="Apartment" Type="Int32" />
-          <Property Name="Case_type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Case_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Selected_team" Type="Int32" Nullable="false" />
           <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Used_water_resources" Type="Double" />
-          <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
           <Property Name="Used_fuel" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Teams" Relationship="Self.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
+        </EntityType>
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="employee_id" />
+          </Key>
+          <Property Name="employee_id" Type="Int32" Nullable="false" />
+          <Property Name="first_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="middle_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="last_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="age" Type="Int32" Nullable="false" />
+          <Property Name="rank" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="personal_phone_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
+          <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
+          <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
+          <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
+          <Property Name="number_of_answered_cases" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="choosen_team" Type="Int32" />
+          <NavigationProperty Name="Teams" Relationship="Self.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />
         </EntityType>
         <EntityType Name="FireTrucks">
           <Key>
             <PropertyRef Name="fire_truck_id" />
           </Key>
           <Property Name="fire_truck_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="model" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="water_capacity" Type="Double" Nullable="false" />
           <Property Name="staff_capacity" Type="Double" Nullable="false" />
           <Property Name="available_water" Type="Double" Nullable="false" />
           <Property Name="fuel_capacity" Type="Double" Nullable="false" />
           <Property Name="available_fuel" Type="Double" Nullable="false" />
           <Property Name="answered_cases" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Teams_FireTrucks" FromRole="FireTrucks" ToRole="Teams" />
+          <NavigationProperty Name="Teams" Relationship="Self.FK_Teams_FireTrucks" FromRole="FireTrucks" ToRole="Teams" />
+        </EntityType>
+        <EntityType Name="Teams">
+          <Key>
+            <PropertyRef Name="team_id" />
+          </Key>
+          <Property Name="team_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="team_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="number_of_members" Type="Int32" Nullable="false" />
+          <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
+          <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
+          <Property Name="is_team_active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="is_team_busy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Cases" Relationship="Self.FK_Cases_Teams" FromRole="Teams" ToRole="Cases" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employees_Teams" FromRole="Teams" ToRole="Employees" />
+          <NavigationProperty Name="FireTrucks" Relationship="Self.FK_Teams_FireTrucks" FromRole="Teams" ToRole="FireTrucks" />
         </EntityType>
         <Association Name="FK_Cases_Teams">
-          <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="1" />
-          <End Type="FiremanSysModel.Cases" Role="Cases" Multiplicity="*" />
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Cases" Type="Self.Cases" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Teams">
               <PropertyRef Name="team_id" />
@@ -230,8 +213,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Employees_Teams">
-          <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="0..1" />
-          <End Type="FiremanSysModel.Employees" Role="Employees" Multiplicity="*" />
+          <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+          <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Teams">
               <PropertyRef Name="team_id" />
@@ -242,8 +225,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Teams_FireTrucks">
-          <End Type="FiremanSysModel.FireTrucks" Role="FireTrucks" Multiplicity="1" />
-          <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="*" />
+          <End Role="FireTrucks" Type="Self.FireTrucks" Multiplicity="1" />
+          <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="FireTrucks">
               <PropertyRef Name="fire_truck_id" />
@@ -253,78 +236,96 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cases" EntityType="Self.Cases" />
+          <EntitySet Name="Employees" EntityType="Self.Employees" />
+          <EntitySet Name="FireTrucks" EntityType="Self.FireTrucks" />
+          <EntitySet Name="Teams" EntityType="Self.Teams" />
+          <AssociationSet Name="FK_Cases_Teams" Association="Self.FK_Cases_Teams">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Cases" EntitySet="Cases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employees_Teams" Association="Self.FK_Employees_Teams">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Employees" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Teams_FireTrucks" Association="Self.FK_Teams_FireTrucks">
+            <End Role="FireTrucks" EntitySet="FireTrucks" />
+            <End Role="Teams" EntitySet="Teams" />
+          </AssociationSet>
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="FiremanSysModelStoreContainer" CdmEntityContainer="FiremanSysEntities">
-          <EntitySetMapping Name="Employees">
-            <EntityTypeMapping TypeName="FiremanSysModel.Employees">
-              <MappingFragment StoreEntitySet="Employees">
-                <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
-                <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
-                <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
-                <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
-                <ScalarProperty Name="vacation_end_date" ColumnName="vacation_end_date" />
-                <ScalarProperty Name="vacation_start_date" ColumnName="vacation_start_date" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="personal_phone_number" ColumnName="personal_phone_number" />
-                <ScalarProperty Name="home_address" ColumnName="home_address" />
-                <ScalarProperty Name="rank" ColumnName="rank" />
-                <ScalarProperty Name="age" ColumnName="age" />
-                <ScalarProperty Name="last_name" ColumnName="last_name" />
-                <ScalarProperty Name="middle_name" ColumnName="middle_name" />
-                <ScalarProperty Name="first_name" ColumnName="first_name" />
-                <ScalarProperty Name="employee_id" ColumnName="employee_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Teams">
-            <EntityTypeMapping TypeName="FiremanSysModel.Teams">
-              <MappingFragment StoreEntitySet="Teams">
-                <ScalarProperty Name="is_team_busy" ColumnName="is_team_busy" />
-                <ScalarProperty Name="is_team_active" ColumnName="is_team_active" />
-                <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
-                <ScalarProperty Name="choosen_fire_truck" ColumnName="choosen_fire_truck" />
-                <ScalarProperty Name="number_of_members" ColumnName="number_of_members" />
-                <ScalarProperty Name="team_name" ColumnName="team_name" />
-                <ScalarProperty Name="team_id" ColumnName="team_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Cases">
             <EntityTypeMapping TypeName="FiremanSysModel.Cases">
               <MappingFragment StoreEntitySet="Cases">
-                <ScalarProperty Name="Used_fuel" ColumnName="Used_fuel" />
-                <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
-                <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
-                <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />
-                <ScalarProperty Name="Selected_team" ColumnName="Selected_team" />
-                <ScalarProperty Name="Dangerous_substances_info" ColumnName="Dangerous_substances_info" />
-                <ScalarProperty Name="Case_type" ColumnName="Case_type" />
-                <ScalarProperty Name="Apartment" ColumnName="Apartment" />
-                <ScalarProperty Name="Floor" ColumnName="Floor" />
-                <ScalarProperty Name="Address_number" ColumnName="Address_number" />
-                <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
-                <ScalarProperty Name="Street" ColumnName="Street" />
-                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="case_id" ColumnName="case_id" />
                 <ScalarProperty Name="Region" ColumnName="Region" />
-                <ScalarProperty Name="Case_id" ColumnName="case_id" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Neighborhood" ColumnName="Neighborhood" />
+                <ScalarProperty Name="Address_number" ColumnName="Address_number" />
+                <ScalarProperty Name="Floor" ColumnName="Floor" />
+                <ScalarProperty Name="Apartment" ColumnName="Apartment" />
+                <ScalarProperty Name="Case_type" ColumnName="Case_type" />
+                <ScalarProperty Name="Dangerous_substances_info" ColumnName="Dangerous_substances_info" />
+                <ScalarProperty Name="Selected_team" ColumnName="Selected_team" />
+                <ScalarProperty Name="Date_time_of_case" ColumnName="Date_time_of_case" />
+                <ScalarProperty Name="End_date_time_of_case" ColumnName="End_date_time_of_case" />
+                <ScalarProperty Name="Used_water_resources" ColumnName="Used_water_resources" />
+                <ScalarProperty Name="Used_fuel" ColumnName="Used_fuel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="FiremanSysModel.Employees">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="rank" ColumnName="rank" />
+                <ScalarProperty Name="home_address" ColumnName="home_address" />
+                <ScalarProperty Name="personal_phone_number" ColumnName="personal_phone_number" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="vacation_start_date" ColumnName="vacation_start_date" />
+                <ScalarProperty Name="vacation_end_date" ColumnName="vacation_end_date" />
+                <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
+                <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
+                <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
+                <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FireTrucks">
             <EntityTypeMapping TypeName="FiremanSysModel.FireTrucks">
               <MappingFragment StoreEntitySet="FireTrucks">
-                <ScalarProperty Name="answered_cases" ColumnName="answered_cases" />
-                <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
-                <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
-                <ScalarProperty Name="available_water" ColumnName="available_water" />
-                <ScalarProperty Name="staff_capacity" ColumnName="staff_capacity" />
-                <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
-                <ScalarProperty Name="model" ColumnName="model" />
                 <ScalarProperty Name="fire_truck_id" ColumnName="fire_truck_id" />
+                <ScalarProperty Name="model" ColumnName="model" />
+                <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
+                <ScalarProperty Name="staff_capacity" ColumnName="staff_capacity" />
+                <ScalarProperty Name="available_water" ColumnName="available_water" />
+                <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
+                <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
+                <ScalarProperty Name="answered_cases" ColumnName="answered_cases" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teams">
+            <EntityTypeMapping TypeName="FiremanSysModel.Teams">
+              <MappingFragment StoreEntitySet="Teams">
+                <ScalarProperty Name="team_id" ColumnName="team_id" />
+                <ScalarProperty Name="team_name" ColumnName="team_name" />
+                <ScalarProperty Name="number_of_members" ColumnName="number_of_members" />
+                <ScalarProperty Name="choosen_fire_truck" ColumnName="choosen_fire_truck" />
+                <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
+                <ScalarProperty Name="is_team_active" ColumnName="is_team_active" />
+                <ScalarProperty Name="is_team_busy" ColumnName="is_team_busy" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

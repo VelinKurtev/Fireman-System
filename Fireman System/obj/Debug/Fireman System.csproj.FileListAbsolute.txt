@@ -36,3 +36,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddFireTruckView.resourc
 D:\GitHub\Fireman System\obj\Debug\Fireman System.csproj.AssemblyReference.cache
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.EnterValidData.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.SuccessfullyAddedData.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddTeamView.resources

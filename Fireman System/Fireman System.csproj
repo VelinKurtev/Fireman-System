@@ -184,6 +184,9 @@
     <EmbeddedResource Include="View\AddViews\AddFireTruckView.resx">
       <DependentUpon>AddFireTruckView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddTeamView.resx">
+      <DependentUpon>AddTeamView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\CasesView.resx">
       <DependentUpon>CasesView.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,8 +246,8 @@
     <Content Include="FiremanSys.mdf" />
     <Content Include="FiremanSysModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="FiremanSysModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

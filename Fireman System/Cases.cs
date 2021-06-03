@@ -14,7 +14,7 @@ namespace Fireman_Systemn
     
     public partial class Cases
     {
-        public int Case_id { get; set; }
+        public int case_id { get; set; }
         public string Region { get; set; }
         public string Town { get; set; }
         public string Street { get; set; }

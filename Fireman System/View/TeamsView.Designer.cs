@@ -41,6 +41,16 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.lbl_teams = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.TeamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TeamName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MembersCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SelectedFireTruck = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AnsweredCasesCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsTeamActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsTeamBusy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedColumnFireTrucks = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedEmployees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gradientPanelFireTrucks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeams)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -92,6 +102,17 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvTeams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTeams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvTeams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TeamID,
+            this.TeamName,
+            this.MembersCount,
+            this.SelectedFireTruck,
+            this.AnsweredCasesCount,
+            this.IsTeamActive,
+            this.IsTeamBusy,
+            this.NotWantedColumnFireTrucks,
+            this.NotWantedCases,
+            this.NotWantedEmployees});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,6 +210,79 @@
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 6;
             // 
+            // TeamID
+            // 
+            this.TeamID.DataPropertyName = "team_id";
+            this.TeamID.HeaderText = "ИД на отбор";
+            this.TeamID.Name = "TeamID";
+            this.TeamID.Width = 96;
+            // 
+            // TeamName
+            // 
+            this.TeamName.DataPropertyName = "team_name";
+            this.TeamName.HeaderText = "Име на отбор";
+            this.TeamName.Name = "TeamName";
+            this.TeamName.Width = 101;
+            // 
+            // MembersCount
+            // 
+            this.MembersCount.DataPropertyName = "number_of_members";
+            this.MembersCount.HeaderText = "Брой на членовете";
+            this.MembersCount.Name = "MembersCount";
+            this.MembersCount.Width = 127;
+            // 
+            // SelectedFireTruck
+            // 
+            this.SelectedFireTruck.DataPropertyName = "choosen_fire_truck";
+            this.SelectedFireTruck.HeaderText = "Избрана пожарна";
+            this.SelectedFireTruck.Name = "SelectedFireTruck";
+            this.SelectedFireTruck.Width = 123;
+            // 
+            // AnsweredCasesCount
+            // 
+            this.AnsweredCasesCount.DataPropertyName = "number_of_answered_cases";
+            this.AnsweredCasesCount.HeaderText = "Брой на приети случаи";
+            this.AnsweredCasesCount.Name = "AnsweredCasesCount";
+            this.AnsweredCasesCount.Width = 147;
+            // 
+            // IsTeamActive
+            // 
+            this.IsTeamActive.DataPropertyName = "is_team_active";
+            this.IsTeamActive.HeaderText = "Активност";
+            this.IsTeamActive.Name = "IsTeamActive";
+            this.IsTeamActive.Width = 85;
+            // 
+            // IsTeamBusy
+            // 
+            this.IsTeamBusy.DataPropertyName = "is_team_busy";
+            this.IsTeamBusy.HeaderText = "Заетост";
+            this.IsTeamBusy.Name = "IsTeamBusy";
+            this.IsTeamBusy.Width = 73;
+            // 
+            // NotWantedColumnFireTrucks
+            // 
+            this.NotWantedColumnFireTrucks.DataPropertyName = "FireTrucks";
+            this.NotWantedColumnFireTrucks.HeaderText = "NotWantedFireTrucks";
+            this.NotWantedColumnFireTrucks.Name = "NotWantedColumnFireTrucks";
+            this.NotWantedColumnFireTrucks.Visible = false;
+            this.NotWantedColumnFireTrucks.Width = 137;
+            // 
+            // NotWantedCases
+            // 
+            this.NotWantedCases.DataPropertyName = "Cases";
+            this.NotWantedCases.HeaderText = "NotWantedCases";
+            this.NotWantedCases.Name = "NotWantedCases";
+            this.NotWantedCases.Visible = false;
+            this.NotWantedCases.Width = 117;
+            // 
+            // NotWantedEmployees
+            // 
+            this.NotWantedEmployees.DataPropertyName = "Employees";
+            this.NotWantedEmployees.HeaderText = "NotWantedEmployees";
+            this.NotWantedEmployees.Name = "NotWantedEmployees";
+            this.NotWantedEmployees.Visible = false;
+            this.NotWantedEmployees.Width = 140;
+            // 
             // TeamsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -222,6 +316,16 @@
         private System.Windows.Forms.Button btn_delete_team;
         private System.Windows.Forms.Button btn_update_table;
         private System.Windows.Forms.Button btn_add_team;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TeamID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TeamName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MembersCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SelectedFireTruck;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCasesCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IsTeamActive;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IsTeamBusy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumnFireTrucks;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedCases;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedEmployees;
     }
 }
 

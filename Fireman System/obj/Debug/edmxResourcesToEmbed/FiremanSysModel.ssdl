@@ -58,12 +58,12 @@
       <PropertyRef Name="team_id" />
     </Key>
     <Property Name="team_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="team_name" Type="varchar(max)" Nullable="false" />
-    <Property Name="number_of_members" Type="varchar(max)" Nullable="false" />
+    <Property Name="team_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="number_of_members" Type="int" Nullable="false" />
     <Property Name="choosen_fire_truck" Type="int" Nullable="false" />
     <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
-    <Property Name="is_team_active" Type="varchar(max)" Nullable="false" />
-    <Property Name="is_team_busy" Type="varchar(max)" Nullable="false" />
+    <Property Name="is_team_active" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="is_team_busy" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <Association Name="FK_Cases_Teams">
     <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
