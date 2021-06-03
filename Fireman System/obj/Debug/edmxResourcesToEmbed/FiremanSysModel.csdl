@@ -59,15 +59,15 @@
       <PropertyRef Name="Case_id" />
     </Key>
     <Property Name="Case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Address_number" Type="Int32" Nullable="false" />
     <Property Name="Floor" Type="Int32" />
     <Property Name="Apartment" Type="Int32" />
-    <Property Name="Case_type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Case_type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Selected_team" Type="Int32" Nullable="false" />
     <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />

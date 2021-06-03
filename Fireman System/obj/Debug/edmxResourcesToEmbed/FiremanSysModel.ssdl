@@ -5,15 +5,15 @@
       <PropertyRef Name="case_id" />
     </Key>
     <Property Name="case_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Region" Type="varchar(max)" Nullable="false" />
-    <Property Name="Town" Type="varchar(max)" Nullable="false" />
-    <Property Name="Street" Type="varchar(max)" Nullable="false" />
-    <Property Name="Neighborhood" Type="varchar(max)" />
+    <Property Name="Region" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Town" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Street" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Neighborhood" Type="nvarchar(max)" />
     <Property Name="Address_number" Type="int" Nullable="false" />
     <Property Name="Floor" Type="int" />
     <Property Name="Apartment" Type="int" />
-    <Property Name="Case_type" Type="varchar(max)" Nullable="false" />
-    <Property Name="Dangerous_substances_info" Type="varchar(max)" />
+    <Property Name="Case_type" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Dangerous_substances_info" Type="nvarchar(max)" />
     <Property Name="Selected_team" Type="int" Nullable="false" />
     <Property Name="Date_time_of_case" Type="datetime" Nullable="false" />
     <Property Name="End_date_time_of_case" Type="datetime" Nullable="false" />

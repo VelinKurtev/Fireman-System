@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Case_View));
             this.gradientPanelAddCase = new Fireman_Systemn.GradientPanel();
             this.gradientPanelAddCases = new Fireman_Systemn.GradientPanel();
+            this.nud_used_fuel = new System.Windows.Forms.NumericUpDown();
+            this.lbl_used_fuel = new System.Windows.Forms.Label();
             this.nud_floor = new System.Windows.Forms.NumericUpDown();
             this.nup_Apartment = new System.Windows.Forms.NumericUpDown();
             this.lbl_used_water_resources = new System.Windows.Forms.Label();
@@ -63,16 +65,14 @@
             this.btn_back = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbl_add_case = new System.Windows.Forms.Label();
-            this.lbl_used_fuel = new System.Windows.Forms.Label();
-            this.nud_used_fuel = new System.Windows.Forms.NumericUpDown();
             this.gradientPanelAddCase.SuspendLayout();
             this.gradientPanelAddCases.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).BeginInit();
             this.SuspendLayout();
             // 
             // gradientPanelAddCase
@@ -132,10 +132,41 @@
             this.gradientPanelAddCases.TabIndex = 23;
             this.gradientPanelAddCases.TopColor = System.Drawing.Color.Black;
             // 
+            // nud_used_fuel
+            // 
+            this.nud_used_fuel.DecimalPlaces = 2;
+            this.nud_used_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_used_fuel.Location = new System.Drawing.Point(576, 183);
+            this.nud_used_fuel.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nud_used_fuel.Name = "nud_used_fuel";
+            this.nud_used_fuel.Size = new System.Drawing.Size(168, 23);
+            this.nud_used_fuel.TabIndex = 40;
+            // 
+            // lbl_used_fuel
+            // 
+            this.lbl_used_fuel.AutoSize = true;
+            this.lbl_used_fuel.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_used_fuel.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_used_fuel.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_used_fuel.Location = new System.Drawing.Point(572, 157);
+            this.lbl_used_fuel.Name = "lbl_used_fuel";
+            this.lbl_used_fuel.Size = new System.Drawing.Size(165, 23);
+            this.lbl_used_fuel.TabIndex = 39;
+            this.lbl_used_fuel.Text = "Използвано гориво";
+            // 
             // nud_floor
             // 
             this.nud_floor.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_floor.Location = new System.Drawing.Point(170, 394);
+            this.nud_floor.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nud_floor.Name = "nud_floor";
             this.nud_floor.Size = new System.Drawing.Size(168, 23);
             this.nud_floor.TabIndex = 38;
@@ -144,6 +175,11 @@
             // 
             this.nup_Apartment.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nup_Apartment.Location = new System.Drawing.Point(361, 130);
+            this.nup_Apartment.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nup_Apartment.Name = "nup_Apartment";
             this.nup_Apartment.Size = new System.Drawing.Size(168, 23);
             this.nup_Apartment.TabIndex = 37;
@@ -173,15 +209,16 @@
             this.nud_Used_water_resources.Name = "nud_Used_water_resources";
             this.nud_Used_water_resources.Size = new System.Drawing.Size(168, 23);
             this.nud_Used_water_resources.TabIndex = 35;
+            this.nud_Used_water_resources.Tag = "";
             // 
             // btn_submit_case
             // 
             this.btn_submit_case.BackColor = System.Drawing.Color.Beige;
             this.btn_submit_case.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_submit_case.ForeColor = System.Drawing.Color.Black;
-            this.btn_submit_case.Location = new System.Drawing.Point(189, 441);
+            this.btn_submit_case.Location = new System.Drawing.Point(170, 441);
             this.btn_submit_case.Name = "btn_submit_case";
-            this.btn_submit_case.Size = new System.Drawing.Size(590, 47);
+            this.btn_submit_case.Size = new System.Drawing.Size(574, 47);
             this.btn_submit_case.TabIndex = 34;
             this.btn_submit_case.Text = "Добави ";
             this.btn_submit_case.UseVisualStyleBackColor = false;
@@ -264,7 +301,7 @@
             this.txt_box_dangerous_substances.Name = "txt_box_dangerous_substances";
             this.txt_box_dangerous_substances.Size = new System.Drawing.Size(167, 23);
             this.txt_box_dangerous_substances.TabIndex = 26;
-            this.txt_box_dangerous_substances.Text = "-";
+            this.txt_box_dangerous_substances.Text = "Няма";
             // 
             // lbl_dangerous_substances
             // 
@@ -285,7 +322,6 @@
             this.txt_box_type_of_case.Name = "txt_box_type_of_case";
             this.txt_box_type_of_case.Size = new System.Drawing.Size(167, 23);
             this.txt_box_type_of_case.TabIndex = 24;
-            this.txt_box_type_of_case.Text = "-";
             // 
             // lbl_type_of_case
             // 
@@ -340,7 +376,7 @@
             this.nud_building_number.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_building_number.Location = new System.Drawing.Point(170, 339);
             this.nud_building_number.Maximum = new decimal(new int[] {
-            500,
+            1000,
             0,
             0,
             0});
@@ -360,7 +396,6 @@
             this.txt_box_complex.Name = "txt_box_complex";
             this.txt_box_complex.Size = new System.Drawing.Size(167, 23);
             this.txt_box_complex.TabIndex = 16;
-            this.txt_box_complex.Text = "-";
             // 
             // lbl_complex
             // 
@@ -381,7 +416,6 @@
             this.txt_box_street.Name = "txt_box_street";
             this.txt_box_street.Size = new System.Drawing.Size(168, 23);
             this.txt_box_street.TabIndex = 14;
-            this.txt_box_street.Text = "-";
             // 
             // lbl_street
             // 
@@ -402,7 +436,6 @@
             this.txt_box_town.Name = "txt_box_town";
             this.txt_box_town.Size = new System.Drawing.Size(168, 23);
             this.txt_box_town.TabIndex = 12;
-            this.txt_box_town.Text = "-";
             // 
             // lbl_town
             // 
@@ -435,7 +468,6 @@
             this.txt_box_region.Name = "txt_box_region";
             this.txt_box_region.Size = new System.Drawing.Size(168, 23);
             this.txt_box_region.TabIndex = 9;
-            this.txt_box_region.Text = "-";
             // 
             // lbl_add_cases
             // 
@@ -496,32 +528,6 @@
             this.lbl_add_case.Text = "Добави произшествие";
             this.lbl_add_case.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lbl_used_fuel
-            // 
-            this.lbl_used_fuel.AutoSize = true;
-            this.lbl_used_fuel.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_used_fuel.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_used_fuel.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_used_fuel.Location = new System.Drawing.Point(572, 157);
-            this.lbl_used_fuel.Name = "lbl_used_fuel";
-            this.lbl_used_fuel.Size = new System.Drawing.Size(165, 23);
-            this.lbl_used_fuel.TabIndex = 39;
-            this.lbl_used_fuel.Text = "Използвано гориво";
-            // 
-            // nud_used_fuel
-            // 
-            this.nud_used_fuel.DecimalPlaces = 2;
-            this.nud_used_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_used_fuel.Location = new System.Drawing.Point(576, 183);
-            this.nud_used_fuel.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nud_used_fuel.Name = "nud_used_fuel";
-            this.nud_used_fuel.Size = new System.Drawing.Size(168, 23);
-            this.nud_used_fuel.TabIndex = 40;
-            // 
             // Add_Case_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -540,12 +546,12 @@
             this.gradientPanelAddCase.PerformLayout();
             this.gradientPanelAddCases.ResumeLayout(false);
             this.gradientPanelAddCases.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
-
+using Fireman_Systemn.View.Pop_Ups;
 namespace Fireman_Systemn.View
 {
     public partial class Add_Case_View : Form
@@ -22,7 +22,7 @@ namespace Fireman_Systemn.View
             {
                 cb_choosen_team.DataSource = fse.Teams.ToList();
                 cb_choosen_team.ValueMember = "team_id";
-                cb_choosen_team.DisplayMember = "team_id";
+                cb_choosen_team.DisplayMember = "team_name";
             }
         }
 
@@ -53,10 +53,23 @@ namespace Fireman_Systemn.View
             Case.Used_water_resources = (double)nud_Used_water_resources.Value;
             Case.Used_fuel = (double)nud_used_fuel.Value;
 
-            CaseController.Insert(Case);
-            MessageBox.Show("Saved Data");
-            
-            FormLayout.NavigateForms(this, new CasesView());
+            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty)
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+            }
+            else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+            }
+            else
+            {
+                CaseController.Insert(Case);
+                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                successfullyAddedData.ShowDialog();
+                FormLayout.NavigateForms(this, new CasesView());
+            }
         }
     }
 }

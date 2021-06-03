@@ -137,11 +137,23 @@
     <Compile Include="View\EmployeesView.Designer.cs">
       <DependentUpon>EmployeesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Pop-Ups\EnterValidData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\EnterValidData.Designer.cs">
+      <DependentUpon>EnterValidData.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FireTrucksView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FireTrucksView.Designer.cs">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pop-Ups\SuccessfullyAddedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\SuccessfullyAddedData.Designer.cs">
+      <DependentUpon>SuccessfullyAddedData.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TeamsView.cs">
       <SubType>Form</SubType>
@@ -180,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FireTrucksView.resx">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\EnterValidData.resx">
+      <DependentUpon>EnterValidData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\SuccessfullyAddedData.resx">
+      <DependentUpon>SuccessfullyAddedData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TeamsView.resx">
       <DependentUpon>TeamsView.cs</DependentUpon>
