@@ -2690,6 +2690,488 @@
         TkSuQmCC
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 130</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 237</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btn_submit_case.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 18pt, style=Bold</value>
+  </data>
+  <data name="btn_submit_case.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_submit_case.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 441</value>
+  </data>
+  <data name="btn_submit_case.Size" type="System.Drawing.Size, System.Drawing">
+    <value>574, 47</value>
+  </data>
+  <data name="btn_submit_case.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="btn_submit_case.Text" xml:space="preserve">
+    <value>Добави </value>
+  </data>
+  <data name="&gt;&gt;btn_submit_case.Name" xml:space="preserve">
+    <value>btn_submit_case</value>
+  </data>
+  <data name="&gt;&gt;btn_submit_case.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_submit_case.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;btn_submit_case.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cb_buisiness.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9.75pt</value>
+  </data>
+  <data name="cb_buisiness.Items" xml:space="preserve">
+    <value>Зает</value>
+  </data>
+  <data name="cb_buisiness.Items1" xml:space="preserve">
+    <value>Свободен</value>
+  </data>
+  <data name="cb_buisiness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 274</value>
+  </data>
+  <data name="cb_buisiness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="cb_buisiness.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;cb_buisiness.Name" xml:space="preserve">
+    <value>cb_buisiness</value>
+  </data>
+  <data name="&gt;&gt;cb_buisiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_buisiness.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;cb_buisiness.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_buisiness.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_buisiness.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_buisiness.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_buisiness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 248</value>
+  </data>
+  <data name="lbl_buisiness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="lbl_buisiness.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lbl_buisiness.Text" xml:space="preserve">
+    <value>Заетост*</value>
+  </data>
+  <data name="&gt;&gt;lbl_buisiness.Name" xml:space="preserve">
+    <value>lbl_buisiness</value>
+  </data>
+  <data name="&gt;&gt;lbl_buisiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_buisiness.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_buisiness.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lbl_activity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_activity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_activity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_activity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 188</value>
+  </data>
+  <data name="lbl_activity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="lbl_activity.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lbl_activity.Text" xml:space="preserve">
+    <value>Активност*</value>
+  </data>
+  <data name="&gt;&gt;lbl_activity.Name" xml:space="preserve">
+    <value>lbl_activity</value>
+  </data>
+  <data name="&gt;&gt;lbl_activity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_activity.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_activity.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cb_activity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Candara, 9.75pt</value>
+  </data>
+  <data name="cb_activity.Items" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="cb_activity.Items1" xml:space="preserve">
+    <value>Неактивен</value>
+  </data>
+  <data name="cb_activity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 214</value>
+  </data>
+  <data name="cb_activity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="cb_activity.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;cb_activity.Name" xml:space="preserve">
+    <value>cb_activity</value>
+  </data>
+  <data name="&gt;&gt;cb_activity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_activity.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;cb_activity.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="nud_answered_cases.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 9.75pt</value>
+  </data>
+  <data name="nud_answered_cases.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 156</value>
+  </data>
+  <data name="nud_answered_cases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="nud_answered_cases.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;nud_answered_cases.Name" xml:space="preserve">
+    <value>nud_answered_cases</value>
+  </data>
+  <data name="&gt;&gt;nud_answered_cases.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nud_answered_cases.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;nud_answered_cases.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbl_answered_cases.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_answered_cases.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_answered_cases.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_answered_cases.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 130</value>
+  </data>
+  <data name="lbl_answered_cases.Size" type="System.Drawing.Size, System.Drawing">
+    <value>173, 23</value>
+  </data>
+  <data name="lbl_answered_cases.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lbl_answered_cases.Text" xml:space="preserve">
+    <value>Отговорени случаи*</value>
+  </data>
+  <data name="&gt;&gt;lbl_answered_cases.Name" xml:space="preserve">
+    <value>lbl_answered_cases</value>
+  </data>
+  <data name="&gt;&gt;lbl_answered_cases.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_answered_cases.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_answered_cases.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="nud_employees_in_team.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 9.75pt</value>
+  </data>
+  <data name="nud_employees_in_team.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 274</value>
+  </data>
+  <data name="nud_employees_in_team.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="nud_employees_in_team.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;nud_employees_in_team.Name" xml:space="preserve">
+    <value>nud_employees_in_team</value>
+  </data>
+  <data name="&gt;&gt;nud_employees_in_team.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nud_employees_in_team.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;nud_employees_in_team.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_employees_in_team.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_employees_in_team.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_employees_in_team.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_employees_in_team.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 248</value>
+  </data>
+  <data name="lbl_employees_in_team.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 23</value>
+  </data>
+  <data name="lbl_employees_in_team.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="lbl_employees_in_team.Text" xml:space="preserve">
+    <value>Служители в екип*</value>
+  </data>
+  <data name="&gt;&gt;lbl_employees_in_team.Name" xml:space="preserve">
+    <value>lbl_employees_in_team</value>
+  </data>
+  <data name="&gt;&gt;lbl_employees_in_team.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_employees_in_team.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_employees_in_team.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lbl_select_truck.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_select_truck.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_select_truck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_select_truck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 188</value>
+  </data>
+  <data name="lbl_select_truck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 23</value>
+  </data>
+  <data name="lbl_select_truck.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="lbl_select_truck.Text" xml:space="preserve">
+    <value>Избор на камион*</value>
+  </data>
+  <data name="&gt;&gt;lbl_select_truck.Name" xml:space="preserve">
+    <value>lbl_select_truck</value>
+  </data>
+  <data name="&gt;&gt;lbl_select_truck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_select_truck.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_select_truck.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cb_choosen_fireTruck.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 9pt</value>
+  </data>
+  <data name="cb_choosen_fireTruck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 214</value>
+  </data>
+  <data name="cb_choosen_fireTruck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 22</value>
+  </data>
+  <data name="cb_choosen_fireTruck.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;cb_choosen_fireTruck.Name" xml:space="preserve">
+    <value>cb_choosen_fireTruck</value>
+  </data>
+  <data name="&gt;&gt;cb_choosen_fireTruck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_choosen_fireTruck.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;cb_choosen_fireTruck.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txt_box_team_name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 9.75pt</value>
+  </data>
+  <data name="txt_box_team_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 157</value>
+  </data>
+  <data name="txt_box_team_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="txt_box_team_name.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txt_box_team_name.Name" xml:space="preserve">
+    <value>txt_box_team_name</value>
+  </data>
+  <data name="&gt;&gt;txt_box_team_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_box_team_name.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;txt_box_team_name.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lbl_team_name.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_team_name.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Rockwell, 14.25pt, style=Bold</value>
+  </data>
+  <data name="lbl_team_name.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_team_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 130</value>
+  </data>
+  <data name="lbl_team_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 23</value>
+  </data>
+  <data name="lbl_team_name.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_team_name.Text" xml:space="preserve">
+    <value>Име на екип*</value>
+  </data>
+  <data name="&gt;&gt;lbl_team_name.Name" xml:space="preserve">
+    <value>lbl_team_name</value>
+  </data>
+  <data name="&gt;&gt;lbl_team_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_team_name.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_team_name.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbl_add_team.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lbl_add_team.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_add_team.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft PhagsPa, 24pt, style=Bold</value>
+  </data>
+  <data name="lbl_add_team.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_add_team.Location" type="System.Drawing.Point, System.Drawing">
+    <value>314, 45</value>
+  </data>
+  <data name="lbl_add_team.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 42</value>
+  </data>
+  <data name="lbl_add_team.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbl_add_team.Text" xml:space="preserve">
+    <value>Добави екип</value>
+  </data>
+  <data name="lbl_add_team.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;lbl_add_team.Name" xml:space="preserve">
+    <value>lbl_add_team</value>
+  </data>
+  <data name="&gt;&gt;lbl_add_team.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_add_team.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;lbl_add_team.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="btn_back.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft PhagsPa, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btn_back.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_back.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="btn_back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 42</value>
+  </data>
+  <data name="btn_back.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btn_back.Text" xml:space="preserve">
+    <value>Обратно</value>
+  </data>
+  <data name="&gt;&gt;btn_back.Name" xml:space="preserve">
+    <value>btn_back</value>
+  </data>
+  <data name="&gt;&gt;btn_back.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_back.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;btn_back.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
   <data name="pictureBoxLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARwAAAEsCAYAAAARjgxNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -4139,6 +4621,69 @@
         vmRx/PLJ0MaBQw3wovmBGq+k8BM3GU9x8/bLX5x0i5Nmccurgy4NXdpeNBU6mgy/cbxoKt0vX0lwPdL4
         P1wTSpX6/wEwjkvV7PFCmgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="pictureBoxLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxLogo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 382</value>
+  </data>
+  <data name="pictureBoxLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 118</value>
+  </data>
+  <data name="pictureBoxLogo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBoxLogo.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLogo.Name" xml:space="preserve">
+    <value>pictureBoxLogo</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLogo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLogo.Parent" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxLogo.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="gradientPanelAddTeam.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gradientPanelAddTeam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gradientPanelAddTeam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 512</value>
+  </data>
+  <data name="gradientPanelAddTeam.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;gradientPanelAddTeam.Name" xml:space="preserve">
+    <value>gradientPanelAddTeam</value>
+  </data>
+  <data name="&gt;&gt;gradientPanelAddTeam.Type" xml:space="preserve">
+    <value>Fireman_Systemn.GradientPanel, Fireman Systemn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gradientPanelAddTeam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gradientPanelAddTeam.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>861, 512</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft PhagsPa, 8.25pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8411,5 +8956,14 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Fireman System - Добави екип</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddTeamView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

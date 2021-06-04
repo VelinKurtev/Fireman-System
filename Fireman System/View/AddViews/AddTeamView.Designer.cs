@@ -1,4 +1,6 @@
 ﻿
+using System.Globalization;
+
 namespace Fireman_Systemn.View.AddViews
 {
     partial class AddTeamView
@@ -77,116 +79,80 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.Controls.Add(this.lbl_add_team);
             this.gradientPanelAddTeam.Controls.Add(this.btn_back);
             this.gradientPanelAddTeam.Controls.Add(this.pictureBoxLogo);
-            this.gradientPanelAddTeam.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gradientPanelAddTeam.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.gradientPanelAddTeam, "gradientPanelAddTeam");
             this.gradientPanelAddTeam.Name = "gradientPanelAddTeam";
-            this.gradientPanelAddTeam.Size = new System.Drawing.Size(861, 512);
-            this.gradientPanelAddTeam.TabIndex = 8;
             this.gradientPanelAddTeam.TopColor = System.Drawing.Color.Black;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(595, 130);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(223, 237);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
             // btn_submit_case
             // 
             this.btn_submit_case.BackColor = System.Drawing.Color.Beige;
-            this.btn_submit_case.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btn_submit_case, "btn_submit_case");
             this.btn_submit_case.ForeColor = System.Drawing.Color.Black;
-            this.btn_submit_case.Location = new System.Drawing.Point(170, 441);
             this.btn_submit_case.Name = "btn_submit_case";
-            this.btn_submit_case.Size = new System.Drawing.Size(574, 47);
-            this.btn_submit_case.TabIndex = 40;
-            this.btn_submit_case.Text = "Добави ";
             this.btn_submit_case.UseVisualStyleBackColor = false;
             this.btn_submit_case.Click += new System.EventHandler(this.btn_submit_case_Click);
             // 
             // cb_buisiness
             // 
             this.cb_buisiness.BackColor = System.Drawing.Color.White;
-            this.cb_buisiness.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cb_buisiness, "cb_buisiness");
             this.cb_buisiness.FormattingEnabled = true;
             this.cb_buisiness.Items.AddRange(new object[] {
-            "Свободен",
-            "Зает"});
-            this.cb_buisiness.Location = new System.Drawing.Point(389, 274);
+            resources.GetString("cb_buisiness.Items"),
+            resources.GetString("cb_buisiness.Items1")});
             this.cb_buisiness.Name = "cb_buisiness";
-            this.cb_buisiness.Size = new System.Drawing.Size(168, 22);
-            this.cb_buisiness.TabIndex = 39;
             // 
             // lbl_buisiness
             // 
-            this.lbl_buisiness.AutoSize = true;
+            resources.ApplyResources(this.lbl_buisiness, "lbl_buisiness");
             this.lbl_buisiness.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_buisiness.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_buisiness.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_buisiness.Location = new System.Drawing.Point(385, 248);
             this.lbl_buisiness.Name = "lbl_buisiness";
-            this.lbl_buisiness.Size = new System.Drawing.Size(85, 23);
-            this.lbl_buisiness.TabIndex = 38;
-            this.lbl_buisiness.Text = "Заетост*";
             // 
             // lbl_activity
             // 
-            this.lbl_activity.AutoSize = true;
+            resources.ApplyResources(this.lbl_activity, "lbl_activity");
             this.lbl_activity.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_activity.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_activity.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_activity.Location = new System.Drawing.Point(385, 188);
             this.lbl_activity.Name = "lbl_activity";
-            this.lbl_activity.Size = new System.Drawing.Size(102, 23);
-            this.lbl_activity.TabIndex = 37;
-            this.lbl_activity.Text = "Активност*";
             // 
             // cb_activity
             // 
             this.cb_activity.BackColor = System.Drawing.Color.White;
-            this.cb_activity.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cb_activity, "cb_activity");
             this.cb_activity.FormattingEnabled = true;
             this.cb_activity.Items.AddRange(new object[] {
-            "Активен",
-            "Неактивен"});
-            this.cb_activity.Location = new System.Drawing.Point(389, 214);
+            resources.GetString("cb_activity.Items"),
+            resources.GetString("cb_activity.Items1")});
             this.cb_activity.Name = "cb_activity";
-            this.cb_activity.Size = new System.Drawing.Size(168, 22);
-            this.cb_activity.TabIndex = 36;
             // 
             // nud_answered_cases
             // 
-            this.nud_answered_cases.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_answered_cases.Location = new System.Drawing.Point(389, 156);
+            resources.ApplyResources(this.nud_answered_cases, "nud_answered_cases");
             this.nud_answered_cases.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.nud_answered_cases.Name = "nud_answered_cases";
-            this.nud_answered_cases.Size = new System.Drawing.Size(168, 23);
-            this.nud_answered_cases.TabIndex = 35;
             // 
             // lbl_answered_cases
             // 
-            this.lbl_answered_cases.AutoSize = true;
+            resources.ApplyResources(this.lbl_answered_cases, "lbl_answered_cases");
             this.lbl_answered_cases.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answered_cases.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_answered_cases.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_answered_cases.Location = new System.Drawing.Point(385, 130);
             this.lbl_answered_cases.Name = "lbl_answered_cases";
-            this.lbl_answered_cases.Size = new System.Drawing.Size(173, 23);
-            this.lbl_answered_cases.TabIndex = 34;
-            this.lbl_answered_cases.Text = "Отговорени случаи*";
             // 
             // nud_employees_in_team
             // 
-            this.nud_employees_in_team.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_employees_in_team.Location = new System.Drawing.Point(186, 274);
+            resources.ApplyResources(this.nud_employees_in_team, "nud_employees_in_team");
             this.nud_employees_in_team.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -198,8 +164,6 @@ namespace Fireman_Systemn.View.AddViews
             0,
             0});
             this.nud_employees_in_team.Name = "nud_employees_in_team";
-            this.nud_employees_in_team.Size = new System.Drawing.Size(168, 23);
-            this.nud_employees_in_team.TabIndex = 33;
             this.nud_employees_in_team.Value = new decimal(new int[] {
             1,
             0,
@@ -208,105 +172,65 @@ namespace Fireman_Systemn.View.AddViews
             // 
             // lbl_employees_in_team
             // 
-            this.lbl_employees_in_team.AutoSize = true;
+            resources.ApplyResources(this.lbl_employees_in_team, "lbl_employees_in_team");
             this.lbl_employees_in_team.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_employees_in_team.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_employees_in_team.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_employees_in_team.Location = new System.Drawing.Point(182, 248);
             this.lbl_employees_in_team.Name = "lbl_employees_in_team";
-            this.lbl_employees_in_team.Size = new System.Drawing.Size(163, 23);
-            this.lbl_employees_in_team.TabIndex = 32;
-            this.lbl_employees_in_team.Text = "Служители в екип*";
             // 
             // lbl_select_truck
             // 
-            this.lbl_select_truck.AutoSize = true;
+            resources.ApplyResources(this.lbl_select_truck, "lbl_select_truck");
             this.lbl_select_truck.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_select_truck.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_select_truck.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_select_truck.Location = new System.Drawing.Point(182, 188);
             this.lbl_select_truck.Name = "lbl_select_truck";
-            this.lbl_select_truck.Size = new System.Drawing.Size(157, 23);
-            this.lbl_select_truck.TabIndex = 31;
-            this.lbl_select_truck.Text = "Избор на камион*";
             // 
             // cb_choosen_fireTruck
             // 
             this.cb_choosen_fireTruck.BackColor = System.Drawing.Color.White;
-            this.cb_choosen_fireTruck.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cb_choosen_fireTruck, "cb_choosen_fireTruck");
             this.cb_choosen_fireTruck.FormattingEnabled = true;
-            this.cb_choosen_fireTruck.Location = new System.Drawing.Point(186, 214);
             this.cb_choosen_fireTruck.Name = "cb_choosen_fireTruck";
-            this.cb_choosen_fireTruck.Size = new System.Drawing.Size(168, 22);
-            this.cb_choosen_fireTruck.TabIndex = 30;
             // 
             // txt_box_team_name
             // 
-            this.txt_box_team_name.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_box_team_name.Location = new System.Drawing.Point(186, 156);
+            resources.ApplyResources(this.txt_box_team_name, "txt_box_team_name");
             this.txt_box_team_name.Name = "txt_box_team_name";
-            this.txt_box_team_name.Size = new System.Drawing.Size(168, 23);
-            this.txt_box_team_name.TabIndex = 12;
             // 
             // lbl_team_name
             // 
-            this.lbl_team_name.AutoSize = true;
+            resources.ApplyResources(this.lbl_team_name, "lbl_team_name");
             this.lbl_team_name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_team_name.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_team_name.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_team_name.Location = new System.Drawing.Point(182, 130);
             this.lbl_team_name.Name = "lbl_team_name";
-            this.lbl_team_name.Size = new System.Drawing.Size(118, 23);
-            this.lbl_team_name.TabIndex = 11;
-            this.lbl_team_name.Text = "Име на екип*";
             // 
             // lbl_add_team
             // 
-            this.lbl_add_team.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_add_team.AutoSize = true;
+            resources.ApplyResources(this.lbl_add_team, "lbl_add_team");
             this.lbl_add_team.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_add_team.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_add_team.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_add_team.Location = new System.Drawing.Point(314, 45);
             this.lbl_add_team.Name = "lbl_add_team";
-            this.lbl_add_team.Size = new System.Drawing.Size(243, 42);
-            this.lbl_add_team.TabIndex = 9;
-            this.lbl_add_team.Text = "Добави екип";
-            this.lbl_add_team.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_back
             // 
             this.btn_back.BackColor = System.Drawing.Color.Beige;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.btn_back, "btn_back");
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 8;
-            this.btn_back.Text = "Обратно";
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
+            resources.ApplyResources(this.pictureBoxLogo, "pictureBoxLogo");
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 7;
             this.pictureBoxLogo.TabStop = false;
             // 
             // AddTeamView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 512);
             this.Controls.Add(this.gradientPanelAddTeam);
-            this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddTeamView";
-            this.Text = "Fireman System - Добави екип";
             this.Load += new System.EventHandler(this.AddTeamView_Load);
             this.gradientPanelAddTeam.ResumeLayout(false);
             this.gradientPanelAddTeam.PerformLayout();

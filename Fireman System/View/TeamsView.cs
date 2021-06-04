@@ -38,7 +38,7 @@ namespace Fireman_Systemn.View
             try
             {
                 var row = dgvTeams.CurrentRow;
-                int id = int.Parse(row.Cells["team_id"].Value.ToString());
+                int id = int.Parse(row.Cells["TeamID"].Value.ToString());
                 teamsController.Delete(id);
                 Refresh_table();
             }

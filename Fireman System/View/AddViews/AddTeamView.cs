@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
+using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View.AddViews
 {
@@ -44,7 +42,37 @@ namespace Fireman_Systemn.View.AddViews
 
         private void btn_submit_case_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Team.team_name = txt_box_team_name.Text.Trim().ToString();
+                Team.number_of_members = Convert.ToInt32(nud_employees_in_team.Value);
+                Team.choosen_fire_truck = Convert.ToInt32(cb_choosen_fireTruck.SelectedValue);
+                Team.number_of_answered_cases = Convert.ToInt32(nud_answered_cases.Value);
+                Team.is_team_active = cb_activity.SelectedItem.ToString();
+                Team.is_team_busy = cb_buisiness.SelectedItem.ToString();
+            }
+            catch 
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+                FormLayout.NavigateForms(this, new AddTeamView());
+            }
             
+
+            if (txt_box_team_name.Text == string.Empty)
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+                FormLayout.NavigateForms(this, new AddTeamView());
+            }
+            else
+            {
+                teamsController.Insert(Team);
+                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                successfullyAddedData.ShowDialog();
+                FormLayout.NavigateForms(this, new TeamsView());
+            }
+
         }
     }
 }
