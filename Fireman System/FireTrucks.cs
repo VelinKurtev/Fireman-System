@@ -14,12 +14,6 @@ namespace Fireman_Systemn
     
     public partial class FireTrucks
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public FireTrucks()
-        {
-            this.Teams = new HashSet<Teams>();
-        }
-    
         public int fire_truck_id { get; set; }
         public string model { get; set; }
         public double water_capacity { get; set; }
@@ -28,8 +22,6 @@ namespace Fireman_Systemn
         public double fuel_capacity { get; set; }
         public double available_fuel { get; set; }
         public int answered_cases { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Teams> Teams { get; set; }
+        public virtual Teams Teams { get; set; }
     }
 }

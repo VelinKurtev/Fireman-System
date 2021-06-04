@@ -40,6 +40,15 @@
             this.lbl_Fire_Trucks = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btn_back = new System.Windows.Forms.Button();
+            this.FireTruckID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WaterCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StaffCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableWater = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FuelCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AvailableFuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedTeamColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gradientPanelFireTrucks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFireTrucks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -80,6 +89,16 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvFireTrucks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFireTrucks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvFireTrucks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FireTruckID,
+            this.Model,
+            this.WaterCapacity,
+            this.StaffCapacity,
+            this.AvailableWater,
+            this.FuelCapacity,
+            this.AvailableFuel,
+            this.AnsweredCases,
+            this.NotWantedTeamColumn});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,6 +198,70 @@
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // FireTruckID
+            // 
+            this.FireTruckID.DataPropertyName = "fire_truck_id";
+            this.FireTruckID.HeaderText = "ИД на пожарна";
+            this.FireTruckID.Name = "FireTruckID";
+            this.FireTruckID.Width = 111;
+            // 
+            // Model
+            // 
+            this.Model.DataPropertyName = "model";
+            this.Model.HeaderText = "Марка";
+            this.Model.Name = "Model";
+            this.Model.Width = 65;
+            // 
+            // WaterCapacity
+            // 
+            this.WaterCapacity.DataPropertyName = "water_capacity";
+            this.WaterCapacity.HeaderText = "Воден резервоар";
+            this.WaterCapacity.Name = "WaterCapacity";
+            this.WaterCapacity.Width = 120;
+            // 
+            // StaffCapacity
+            // 
+            this.StaffCapacity.DataPropertyName = "staff_capacity";
+            this.StaffCapacity.HeaderText = "Седалки";
+            this.StaffCapacity.Name = "StaffCapacity";
+            this.StaffCapacity.Width = 75;
+            // 
+            // AvailableWater
+            // 
+            this.AvailableWater.DataPropertyName = "available_water";
+            this.AvailableWater.HeaderText = "Вода в цистерната";
+            this.AvailableWater.Name = "AvailableWater";
+            this.AvailableWater.Width = 127;
+            // 
+            // FuelCapacity
+            // 
+            this.FuelCapacity.DataPropertyName = "fuel_capacity";
+            this.FuelCapacity.HeaderText = "Горивен капацитет";
+            this.FuelCapacity.Name = "FuelCapacity";
+            this.FuelCapacity.Width = 129;
+            // 
+            // AvailableFuel
+            // 
+            this.AvailableFuel.DataPropertyName = "available_fuel";
+            this.AvailableFuel.HeaderText = "Налично гориво";
+            this.AvailableFuel.Name = "AvailableFuel";
+            this.AvailableFuel.Width = 113;
+            // 
+            // AnsweredCases
+            // 
+            this.AnsweredCases.DataPropertyName = "answered_cases";
+            this.AnsweredCases.HeaderText = "Отговорени случаи";
+            this.AnsweredCases.Name = "AnsweredCases";
+            this.AnsweredCases.Width = 129;
+            // 
+            // NotWantedTeamColumn
+            // 
+            this.NotWantedTeamColumn.DataPropertyName = "Teams";
+            this.NotWantedTeamColumn.HeaderText = "NotWantedTeamColumn";
+            this.NotWantedTeamColumn.Name = "NotWantedTeamColumn";
+            this.NotWantedTeamColumn.Visible = false;
+            this.NotWantedTeamColumn.Width = 152;
+            // 
             // FireTrucksView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -211,5 +294,14 @@
         private System.Windows.Forms.Button btn_update_table;
         private System.Windows.Forms.Button btn_add_fire_truck;
         private System.Windows.Forms.DataGridView dgvFireTrucks;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FireTruckID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Model;
+        private System.Windows.Forms.DataGridViewTextBoxColumn WaterCapacity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StaffCapacity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AvailableWater;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FuelCapacity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AvailableFuel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCases;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedTeamColumn;
     }
 }

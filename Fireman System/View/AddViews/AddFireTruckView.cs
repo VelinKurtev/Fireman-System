@@ -31,7 +31,7 @@ namespace Fireman_Systemn.View
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            FormLayout.NavigateForms(this, new MainMenuView());
+            FormLayout.NavigateForms(this, new FireTrucksView());
         }
 
         private void AddFireTruckView_Load(object sender, EventArgs e)

@@ -228,7 +228,6 @@ namespace Fireman_Systemn.View
             this.txt_box_model.Name = "txt_box_model";
             this.txt_box_model.Size = new System.Drawing.Size(168, 23);
             this.txt_box_model.TabIndex = 17;
-            this.txt_box_model.Text = "-";
             // 
             // btn_back
             // 
