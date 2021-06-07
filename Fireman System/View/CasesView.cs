@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
+using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View
 {
@@ -35,16 +36,18 @@ namespace Fireman_Systemn.View
 
         private void btn_delete_case_Click(object sender, EventArgs e)
         {
+
+            var row = dgvCases.CurrentRow;
             try
             {
-                var row = dgvCases.CurrentRow;
                 int id = int.Parse(row.Cells["CaseID"].Value.ToString());
                 CasesController.Delete(id);
                 Refresh_table();
             }
-            catch (Exception ex)
+            catch 
             {
-                throw new Exception("Invalid Row Selected!", ex);
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
             }
         }
 

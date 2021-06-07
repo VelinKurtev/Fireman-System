@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.AddViews;
+using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View
 {
@@ -35,16 +36,26 @@ namespace Fireman_Systemn.View
 
         private void btn_delete_team_Click(object sender, EventArgs e)
         {
+            var row = dgvTeams.CurrentRow;
             try
             {
-                var row = dgvTeams.CurrentRow;
-                int id = int.Parse(row.Cells["TeamID"].Value.ToString());
-                teamsController.Delete(id);
-                Refresh_table();
+                if (row == null)
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
+                else
+                {
+                    int id = int.Parse(row.Cells["TeamID"].Value.ToString());
+                    teamsController.Delete(id);
+                    Refresh_table();
+                }
+                
             }
-            catch (Exception ex)
+            catch 
             {
-                throw new Exception("Invalid Row Selected!", ex);
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
             }
         }
 

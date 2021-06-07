@@ -149,6 +149,12 @@
     <Compile Include="View\FireTrucksView.Designer.cs">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Pop-Ups\InvalidRowSelected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\InvalidRowSelected.Designer.cs">
+      <DependentUpon>InvalidRowSelected.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Pop-Ups\SuccessfullyAddedData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Pop-Ups\EnterValidData.resx">
       <DependentUpon>EnterValidData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\InvalidRowSelected.resx">
+      <DependentUpon>InvalidRowSelected.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Pop-Ups\SuccessfullyAddedData.resx">
       <DependentUpon>SuccessfullyAddedData.cs</DependentUpon>
