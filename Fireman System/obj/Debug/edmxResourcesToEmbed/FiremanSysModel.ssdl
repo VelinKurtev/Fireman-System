@@ -45,7 +45,7 @@
       <PropertyRef Name="fire_truck_id" />
     </Key>
     <Property Name="fire_truck_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="model" Type="varchar(max)" Nullable="false" />
+    <Property Name="model" Type="nvarchar(max)" Nullable="false" />
     <Property Name="water_capacity" Type="float" Nullable="false" />
     <Property Name="staff_capacity" Type="float" Nullable="false" />
     <Property Name="available_water" Type="float" Nullable="false" />

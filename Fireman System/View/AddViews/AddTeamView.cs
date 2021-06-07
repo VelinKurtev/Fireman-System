@@ -32,7 +32,7 @@ namespace Fireman_Systemn.View.AddViews
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            FormLayout.NavigateForms(this, new MainMenuView());
+            FormLayout.NavigateForms(this, new TeamsView());
         }
 
         private void AddTeamView_Load(object sender, EventArgs e)

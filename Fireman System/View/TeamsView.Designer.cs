@@ -49,8 +49,8 @@
             this.IsTeamActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsTeamBusy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotWantedColumnFireTrucks = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NotWantedCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NotWantedEmployees = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedColumnCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedColumnEmployees = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gradientPanelFireTrucks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTeams)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -111,8 +111,8 @@
             this.IsTeamActive,
             this.IsTeamBusy,
             this.NotWantedColumnFireTrucks,
-            this.NotWantedCases,
-            this.NotWantedEmployees});
+            this.NotWantedColumnCases,
+            this.NotWantedColumnEmployees});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -262,26 +262,26 @@
             // NotWantedColumnFireTrucks
             // 
             this.NotWantedColumnFireTrucks.DataPropertyName = "FireTrucks";
-            this.NotWantedColumnFireTrucks.HeaderText = "NotWantedFireTrucks";
+            this.NotWantedColumnFireTrucks.HeaderText = "NotWantedColumnFireTrucks";
             this.NotWantedColumnFireTrucks.Name = "NotWantedColumnFireTrucks";
             this.NotWantedColumnFireTrucks.Visible = false;
-            this.NotWantedColumnFireTrucks.Width = 137;
+            this.NotWantedColumnFireTrucks.Width = 174;
             // 
-            // NotWantedCases
+            // NotWantedColumnCases
             // 
-            this.NotWantedCases.DataPropertyName = "Cases";
-            this.NotWantedCases.HeaderText = "NotWantedCases";
-            this.NotWantedCases.Name = "NotWantedCases";
-            this.NotWantedCases.Visible = false;
-            this.NotWantedCases.Width = 117;
+            this.NotWantedColumnCases.DataPropertyName = "Cases";
+            this.NotWantedColumnCases.HeaderText = "NotWantedColumnCases";
+            this.NotWantedColumnCases.Name = "NotWantedColumnCases";
+            this.NotWantedColumnCases.Visible = false;
+            this.NotWantedColumnCases.Width = 154;
             // 
-            // NotWantedEmployees
+            // NotWantedColumnEmployees
             // 
-            this.NotWantedEmployees.DataPropertyName = "Employees";
-            this.NotWantedEmployees.HeaderText = "NotWantedEmployees";
-            this.NotWantedEmployees.Name = "NotWantedEmployees";
-            this.NotWantedEmployees.Visible = false;
-            this.NotWantedEmployees.Width = 140;
+            this.NotWantedColumnEmployees.DataPropertyName = "Employees";
+            this.NotWantedColumnEmployees.HeaderText = "NotWantedColumnEmployees";
+            this.NotWantedColumnEmployees.Name = "NotWantedColumnEmployees";
+            this.NotWantedColumnEmployees.Visible = false;
+            this.NotWantedColumnEmployees.Width = 177;
             // 
             // TeamsView
             // 
@@ -324,8 +324,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IsTeamActive;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsTeamBusy;
         private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumnFireTrucks;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedCases;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedEmployees;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumnCases;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumnEmployees;
     }
 }
 
