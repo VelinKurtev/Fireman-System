@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
+using Fireman_Systemn.View.EditViews;
 using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View
@@ -53,7 +55,14 @@ namespace Fireman_Systemn.View
 
         private void btn_update_table_Click(object sender, EventArgs e)
         {
+            var row = dgvCases.CurrentRow;
+            int id = int.Parse(row.Cells["CaseID"].Value.ToString());
 
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
+                FormLayout.NavigateForms(this, new EditCaseView(fireCase));
+            }
         }
     }
 }

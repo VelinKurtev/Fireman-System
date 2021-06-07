@@ -38,3 +38,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.EnterValidData.r
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.SuccessfullyAddedData.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddTeamView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.InvalidRowSelected.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditCaseView.resources
