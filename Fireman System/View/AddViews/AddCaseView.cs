@@ -74,5 +74,6 @@ namespace Fireman_Systemn.View
                 FormLayout.NavigateForms(this, new CasesView());
             }
         }
+
     }
 }

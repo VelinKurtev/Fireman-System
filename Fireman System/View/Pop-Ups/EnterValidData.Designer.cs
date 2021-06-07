@@ -81,6 +81,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.ClientSize = new System.Drawing.Size(397, 222);
             this.Controls.Add(this.gradientPanelInvalidInfo);
             this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

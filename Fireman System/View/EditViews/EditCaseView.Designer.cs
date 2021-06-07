@@ -128,6 +128,7 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddCases.Controls.Add(this.pictureBoxLogo);
             this.gradientPanelAddCases.Controls.Add(this.btn_back);
             this.gradientPanelAddCases.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanelAddCases.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gradientPanelAddCases.Location = new System.Drawing.Point(0, 0);
             this.gradientPanelAddCases.Name = "gradientPanelAddCases";
             this.gradientPanelAddCases.Size = new System.Drawing.Size(861, 512);
@@ -137,7 +138,7 @@ namespace Fireman_Systemn.View.EditViews
             // nud_used_fuel
             // 
             this.nud_used_fuel.DecimalPlaces = 2;
-            this.nud_used_fuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_used_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_used_fuel.Location = new System.Drawing.Point(576, 183);
             this.nud_used_fuel.Maximum = new decimal(new int[] {
             1000,
@@ -145,19 +146,19 @@ namespace Fireman_Systemn.View.EditViews
             0,
             0});
             this.nud_used_fuel.Name = "nud_used_fuel";
-            this.nud_used_fuel.Size = new System.Drawing.Size(168, 22);
-            this.nud_used_fuel.TabIndex = 40;
+            this.nud_used_fuel.Size = new System.Drawing.Size(168, 23);
+            this.nud_used_fuel.TabIndex = 67;
             // 
             // lbl_used_fuel
             // 
             this.lbl_used_fuel.AutoSize = true;
             this.lbl_used_fuel.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_used_fuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_used_fuel.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_used_fuel.ForeColor = System.Drawing.Color.Gold;
             this.lbl_used_fuel.Location = new System.Drawing.Point(572, 157);
             this.lbl_used_fuel.Name = "lbl_used_fuel";
-            this.lbl_used_fuel.Size = new System.Drawing.Size(204, 24);
-            this.lbl_used_fuel.TabIndex = 39;
+            this.lbl_used_fuel.Size = new System.Drawing.Size(165, 23);
+            this.lbl_used_fuel.TabIndex = 71;
             this.lbl_used_fuel.Text = "Използвано гориво";
             // 
             // nud_floor
@@ -171,7 +172,7 @@ namespace Fireman_Systemn.View.EditViews
             0});
             this.nud_floor.Name = "nud_floor";
             this.nud_floor.Size = new System.Drawing.Size(168, 22);
-            this.nud_floor.TabIndex = 38;
+            this.nud_floor.TabIndex = 70;
             // 
             // nup_Apartment
             // 
@@ -184,24 +185,24 @@ namespace Fireman_Systemn.View.EditViews
             0});
             this.nup_Apartment.Name = "nup_Apartment";
             this.nup_Apartment.Size = new System.Drawing.Size(168, 22);
-            this.nup_Apartment.TabIndex = 37;
+            this.nup_Apartment.TabIndex = 69;
             // 
             // lbl_used_water_resources
             // 
             this.lbl_used_water_resources.AutoSize = true;
             this.lbl_used_water_resources.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_used_water_resources.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_used_water_resources.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_used_water_resources.ForeColor = System.Drawing.Color.Gold;
             this.lbl_used_water_resources.Location = new System.Drawing.Point(572, 105);
             this.lbl_used_water_resources.Name = "lbl_used_water_resources";
-            this.lbl_used_water_resources.Size = new System.Drawing.Size(281, 24);
-            this.lbl_used_water_resources.TabIndex = 36;
+            this.lbl_used_water_resources.Size = new System.Drawing.Size(224, 23);
+            this.lbl_used_water_resources.TabIndex = 68;
             this.lbl_used_water_resources.Text = "Използвани водни ресурси";
             // 
             // nud_Used_water_resources
             // 
             this.nud_Used_water_resources.DecimalPlaces = 2;
-            this.nud_Used_water_resources.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_Used_water_resources.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_Used_water_resources.Location = new System.Drawing.Point(576, 131);
             this.nud_Used_water_resources.Maximum = new decimal(new int[] {
             1000,
@@ -209,8 +210,8 @@ namespace Fireman_Systemn.View.EditViews
             0,
             0});
             this.nud_Used_water_resources.Name = "nud_Used_water_resources";
-            this.nud_Used_water_resources.Size = new System.Drawing.Size(168, 22);
-            this.nud_Used_water_resources.TabIndex = 35;
+            this.nud_Used_water_resources.Size = new System.Drawing.Size(168, 23);
+            this.nud_Used_water_resources.TabIndex = 67;
             this.nud_Used_water_resources.Tag = "";
             // 
             // btn_submit_case
@@ -220,8 +221,8 @@ namespace Fireman_Systemn.View.EditViews
             this.btn_submit_case.ForeColor = System.Drawing.Color.Black;
             this.btn_submit_case.Location = new System.Drawing.Point(170, 441);
             this.btn_submit_case.Name = "btn_submit_case";
-            this.btn_submit_case.Size = new System.Drawing.Size(574, 47);
-            this.btn_submit_case.TabIndex = 34;
+            this.btn_submit_case.Size = new System.Drawing.Size(574, 51);
+            this.btn_submit_case.TabIndex = 66;
             this.btn_submit_case.Text = "Редактирай";
             this.btn_submit_case.UseVisualStyleBackColor = false;
             this.btn_submit_case.Click += new System.EventHandler(this.btn_edit_case_Click);
@@ -235,19 +236,19 @@ namespace Fireman_Systemn.View.EditViews
             this.end_date_case_time_picker.Location = new System.Drawing.Point(361, 390);
             this.end_date_case_time_picker.Name = "end_date_case_time_picker";
             this.end_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
-            this.end_date_case_time_picker.TabIndex = 33;
+            this.end_date_case_time_picker.TabIndex = 65;
             this.end_date_case_time_picker.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // lbl_end_date_of_case
             // 
             this.lbl_end_date_of_case.AutoSize = true;
             this.lbl_end_date_of_case.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_end_date_of_case.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_end_date_of_case.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_end_date_of_case.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_end_date_of_case.Location = new System.Drawing.Point(357, 364);
+            this.lbl_end_date_of_case.Location = new System.Drawing.Point(356, 364);
             this.lbl_end_date_of_case.Name = "lbl_end_date_of_case";
-            this.lbl_end_date_of_case.Size = new System.Drawing.Size(268, 24);
-            this.lbl_end_date_of_case.TabIndex = 32;
+            this.lbl_end_date_of_case.Size = new System.Drawing.Size(216, 23);
+            this.lbl_end_date_of_case.TabIndex = 64;
             this.lbl_end_date_of_case.Text = "Край на произшествието*";
             // 
             // start_date_case_time_picker
@@ -259,41 +260,42 @@ namespace Fireman_Systemn.View.EditViews
             this.start_date_case_time_picker.Location = new System.Drawing.Point(361, 338);
             this.start_date_case_time_picker.Name = "start_date_case_time_picker";
             this.start_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
-            this.start_date_case_time_picker.TabIndex = 31;
+            this.start_date_case_time_picker.TabIndex = 63;
             this.start_date_case_time_picker.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // lbl_start_date_of_Case
             // 
             this.lbl_start_date_of_Case.AutoSize = true;
             this.lbl_start_date_of_Case.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_start_date_of_Case.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_start_date_of_Case.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_start_date_of_Case.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_start_date_of_Case.Location = new System.Drawing.Point(357, 314);
+            this.lbl_start_date_of_Case.Location = new System.Drawing.Point(356, 314);
             this.lbl_start_date_of_Case.Name = "lbl_start_date_of_Case";
-            this.lbl_start_date_of_Case.Size = new System.Drawing.Size(290, 24);
-            this.lbl_start_date_of_Case.TabIndex = 30;
+            this.lbl_start_date_of_Case.Size = new System.Drawing.Size(237, 23);
+            this.lbl_start_date_of_Case.TabIndex = 62;
             this.lbl_start_date_of_Case.Text = "Начало на произшествието*";
             // 
             // cb_choosen_team
             // 
             this.cb_choosen_team.BackColor = System.Drawing.Color.White;
-            this.cb_choosen_team.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_choosen_team.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_choosen_team.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_choosen_team.FormattingEnabled = true;
             this.cb_choosen_team.Location = new System.Drawing.Point(361, 287);
             this.cb_choosen_team.Name = "cb_choosen_team";
-            this.cb_choosen_team.Size = new System.Drawing.Size(167, 23);
-            this.cb_choosen_team.TabIndex = 29;
+            this.cb_choosen_team.Size = new System.Drawing.Size(167, 24);
+            this.cb_choosen_team.TabIndex = 61;
             // 
             // lbl_chose_team
             // 
             this.lbl_chose_team.AutoSize = true;
             this.lbl_chose_team.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_chose_team.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_chose_team.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_chose_team.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_chose_team.Location = new System.Drawing.Point(357, 261);
+            this.lbl_chose_team.Location = new System.Drawing.Point(356, 261);
             this.lbl_chose_team.Name = "lbl_chose_team";
-            this.lbl_chose_team.Size = new System.Drawing.Size(155, 24);
-            this.lbl_chose_team.TabIndex = 28;
+            this.lbl_chose_team.Size = new System.Drawing.Size(131, 23);
+            this.lbl_chose_team.TabIndex = 60;
             this.lbl_chose_team.Text = "Избран отбор*";
             // 
             // txt_box_dangerous_substances
@@ -302,19 +304,19 @@ namespace Fireman_Systemn.View.EditViews
             this.txt_box_dangerous_substances.Location = new System.Drawing.Point(361, 234);
             this.txt_box_dangerous_substances.Name = "txt_box_dangerous_substances";
             this.txt_box_dangerous_substances.Size = new System.Drawing.Size(167, 22);
-            this.txt_box_dangerous_substances.TabIndex = 26;
+            this.txt_box_dangerous_substances.TabIndex = 59;
             this.txt_box_dangerous_substances.Text = "Няма";
             // 
             // lbl_dangerous_substances
             // 
             this.lbl_dangerous_substances.AutoSize = true;
             this.lbl_dangerous_substances.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_dangerous_substances.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_dangerous_substances.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dangerous_substances.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_dangerous_substances.Location = new System.Drawing.Point(357, 208);
+            this.lbl_dangerous_substances.Location = new System.Drawing.Point(356, 208);
             this.lbl_dangerous_substances.Name = "lbl_dangerous_substances";
-            this.lbl_dangerous_substances.Size = new System.Drawing.Size(185, 24);
-            this.lbl_dangerous_substances.TabIndex = 25;
+            this.lbl_dangerous_substances.Size = new System.Drawing.Size(147, 23);
+            this.lbl_dangerous_substances.TabIndex = 58;
             this.lbl_dangerous_substances.Text = "Опасни вещества";
             // 
             // txt_box_type_of_case
@@ -323,54 +325,54 @@ namespace Fireman_Systemn.View.EditViews
             this.txt_box_type_of_case.Location = new System.Drawing.Point(361, 182);
             this.txt_box_type_of_case.Name = "txt_box_type_of_case";
             this.txt_box_type_of_case.Size = new System.Drawing.Size(167, 22);
-            this.txt_box_type_of_case.TabIndex = 24;
+            this.txt_box_type_of_case.TabIndex = 57;
             // 
             // lbl_type_of_case
             // 
             this.lbl_type_of_case.AutoSize = true;
             this.lbl_type_of_case.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_type_of_case.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_type_of_case.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_type_of_case.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_type_of_case.Location = new System.Drawing.Point(357, 157);
+            this.lbl_type_of_case.Location = new System.Drawing.Point(356, 157);
             this.lbl_type_of_case.Name = "lbl_type_of_case";
-            this.lbl_type_of_case.Size = new System.Drawing.Size(260, 24);
-            this.lbl_type_of_case.TabIndex = 23;
+            this.lbl_type_of_case.Size = new System.Drawing.Size(211, 23);
+            this.lbl_type_of_case.TabIndex = 56;
             this.lbl_type_of_case.Text = "Вид на Произшествието*";
             // 
             // lbl_apartment
             // 
             this.lbl_apartment.AutoSize = true;
             this.lbl_apartment.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_apartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_apartment.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_apartment.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_apartment.Location = new System.Drawing.Point(357, 104);
+            this.lbl_apartment.Location = new System.Drawing.Point(356, 104);
             this.lbl_apartment.Name = "lbl_apartment";
-            this.lbl_apartment.Size = new System.Drawing.Size(130, 24);
-            this.lbl_apartment.TabIndex = 21;
+            this.lbl_apartment.Size = new System.Drawing.Size(102, 23);
+            this.lbl_apartment.TabIndex = 55;
             this.lbl_apartment.Text = "Апартамент";
             // 
             // lbl_floor
             // 
             this.lbl_floor.AutoSize = true;
             this.lbl_floor.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_floor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_floor.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_floor.ForeColor = System.Drawing.Color.Gold;
             this.lbl_floor.Location = new System.Drawing.Point(167, 365);
             this.lbl_floor.Name = "lbl_floor";
-            this.lbl_floor.Size = new System.Drawing.Size(61, 24);
-            this.lbl_floor.TabIndex = 19;
+            this.lbl_floor.Size = new System.Drawing.Size(50, 23);
+            this.lbl_floor.TabIndex = 54;
             this.lbl_floor.Text = "Етаж";
             // 
             // lbl_building_number
             // 
             this.lbl_building_number.AutoSize = true;
             this.lbl_building_number.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_building_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_building_number.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_building_number.ForeColor = System.Drawing.Color.Gold;
             this.lbl_building_number.Location = new System.Drawing.Point(167, 313);
             this.lbl_building_number.Name = "lbl_building_number";
-            this.lbl_building_number.Size = new System.Drawing.Size(185, 24);
-            this.lbl_building_number.TabIndex = 18;
+            this.lbl_building_number.Size = new System.Drawing.Size(154, 23);
+            this.lbl_building_number.TabIndex = 53;
             this.lbl_building_number.Text = "Номер на сграда*";
             // 
             // nud_building_number
@@ -384,7 +386,7 @@ namespace Fireman_Systemn.View.EditViews
             0});
             this.nud_building_number.Name = "nud_building_number";
             this.nud_building_number.Size = new System.Drawing.Size(168, 22);
-            this.nud_building_number.TabIndex = 17;
+            this.nud_building_number.TabIndex = 52;
             this.nud_building_number.Value = new decimal(new int[] {
             1,
             0,
@@ -394,21 +396,21 @@ namespace Fireman_Systemn.View.EditViews
             // txt_box_complex
             // 
             this.txt_box_complex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_box_complex.Location = new System.Drawing.Point(171, 287);
+            this.txt_box_complex.Location = new System.Drawing.Point(170, 287);
             this.txt_box_complex.Name = "txt_box_complex";
             this.txt_box_complex.Size = new System.Drawing.Size(167, 22);
-            this.txt_box_complex.TabIndex = 16;
+            this.txt_box_complex.TabIndex = 51;
             // 
             // lbl_complex
             // 
             this.lbl_complex.AutoSize = true;
             this.lbl_complex.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_complex.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_complex.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_complex.ForeColor = System.Drawing.Color.Gold;
             this.lbl_complex.Location = new System.Drawing.Point(167, 261);
             this.lbl_complex.Name = "lbl_complex";
-            this.lbl_complex.Size = new System.Drawing.Size(192, 24);
-            this.lbl_complex.TabIndex = 15;
+            this.lbl_complex.Size = new System.Drawing.Size(164, 23);
+            this.lbl_complex.TabIndex = 50;
             this.lbl_complex.Text = "Квартал/Комплекс";
             // 
             // txt_box_street
@@ -417,18 +419,18 @@ namespace Fireman_Systemn.View.EditViews
             this.txt_box_street.Location = new System.Drawing.Point(170, 235);
             this.txt_box_street.Name = "txt_box_street";
             this.txt_box_street.Size = new System.Drawing.Size(168, 22);
-            this.txt_box_street.TabIndex = 14;
+            this.txt_box_street.TabIndex = 49;
             // 
             // lbl_street
             // 
             this.lbl_street.AutoSize = true;
             this.lbl_street.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_street.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_street.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_street.ForeColor = System.Drawing.Color.Gold;
             this.lbl_street.Location = new System.Drawing.Point(167, 209);
             this.lbl_street.Name = "lbl_street";
-            this.lbl_street.Size = new System.Drawing.Size(77, 24);
-            this.lbl_street.TabIndex = 13;
+            this.lbl_street.Size = new System.Drawing.Size(69, 23);
+            this.lbl_street.TabIndex = 48;
             this.lbl_street.Text = "Улица*";
             // 
             // txt_box_town
@@ -437,30 +439,30 @@ namespace Fireman_Systemn.View.EditViews
             this.txt_box_town.Location = new System.Drawing.Point(170, 183);
             this.txt_box_town.Name = "txt_box_town";
             this.txt_box_town.Size = new System.Drawing.Size(168, 22);
-            this.txt_box_town.TabIndex = 12;
+            this.txt_box_town.TabIndex = 47;
             // 
             // lbl_town
             // 
             this.lbl_town.AutoSize = true;
             this.lbl_town.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_town.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_town.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_town.ForeColor = System.Drawing.Color.Gold;
             this.lbl_town.Location = new System.Drawing.Point(167, 157);
             this.lbl_town.Name = "lbl_town";
-            this.lbl_town.Size = new System.Drawing.Size(66, 24);
-            this.lbl_town.TabIndex = 11;
+            this.lbl_town.Size = new System.Drawing.Size(59, 23);
+            this.lbl_town.TabIndex = 46;
             this.lbl_town.Text = "Град*";
             // 
             // lbl_region
             // 
             this.lbl_region.AutoSize = true;
             this.lbl_region.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_region.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_region.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_region.ForeColor = System.Drawing.Color.Gold;
             this.lbl_region.Location = new System.Drawing.Point(167, 105);
             this.lbl_region.Name = "lbl_region";
-            this.lbl_region.Size = new System.Drawing.Size(90, 24);
-            this.lbl_region.TabIndex = 10;
+            this.lbl_region.Size = new System.Drawing.Size(80, 23);
+            this.lbl_region.TabIndex = 45;
             this.lbl_region.Text = "Област*";
             // 
             // txt_box_region
@@ -469,7 +471,7 @@ namespace Fireman_Systemn.View.EditViews
             this.txt_box_region.Location = new System.Drawing.Point(170, 131);
             this.txt_box_region.Name = "txt_box_region";
             this.txt_box_region.Size = new System.Drawing.Size(168, 22);
-            this.txt_box_region.TabIndex = 9;
+            this.txt_box_region.TabIndex = 44;
             // 
             // lbl_add_cases
             // 
@@ -478,10 +480,10 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_add_cases.BackColor = System.Drawing.Color.Transparent;
             this.lbl_add_cases.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_add_cases.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_add_cases.Location = new System.Drawing.Point(239, 43);
+            this.lbl_add_cases.Location = new System.Drawing.Point(237, 46);
             this.lbl_add_cases.Name = "lbl_add_cases";
             this.lbl_add_cases.Size = new System.Drawing.Size(488, 42);
-            this.lbl_add_cases.TabIndex = 2;
+            this.lbl_add_cases.TabIndex = 41;
             this.lbl_add_cases.Text = "Редактирай произшествие";
             this.lbl_add_cases.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -493,7 +495,7 @@ namespace Fireman_Systemn.View.EditViews
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 6;
+            this.pictureBoxLogo.TabIndex = 43;
             this.pictureBoxLogo.TabStop = false;
             // 
             // btn_back
@@ -503,7 +505,7 @@ namespace Fireman_Systemn.View.EditViews
             this.btn_back.Location = new System.Drawing.Point(12, 12);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 4;
+            this.btn_back.TabIndex = 42;
             this.btn_back.Text = "Обратно";
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
@@ -511,7 +513,7 @@ namespace Fireman_Systemn.View.EditViews
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(399, 140);
+            this.textBox1.Location = new System.Drawing.Point(399, 151);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 22);
             this.textBox1.TabIndex = 22;
@@ -523,7 +525,7 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_add_case.BackColor = System.Drawing.Color.Transparent;
             this.lbl_add_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_add_case.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_add_case.Location = new System.Drawing.Point(239, 43);
+            this.lbl_add_case.Location = new System.Drawing.Point(239, 46);
             this.lbl_add_case.Name = "lbl_add_case";
             this.lbl_add_case.Size = new System.Drawing.Size(413, 42);
             this.lbl_add_case.TabIndex = 2;
@@ -532,12 +534,12 @@ namespace Fireman_Systemn.View.EditViews
             // 
             // EditCaseView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(861, 512);
             this.Controls.Add(this.gradientPanelAddCase);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -564,18 +566,15 @@ namespace Fireman_Systemn.View.EditViews
 
         private GradientPanel gradientPanelAddCase;
         private System.Windows.Forms.Label lbl_add_case;
-        private GradientPanel gradientPanelAddCases;
-        private System.Windows.Forms.Label lbl_add_cases;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btn_submit_case;
+        private GradientPanel gradientPanelAddCases;
         private System.Windows.Forms.NumericUpDown nud_used_fuel;
         private System.Windows.Forms.Label lbl_used_fuel;
         private System.Windows.Forms.NumericUpDown nud_floor;
         private System.Windows.Forms.NumericUpDown nup_Apartment;
         private System.Windows.Forms.Label lbl_used_water_resources;
         private System.Windows.Forms.NumericUpDown nud_Used_water_resources;
+        private System.Windows.Forms.Button btn_submit_case;
         private System.Windows.Forms.DateTimePicker end_date_case_time_picker;
         private System.Windows.Forms.Label lbl_end_date_of_case;
         private System.Windows.Forms.DateTimePicker start_date_case_time_picker;
@@ -598,5 +597,8 @@ namespace Fireman_Systemn.View.EditViews
         private System.Windows.Forms.Label lbl_town;
         private System.Windows.Forms.Label lbl_region;
         private System.Windows.Forms.TextBox txt_box_region;
+        private System.Windows.Forms.Label lbl_add_cases;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Button btn_back;
     }
 }

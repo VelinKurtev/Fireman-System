@@ -61,7 +61,7 @@
             this.btn_view_teams.BackColor = System.Drawing.Color.Beige;
             this.btn_view_teams.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_teams.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_teams.Location = new System.Drawing.Point(82, 126);
+            this.btn_view_teams.Location = new System.Drawing.Point(82, 186);
             this.btn_view_teams.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_teams.Name = "btn_view_teams";
             this.btn_view_teams.Size = new System.Drawing.Size(360, 52);
@@ -75,7 +75,7 @@
             this.btn_view_cases.BackColor = System.Drawing.Color.Beige;
             this.btn_view_cases.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_cases.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_cases.Location = new System.Drawing.Point(82, 186);
+            this.btn_view_cases.Location = new System.Drawing.Point(82, 126);
             this.btn_view_cases.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_cases.Name = "btn_view_cases";
             this.btn_view_cases.Size = new System.Drawing.Size(360, 52);
@@ -89,7 +89,7 @@
             this.btn_view_firetrucks.BackColor = System.Drawing.Color.Beige;
             this.btn_view_firetrucks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_firetrucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_firetrucks.Location = new System.Drawing.Point(82, 246);
+            this.btn_view_firetrucks.Location = new System.Drawing.Point(82, 306);
             this.btn_view_firetrucks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_firetrucks.Name = "btn_view_firetrucks";
             this.btn_view_firetrucks.Size = new System.Drawing.Size(360, 52);
@@ -103,7 +103,7 @@
             this.btn_view_employees.BackColor = System.Drawing.Color.Beige;
             this.btn_view_employees.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_view_employees.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_view_employees.Location = new System.Drawing.Point(82, 306);
+            this.btn_view_employees.Location = new System.Drawing.Point(82, 246);
             this.btn_view_employees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_view_employees.Name = "btn_view_employees";
             this.btn_view_employees.Size = new System.Drawing.Size(360, 52);
@@ -145,11 +145,11 @@
             this.gradientBcgndMainMenu.BottomColor = System.Drawing.Color.DarkRed;
             this.gradientBcgndMainMenu.Controls.Add(this.btn_add_case);
             this.gradientBcgndMainMenu.Controls.Add(this.pictureBox1);
-            this.gradientBcgndMainMenu.Controls.Add(this.btn_view_employees);
             this.gradientBcgndMainMenu.Controls.Add(this.lbl_main_menu);
             this.gradientBcgndMainMenu.Controls.Add(this.btn_view_firetrucks);
             this.gradientBcgndMainMenu.Controls.Add(this.btn_view_teams);
             this.gradientBcgndMainMenu.Controls.Add(this.btn_view_cases);
+            this.gradientBcgndMainMenu.Controls.Add(this.btn_view_employees);
             this.gradientBcgndMainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientBcgndMainMenu.Location = new System.Drawing.Point(0, 0);
             this.gradientBcgndMainMenu.Name = "gradientBcgndMainMenu";
