@@ -51,10 +51,10 @@ namespace Fireman_Systemn.View
             Case.Selected_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
             Case.Date_time_of_case = start_date_case_time_picker.Value;
             Case.End_date_time_of_case = end_date_case_time_picker.Value;
-            Case.Used_water_resources = (double)nud_Used_water_resources.Value;
-            Case.Used_fuel = (double)nud_used_fuel.Value;
+            Case.Used_water_resources = Convert.ToDouble(nud_Used_water_resources.Value);
+            Case.Used_fuel = Convert.ToDouble(nud_used_fuel.Value);
 
-            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty)
+            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty || cb_choosen_team.SelectedItem == null)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();

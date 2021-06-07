@@ -33,7 +33,7 @@ namespace Fireman_Systemn.View
             try
             {
                 var row = dgvFireTrucks.CurrentRow;
-                int id = int.Parse(row.Cells["fire_truck_id"].Value.ToString());
+                int id = int.Parse(row.Cells["FireTruckID"].Value.ToString());
                 fireTrucksController.Delete(id);
                 Refresh_table();
             }

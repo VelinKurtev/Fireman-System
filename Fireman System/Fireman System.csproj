@@ -137,6 +137,12 @@
     <Compile Include="View\EditViews\EditCaseView.Designer.cs">
       <DependentUpon>EditCaseView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EditViews\EditTeamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditTeamView.Designer.cs">
+      <DependentUpon>EditTeamView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EmployeesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\EditViews\EditCaseView.resx">
       <DependentUpon>EditCaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditTeamView.resx">
+      <DependentUpon>EditTeamView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeesView.resx">
       <DependentUpon>EmployeesView.cs</DependentUpon>

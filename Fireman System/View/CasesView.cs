@@ -40,29 +40,41 @@ namespace Fireman_Systemn.View
         {
 
             var row = dgvCases.CurrentRow;
-            try
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+                FormLayout.NavigateForms(this, new CasesView());
+            }
+            else
             {
                 int id = int.Parse(row.Cells["CaseID"].Value.ToString());
                 CasesController.Delete(id);
                 Refresh_table();
             }
-            catch 
-            {
-                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
-                invalidRowSelected.ShowDialog();
-            }
+
         }
 
         private void btn_update_table_Click(object sender, EventArgs e)
         {
             var row = dgvCases.CurrentRow;
-            int id = int.Parse(row.Cells["CaseID"].Value.ToString());
 
-            using (FiremanSysEntities fse = new FiremanSysEntities())
+            if (row == null)
             {
-                var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
-                FormLayout.NavigateForms(this, new EditCaseView(fireCase));
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+                FormLayout.NavigateForms(this, new CasesView());
+            }
+            else
+            {
+                int id = int.Parse(row.Cells["CaseID"].Value.ToString());
+                using (FiremanSysEntities fse = new FiremanSysEntities())
+                {
+                    var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
+                    FormLayout.NavigateForms(this, new EditCaseView(fireCase));
+                }
             }
         }
+
     }
 }

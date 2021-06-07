@@ -2719,34 +2719,34 @@
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btn_submit_case.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btn_submit_team.Font" type="System.Drawing.Font, System.Drawing">
     <value>Rockwell, 18pt, style=Bold</value>
   </data>
-  <data name="btn_submit_case.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_submit_team.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_submit_case.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btn_submit_team.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 441</value>
   </data>
-  <data name="btn_submit_case.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_submit_team.Size" type="System.Drawing.Size, System.Drawing">
     <value>574, 47</value>
   </data>
-  <data name="btn_submit_case.TabIndex" type="System.Int32, mscorlib">
+  <data name="btn_submit_team.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="btn_submit_case.Text" xml:space="preserve">
+  <data name="btn_submit_team.Text" xml:space="preserve">
     <value>Добави </value>
   </data>
-  <data name="&gt;&gt;btn_submit_case.Name" xml:space="preserve">
-    <value>btn_submit_case</value>
+  <data name="&gt;&gt;btn_submit_team.Name" xml:space="preserve">
+    <value>btn_submit_team</value>
   </data>
-  <data name="&gt;&gt;btn_submit_case.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_submit_team.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_submit_case.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_submit_team.Parent" xml:space="preserve">
     <value>gradientPanelAddTeam</value>
   </data>
-  <data name="&gt;&gt;btn_submit_case.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_submit_team.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="cb_buisiness.Font" type="System.Drawing.Font, System.Drawing">

@@ -28,7 +28,7 @@ namespace Fireman_Systemn.View.EditViews
             txt_box_dangerous_substances.Text = Case.Dangerous_substances_info;
             nud_building_number.Value = Case.Address_number;
             nud_floor.Value = Convert.ToInt32(Case.Floor);
-            nup_Apartment.Value = Convert.ToInt32(Case.Apartment);
+            nud_Apartment.Value = Convert.ToInt32(Case.Apartment);
             nud_used_fuel.Value = Convert.ToDecimal(Case.Used_fuel);
             nud_Used_water_resources.Value = Convert.ToDecimal(Case.Used_water_resources);
             end_date_case_time_picker.Value = Case.End_date_time_of_case;
@@ -66,27 +66,27 @@ namespace Fireman_Systemn.View.EditViews
                 oldCase.Neighborhood = txt_box_complex.Text.Trim().ToString();
                 oldCase.Address_number = Convert.ToInt32(nud_building_number.Value);
                 oldCase.Floor = Convert.ToInt32(nud_floor.Value);
-                oldCase.Apartment = Convert.ToInt32(nup_Apartment.Value);
+                oldCase.Apartment = Convert.ToInt32(nud_Apartment.Value);
                 oldCase.Case_type = txt_box_type_of_case.Text.Trim().ToString();
                 oldCase.Dangerous_substances_info = txt_box_dangerous_substances.Text.Trim().ToString();
                 oldCase.Selected_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
                 oldCase.Date_time_of_case = start_date_case_time_picker.Value;
                 oldCase.End_date_time_of_case = end_date_case_time_picker.Value;
-                oldCase.Used_water_resources = (double)nud_Used_water_resources.Value;
-                oldCase.Used_fuel = (double)nud_used_fuel.Value;
+                oldCase.Used_water_resources = Convert.ToDouble(nud_Used_water_resources.Value);
+                oldCase.Used_fuel = Convert.ToDouble(nud_used_fuel.Value);
             }
 
             if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new Add_Case_View());
+                FormLayout.NavigateForms(this, new CasesView());
             }
             else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new Add_Case_View());
+                FormLayout.NavigateForms(this, new CasesView());
             }
             else
             {

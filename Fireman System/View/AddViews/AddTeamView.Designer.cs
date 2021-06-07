@@ -34,7 +34,7 @@ namespace Fireman_Systemn.View.AddViews
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTeamView));
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_submit_case = new System.Windows.Forms.Button();
+            this.btn_submit_team = new System.Windows.Forms.Button();
             this.cb_buisiness = new System.Windows.Forms.ComboBox();
             this.lbl_buisiness = new System.Windows.Forms.Label();
             this.lbl_activity = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gradientPanelAddTeam.BottomColor = System.Drawing.Color.Empty;
             this.gradientPanelAddTeam.Controls.Add(this.pictureBox1);
-            this.gradientPanelAddTeam.Controls.Add(this.btn_submit_case);
+            this.gradientPanelAddTeam.Controls.Add(this.btn_submit_team);
             this.gradientPanelAddTeam.Controls.Add(this.cb_buisiness);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_buisiness);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_activity);
@@ -90,14 +90,14 @@ namespace Fireman_Systemn.View.AddViews
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // btn_submit_case
+            // btn_submit_team
             // 
-            this.btn_submit_case.BackColor = System.Drawing.Color.Beige;
-            resources.ApplyResources(this.btn_submit_case, "btn_submit_case");
-            this.btn_submit_case.ForeColor = System.Drawing.Color.Black;
-            this.btn_submit_case.Name = "btn_submit_case";
-            this.btn_submit_case.UseVisualStyleBackColor = false;
-            this.btn_submit_case.Click += new System.EventHandler(this.btn_submit_case_Click);
+            this.btn_submit_team.BackColor = System.Drawing.Color.Beige;
+            resources.ApplyResources(this.btn_submit_team, "btn_submit_team");
+            this.btn_submit_team.ForeColor = System.Drawing.Color.Black;
+            this.btn_submit_team.Name = "btn_submit_team";
+            this.btn_submit_team.UseVisualStyleBackColor = false;
+            this.btn_submit_team.Click += new System.EventHandler(this.btn_submit_team_Click);
             // 
             // cb_buisiness
             // 
@@ -259,7 +259,7 @@ namespace Fireman_Systemn.View.AddViews
         private System.Windows.Forms.ComboBox cb_activity;
         private System.Windows.Forms.ComboBox cb_buisiness;
         private System.Windows.Forms.Label lbl_buisiness;
-        private System.Windows.Forms.Button btn_submit_case;
+        private System.Windows.Forms.Button btn_submit_team;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

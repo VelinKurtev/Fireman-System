@@ -36,7 +36,7 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_used_fuel = new System.Windows.Forms.NumericUpDown();
             this.lbl_used_fuel = new System.Windows.Forms.Label();
             this.nud_floor = new System.Windows.Forms.NumericUpDown();
-            this.nup_Apartment = new System.Windows.Forms.NumericUpDown();
+            this.nud_Apartment = new System.Windows.Forms.NumericUpDown();
             this.lbl_used_water_resources = new System.Windows.Forms.Label();
             this.nud_Used_water_resources = new System.Windows.Forms.NumericUpDown();
             this.btn_submit_case = new System.Windows.Forms.Button();
@@ -71,7 +71,7 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddCases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Apartment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -98,7 +98,7 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddCases.Controls.Add(this.nud_used_fuel);
             this.gradientPanelAddCases.Controls.Add(this.lbl_used_fuel);
             this.gradientPanelAddCases.Controls.Add(this.nud_floor);
-            this.gradientPanelAddCases.Controls.Add(this.nup_Apartment);
+            this.gradientPanelAddCases.Controls.Add(this.nud_Apartment);
             this.gradientPanelAddCases.Controls.Add(this.lbl_used_water_resources);
             this.gradientPanelAddCases.Controls.Add(this.nud_Used_water_resources);
             this.gradientPanelAddCases.Controls.Add(this.btn_submit_case);
@@ -174,18 +174,18 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_floor.Size = new System.Drawing.Size(168, 22);
             this.nud_floor.TabIndex = 70;
             // 
-            // nup_Apartment
+            // nud_Apartment
             // 
-            this.nup_Apartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nup_Apartment.Location = new System.Drawing.Point(361, 130);
-            this.nup_Apartment.Maximum = new decimal(new int[] {
+            this.nud_Apartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nud_Apartment.Location = new System.Drawing.Point(361, 130);
+            this.nud_Apartment.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.nup_Apartment.Name = "nup_Apartment";
-            this.nup_Apartment.Size = new System.Drawing.Size(168, 22);
-            this.nup_Apartment.TabIndex = 69;
+            this.nud_Apartment.Name = "nud_Apartment";
+            this.nud_Apartment.Size = new System.Drawing.Size(168, 22);
+            this.nud_Apartment.TabIndex = 69;
             // 
             // lbl_used_water_resources
             // 
@@ -552,7 +552,7 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddCases.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_used_fuel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_floor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_Apartment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_Apartment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_Used_water_resources)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_building_number)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
@@ -571,7 +571,7 @@ namespace Fireman_Systemn.View.EditViews
         private System.Windows.Forms.NumericUpDown nud_used_fuel;
         private System.Windows.Forms.Label lbl_used_fuel;
         private System.Windows.Forms.NumericUpDown nud_floor;
-        private System.Windows.Forms.NumericUpDown nup_Apartment;
+        private System.Windows.Forms.NumericUpDown nud_Apartment;
         private System.Windows.Forms.Label lbl_used_water_resources;
         private System.Windows.Forms.NumericUpDown nud_Used_water_resources;
         private System.Windows.Forms.Button btn_submit_case;

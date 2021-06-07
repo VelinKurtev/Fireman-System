@@ -40,7 +40,7 @@ namespace Fireman_Systemn.View.AddViews
             FormLayout.FormLoad(this);
         }
 
-        private void btn_submit_case_Click(object sender, EventArgs e)
+        private void btn_submit_team_Click(object sender, EventArgs e)
         {
             try
             {
@@ -50,6 +50,20 @@ namespace Fireman_Systemn.View.AddViews
                 Team.number_of_answered_cases = Convert.ToInt32(nud_answered_cases.Value);
                 Team.is_team_active = cb_activity.SelectedItem.ToString();
                 Team.is_team_busy = cb_buisiness.SelectedItem.ToString();
+                
+                if (txt_box_team_name.Text == string.Empty || cb_activity.SelectedItem == null || cb_buisiness.SelectedItem == null || cb_choosen_fireTruck.SelectedItem == null)
+                {
+                    EnterValidData enterValidDataException = new EnterValidData();
+                    enterValidDataException.ShowDialog();
+                    FormLayout.NavigateForms(this, new AddTeamView());
+                }
+                else
+                {
+                    teamsController.Insert(Team);
+                    SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                    successfullyAddedData.ShowDialog();
+                    FormLayout.NavigateForms(this, new TeamsView());
+                }
             }
             catch 
             {
@@ -57,22 +71,6 @@ namespace Fireman_Systemn.View.AddViews
                 enterValidDataException.ShowDialog();
                 FormLayout.NavigateForms(this, new AddTeamView());
             }
-            
-
-            if (txt_box_team_name.Text == string.Empty)
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new AddTeamView());
-            }
-            else
-            {
-                teamsController.Insert(Team);
-                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
-                successfullyAddedData.ShowDialog();
-                FormLayout.NavigateForms(this, new TeamsView());
-            }
-
         }
     }
 }
