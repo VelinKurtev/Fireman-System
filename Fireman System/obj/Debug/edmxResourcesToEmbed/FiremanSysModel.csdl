@@ -37,7 +37,7 @@
     <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
     <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
     <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
-    <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
+    <Property Name="buisiness_trip_end_date" Type="DateTime" Precision="3" />
     <Property Name="number_of_answered_cases" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="choosen_team" Type="Int32" />
     <NavigationProperty Name="Teams" Relationship="Self.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />

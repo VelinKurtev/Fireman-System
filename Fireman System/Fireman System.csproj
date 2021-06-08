@@ -74,44 +74,51 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cases.cs">
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controller\CasesController.cs" />
+    <Compile Include="Controller\EmployeesController.cs" />
     <Compile Include="Controller\FireTrucksController.cs" />
     <Compile Include="Controller\TeamsController.cs" />
     <Compile Include="Employees.cs">
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="FiremanSysModel.Context.cs">
+    <Compile Include="FireTrucks.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormLayout.cs" />
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FiremanSysModel.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="FiremanSysModel.cs">
+    <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FiremanSysModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="FireTrucks.cs">
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="FormLayout.cs" />
-    <Compile Include="GradientPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Teams.cs">
-      <DependentUpon>FiremanSysModel.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="View\AddViews\AddCaseView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AddViews\AddCaseView.Designer.cs">
       <DependentUpon>AddCaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddEmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddEmployeeView.Designer.cs">
+      <DependentUpon>AddEmployeeView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\AddViews\AddFireTruckView.cs">
       <SubType>Form</SubType>
@@ -199,6 +206,9 @@
     <EmbeddedResource Include="View\AddViews\AddCaseView.resx">
       <DependentUpon>AddCaseView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddEmployeeView.resx">
+      <DependentUpon>AddEmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AddViews\AddFireTruckView.resx">
       <DependentUpon>AddFireTruckView.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,18 +281,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FiremanSys.mdf" />
-    <Content Include="FiremanSysModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
-      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="FiremanSysModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
-      <LastGenOutput>FiremanSysModel.cs</LastGenOutput>
-    </Content>
     <Content Include="FiremanSys_log.ldf">
       <DependentUpon>FiremanSys.mdf</DependentUpon>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

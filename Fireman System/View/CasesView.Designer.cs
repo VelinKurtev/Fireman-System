@@ -28,12 +28,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CasesView));
             this.gradientPanelCases = new Fireman_Systemn.GradientPanel();
             this.dgvCases = new System.Windows.Forms.DataGridView();
-            this.btn_delete_case = new System.Windows.Forms.Button();
-            this.lbl_cases = new System.Windows.Forms.Label();
-            this.btn_update_table = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.btn_add_case = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.CaseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Town = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Region = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,6 +44,12 @@
             this.UsedWaterResources = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UsedOil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotWantedTeamsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_delete_case = new System.Windows.Forms.Button();
+            this.lbl_cases = new System.Windows.Forms.Label();
+            this.btn_update_case = new System.Windows.Forms.Button();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.btn_add_case = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.gradientPanelCases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -63,7 +63,7 @@
             this.gradientPanelCases.Controls.Add(this.dgvCases);
             this.gradientPanelCases.Controls.Add(this.btn_delete_case);
             this.gradientPanelCases.Controls.Add(this.lbl_cases);
-            this.gradientPanelCases.Controls.Add(this.btn_update_table);
+            this.gradientPanelCases.Controls.Add(this.btn_update_case);
             this.gradientPanelCases.Controls.Add(this.pictureBoxLogo);
             this.gradientPanelCases.Controls.Add(this.btn_add_case);
             this.gradientPanelCases.Controls.Add(this.btn_back);
@@ -129,83 +129,6 @@
             this.dgvCases.RowHeadersWidth = 20;
             this.dgvCases.Size = new System.Drawing.Size(538, 376);
             this.dgvCases.TabIndex = 12;
-            // 
-            // btn_delete_case
-            // 
-            this.btn_delete_case.BackColor = System.Drawing.Color.Beige;
-            this.btn_delete_case.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_delete_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete_case.Location = new System.Drawing.Point(36, 248);
-            this.btn_delete_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_delete_case.Name = "btn_delete_case";
-            this.btn_delete_case.Size = new System.Drawing.Size(259, 54);
-            this.btn_delete_case.TabIndex = 9;
-            this.btn_delete_case.Text = "Изтрий произшествие";
-            this.btn_delete_case.UseVisualStyleBackColor = false;
-            this.btn_delete_case.Click += new System.EventHandler(this.btn_delete_case_Click);
-            // 
-            // lbl_cases
-            // 
-            this.lbl_cases.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_cases.AutoSize = true;
-            this.lbl_cases.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cases.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_cases.Location = new System.Drawing.Point(304, 43);
-            this.lbl_cases.Name = "lbl_cases";
-            this.lbl_cases.Size = new System.Drawing.Size(276, 42);
-            this.lbl_cases.TabIndex = 2;
-            this.lbl_cases.Text = "Произшествия";
-            this.lbl_cases.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btn_update_table
-            // 
-            this.btn_update_table.BackColor = System.Drawing.Color.Beige;
-            this.btn_update_table.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update_table.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update_table.Location = new System.Drawing.Point(36, 186);
-            this.btn_update_table.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update_table.Name = "btn_update_table";
-            this.btn_update_table.Size = new System.Drawing.Size(259, 54);
-            this.btn_update_table.TabIndex = 8;
-            this.btn_update_table.Text = "Редактирай таблицата";
-            this.btn_update_table.UseVisualStyleBackColor = false;
-            this.btn_update_table.Click += new System.EventHandler(this.btn_update_table_Click);
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 7;
-            this.pictureBoxLogo.TabStop = false;
-            // 
-            // btn_add_case
-            // 
-            this.btn_add_case.BackColor = System.Drawing.Color.Beige;
-            this.btn_add_case.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_add_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_case.Location = new System.Drawing.Point(36, 124);
-            this.btn_add_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_add_case.Name = "btn_add_case";
-            this.btn_add_case.Size = new System.Drawing.Size(259, 54);
-            this.btn_add_case.TabIndex = 0;
-            this.btn_add_case.Text = "Добави произшествие";
-            this.btn_add_case.UseVisualStyleBackColor = false;
-            this.btn_add_case.Click += new System.EventHandler(this.btn_add_case_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Beige;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 4;
-            this.btn_back.Text = "Обратно";
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // CaseID
             // 
@@ -320,6 +243,83 @@
             this.NotWantedTeamsColumn.Visible = false;
             this.NotWantedTeamsColumn.Width = 157;
             // 
+            // btn_delete_case
+            // 
+            this.btn_delete_case.BackColor = System.Drawing.Color.Beige;
+            this.btn_delete_case.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete_case.Location = new System.Drawing.Point(36, 248);
+            this.btn_delete_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_delete_case.Name = "btn_delete_case";
+            this.btn_delete_case.Size = new System.Drawing.Size(259, 54);
+            this.btn_delete_case.TabIndex = 9;
+            this.btn_delete_case.Text = "Изтрий произшествие";
+            this.btn_delete_case.UseVisualStyleBackColor = false;
+            this.btn_delete_case.Click += new System.EventHandler(this.btn_delete_case_Click);
+            // 
+            // lbl_cases
+            // 
+            this.lbl_cases.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_cases.AutoSize = true;
+            this.lbl_cases.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cases.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_cases.Location = new System.Drawing.Point(304, 43);
+            this.lbl_cases.Name = "lbl_cases";
+            this.lbl_cases.Size = new System.Drawing.Size(276, 42);
+            this.lbl_cases.TabIndex = 2;
+            this.lbl_cases.Text = "Произшествия";
+            this.lbl_cases.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btn_update_case
+            // 
+            this.btn_update_case.BackColor = System.Drawing.Color.Beige;
+            this.btn_update_case.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update_case.Location = new System.Drawing.Point(36, 186);
+            this.btn_update_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_update_case.Name = "btn_update_case";
+            this.btn_update_case.Size = new System.Drawing.Size(259, 54);
+            this.btn_update_case.TabIndex = 8;
+            this.btn_update_case.Text = "Редактирай произшествие";
+            this.btn_update_case.UseVisualStyleBackColor = false;
+            this.btn_update_case.Click += new System.EventHandler(this.btn_update_table_Click);
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 7;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // btn_add_case
+            // 
+            this.btn_add_case.BackColor = System.Drawing.Color.Beige;
+            this.btn_add_case.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_case.Location = new System.Drawing.Point(36, 124);
+            this.btn_add_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_add_case.Name = "btn_add_case";
+            this.btn_add_case.Size = new System.Drawing.Size(259, 54);
+            this.btn_add_case.TabIndex = 0;
+            this.btn_add_case.Text = "Добави произшествие";
+            this.btn_add_case.UseVisualStyleBackColor = false;
+            this.btn_add_case.Click += new System.EventHandler(this.btn_add_case_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Beige;
+            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 42);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.Text = "Обратно";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // CasesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -349,7 +349,7 @@
         private System.Windows.Forms.Button btn_delete_case;
         private GradientPanel gradientPanelCases;
         private System.Windows.Forms.DataGridView dgvCases;
-        private System.Windows.Forms.Button btn_update_table;
+        private System.Windows.Forms.Button btn_update_case;
         private System.Windows.Forms.DataGridViewTextBoxColumn CaseID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Town;
         private System.Windows.Forms.DataGridViewTextBoxColumn Region;

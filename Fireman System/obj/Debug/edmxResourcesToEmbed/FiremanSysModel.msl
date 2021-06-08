@@ -37,7 +37,7 @@
           <ScalarProperty Name="vacation_start_date" ColumnName="vacation_start_date" />
           <ScalarProperty Name="vacation_end_date" ColumnName="vacation_end_date" />
           <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
-          <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
+          <ScalarProperty Name="buisiness_trip_end_date" ColumnName="buisiness_trip_end_date" />
           <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
           <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
         </MappingFragment>

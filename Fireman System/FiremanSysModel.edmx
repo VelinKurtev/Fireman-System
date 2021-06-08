@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="FiremanSysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="FiremanSysModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cases">
           <Key>
             <PropertyRef Name="case_id" />
@@ -41,7 +41,7 @@
           <Property Name="vacation_start_date" Type="datetime" />
           <Property Name="vacation_end_date" Type="datetime" />
           <Property Name="business_trip_start_date" Type="datetime" />
-          <Property Name="buisiness_trip_start_date" Type="datetime" />
+          <Property Name="buisiness_trip_end_date" Type="datetime" />
           <Property Name="number_of_answered_cases" Type="varchar(max)" Nullable="false" />
           <Property Name="choosen_team" Type="int" />
         </EntityType>
@@ -124,7 +124,8 @@
             <End Role="Teams" EntitySet="Teams" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FiremanSysModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -165,7 +166,7 @@
           <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
           <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
           <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
-          <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
+          <Property Name="buisiness_trip_end_date" Type="DateTime" Precision="3" />
           <Property Name="number_of_answered_cases" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="choosen_team" Type="Int32" />
           <NavigationProperty Name="Teams" Relationship="Self.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />
@@ -295,7 +296,7 @@
                 <ScalarProperty Name="vacation_start_date" ColumnName="vacation_start_date" />
                 <ScalarProperty Name="vacation_end_date" ColumnName="vacation_end_date" />
                 <ScalarProperty Name="business_trip_start_date" ColumnName="business_trip_start_date" />
-                <ScalarProperty Name="buisiness_trip_start_date" ColumnName="buisiness_trip_start_date" />
+                <ScalarProperty Name="buisiness_trip_end_date" ColumnName="buisiness_trip_end_date" />
                 <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
                 <ScalarProperty Name="choosen_team" ColumnName="choosen_team" />
               </MappingFragment>

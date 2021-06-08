@@ -40,3 +40,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddTeamView.res
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.InvalidRowSelected.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditCaseView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditTeamView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddEmployeeView.resources

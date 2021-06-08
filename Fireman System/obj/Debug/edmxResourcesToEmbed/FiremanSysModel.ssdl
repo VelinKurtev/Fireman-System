@@ -36,7 +36,7 @@
     <Property Name="vacation_start_date" Type="datetime" />
     <Property Name="vacation_end_date" Type="datetime" />
     <Property Name="business_trip_start_date" Type="datetime" />
-    <Property Name="buisiness_trip_start_date" Type="datetime" />
+    <Property Name="buisiness_trip_end_date" Type="datetime" />
     <Property Name="number_of_answered_cases" Type="varchar(max)" Nullable="false" />
     <Property Name="choosen_team" Type="int" />
   </EntityType>
