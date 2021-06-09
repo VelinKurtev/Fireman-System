@@ -1,7 +1,7 @@
-﻿CREATE TABLE [dbo].[Teams] (
+CREATE TABLE [dbo].[Teams] (
     [team_id]                  INT            IDENTITY (1, 1) NOT NULL,
     [team_name]                NVARCHAR (MAX) NOT NULL,
-    [number_of_members]        INT             NOT NULL,
+    [number_of_members]        INT            NOT NULL,
     [choosen_fire_truck]       INT            NOT NULL,
     [number_of_answered_cases] INT            NOT NULL,
     [is_team_active]           NVARCHAR (MAX) NOT NULL,

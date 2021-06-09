@@ -1,5 +1,6 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.AddViews;
+using Fireman_Systemn.View.Pop_Ups;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -47,7 +48,19 @@ namespace Fireman_Systemn.View
 
         private void btn_delete_employee_Click(object sender, EventArgs e)
         {
-
+            var row = dgvEmployees.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+                FormLayout.NavigateForms(this, new EmployeesView());
+            }
+            else
+            {
+                int id = int.Parse(row.Cells["EmployeeID"].Value.ToString());
+                employeesController.Delete(id);
+                Refresh_table();
+            }
         }
     }
 }

@@ -25,19 +25,19 @@
       <PropertyRef Name="employee_id" />
     </Key>
     <Property Name="employee_id" Type="int" Nullable="false" />
-    <Property Name="first_name" Type="varchar(max)" Nullable="false" />
-    <Property Name="middle_name" Type="varchar(max)" Nullable="false" />
-    <Property Name="last_name" Type="varchar(max)" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="middle_name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="last_name" Type="nvarchar(max)" Nullable="false" />
     <Property Name="age" Type="int" Nullable="false" />
-    <Property Name="rank" Type="varchar(max)" Nullable="false" />
-    <Property Name="home_address" Type="varchar(max)" />
-    <Property Name="personal_phone_number" Type="varchar(max)" />
-    <Property Name="email" Type="varchar(max)" Nullable="false" />
+    <Property Name="rank" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="home_address" Type="nvarchar(max)" />
+    <Property Name="personal_phone_number" Type="int" />
+    <Property Name="email" Type="nvarchar(max)" Nullable="false" />
     <Property Name="vacation_start_date" Type="datetime" />
     <Property Name="vacation_end_date" Type="datetime" />
     <Property Name="business_trip_start_date" Type="datetime" />
     <Property Name="buisiness_trip_end_date" Type="datetime" />
-    <Property Name="number_of_answered_cases" Type="varchar(max)" Nullable="false" />
+    <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
     <Property Name="choosen_team" Type="int" />
   </EntityType>
   <EntityType Name="FireTrucks">

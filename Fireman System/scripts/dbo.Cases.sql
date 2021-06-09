@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Cases] (
+CREATE TABLE [dbo].[Cases] (
     [case_id]                   INT            IDENTITY (1, 1) NOT NULL,
     [Region]                    NVARCHAR (MAX) NOT NULL,
     [Town]                      NVARCHAR (MAX) NOT NULL,

@@ -37,17 +37,17 @@ namespace Fireman_Systemn.Controller
         //    }
         //}
 
-        //public void Delete(int id)
-        //{
-        //    using (FiremanSysEntities fse = new FiremanSysEntities())
-        //    {
-        //        var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
-        //        if (fireCase != null)
-        //        {
-        //            fse.Cases.Remove(fireCase);
-        //            fse.SaveChanges();
-        //        }
-        //    }
-        //}
+        public void Delete(int id)
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                var employee = fse.Employees.Where(e => e.employee_id == id).FirstOrDefault();
+                if (employee != null)
+                {
+                    fse.Employees.Remove(employee);
+                    fse.SaveChanges();
+                }
+            }
+        }
     }
 }
