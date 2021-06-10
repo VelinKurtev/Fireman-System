@@ -27,15 +27,15 @@ namespace Fireman_Systemn.Controller
             }
         }
 
-        //public void Update(Cases Case)
-        //{
-        //    using (FiremanSysEntities fse = new FiremanSysEntities())
-        //    {
-        //        fse.Cases.Attach(Case);
-        //        fse.Entry(Case).State = System.Data.Entity.EntityState.Modified;
-        //        fse.SaveChanges();
-        //    }
-        //}
+        public void Update(Employees Employee)
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                fse.Employees.Attach(Employee);
+                fse.Entry(Employee).State = System.Data.Entity.EntityState.Modified;
+                fse.SaveChanges();
+            }
+        }
 
         public void Delete(int id)
         {

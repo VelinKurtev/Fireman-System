@@ -33,6 +33,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.gradientPanelInvalidInfo = new Fireman_Systemn.GradientPanel();
             this.lbl_success = new System.Windows.Forms.Label();
             this.pictureBoxSuccess = new System.Windows.Forms.PictureBox();
+            this.btn_ok = new System.Windows.Forms.Button();
             this.gradientPanelInvalidInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuccess)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.gradientPanelInvalidInfo.Angle = 0F;
             this.gradientPanelInvalidInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gradientPanelInvalidInfo.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanelInvalidInfo.Controls.Add(this.btn_ok);
             this.gradientPanelInvalidInfo.Controls.Add(this.lbl_success);
             this.gradientPanelInvalidInfo.Controls.Add(this.pictureBoxSuccess);
             this.gradientPanelInvalidInfo.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -57,7 +59,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.lbl_success.BackColor = System.Drawing.Color.Transparent;
             this.lbl_success.Font = new System.Drawing.Font("Microsoft PhagsPa", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_success.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_success.Location = new System.Drawing.Point(166, 87);
+            this.lbl_success.Location = new System.Drawing.Point(163, 68);
             this.lbl_success.Name = "lbl_success";
             this.lbl_success.Size = new System.Drawing.Size(192, 44);
             this.lbl_success.TabIndex = 3;
@@ -73,6 +75,17 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.pictureBoxSuccess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSuccess.TabIndex = 2;
             this.pictureBoxSuccess.TabStop = false;
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ok.Location = new System.Drawing.Point(229, 128);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(126, 33);
+            this.btn_ok.TabIndex = 4;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // SuccessfullyAddedData
             // 
@@ -98,5 +111,6 @@ namespace Fireman_Systemn.View.Pop_Ups
         private GradientPanel gradientPanelInvalidInfo;
         private System.Windows.Forms.PictureBox pictureBoxSuccess;
         private System.Windows.Forms.Label lbl_success;
+        private System.Windows.Forms.Button btn_ok;
     }
 }

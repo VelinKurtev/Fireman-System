@@ -50,6 +50,8 @@ namespace Fireman_Systemn.View
                 int id = int.Parse(row.Cells["TeamID"].Value.ToString());
                 teamsController.Delete(id);
                 Refresh_table();
+                DeleteRow deleteRow = new DeleteRow();
+                deleteRow.ShowDialog();
             }
         }
 

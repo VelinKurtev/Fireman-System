@@ -51,6 +51,8 @@ namespace Fireman_Systemn.View
                 int id = int.Parse(row.Cells["CaseID"].Value.ToString());
                 CasesController.Delete(id);
                 Refresh_table();
+                DeleteRow deleteRow = new DeleteRow();
+                deleteRow.ShowDialog();
             }
 
         }

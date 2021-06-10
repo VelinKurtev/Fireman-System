@@ -41,3 +41,5 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.InvalidRowSelect
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditCaseView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditTeamView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddEmployeeView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.DeleteRow.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditEmployeeView.resources

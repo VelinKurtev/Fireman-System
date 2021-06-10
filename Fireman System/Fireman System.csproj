@@ -144,6 +144,12 @@
     <Compile Include="View\EditViews\EditCaseView.Designer.cs">
       <DependentUpon>EditCaseView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EditViews\EditEmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditEmployeeView.Designer.cs">
+      <DependentUpon>EditEmployeeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EditViews\EditTeamView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     <EmbeddedResource Include="View\EditViews\EditCaseView.resx">
       <DependentUpon>EditCaseView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditEmployeeView.resx">
+      <DependentUpon>EditEmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\EditViews\EditTeamView.resx">
       <DependentUpon>EditTeamView.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FireTrucksView.resx">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\DeleteRow.resx">
+      <DependentUpon>DeleteRow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Pop-Ups\EnterValidData.resx">
       <DependentUpon>EnterValidData.cs</DependentUpon>

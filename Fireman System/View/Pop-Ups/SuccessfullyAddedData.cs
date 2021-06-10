@@ -16,5 +16,10 @@ namespace Fireman_Systemn.View.Pop_Ups
         {
             InitializeComponent();
         }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

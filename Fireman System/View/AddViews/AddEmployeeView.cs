@@ -51,8 +51,21 @@ namespace Fireman_Systemn.View.AddViews
                 Employee.buisiness_trip_end_date = DateTimeEndBuisnessTrip.Value;
                 Employee.vacation_start_date = DateTimeStartVacation.Value;
                 Employee.vacation_end_date = DateTimeEndVacation.Value;
+                
+                if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0 || DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) == 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) == 0)
+                {
+                    EnterValidData enterValidDataException = new EnterValidData();
+                    enterValidDataException.ShowDialog();
+                    FormLayout.NavigateForms(this, new AddEmployeeView());
+                }
+                else
+                {
+                    employeesController.Insert(Employee);
+                    SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                    successfullyAddedData.ShowDialog();
+                    FormLayout.NavigateForms(this, new EmployeesView());
+                }
 
-               
             }
             catch
             {
@@ -60,22 +73,6 @@ namespace Fireman_Systemn.View.AddViews
                 enterValidDataException.ShowDialog();
                 FormLayout.NavigateForms(this, new AddEmployeeView());
             }
-
-            if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0 || DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) == 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) == 0)
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new AddEmployeeView());
-            }
-            else
-            {
-                employeesController.Insert(Employee);
-                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
-                successfullyAddedData.ShowDialog();
-                FormLayout.NavigateForms(this, new EmployeesView());
-            }
-            
-
         }
 
         private void FillCombo()
