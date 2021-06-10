@@ -43,3 +43,4 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditTeamView.r
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddEmployeeView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.DeleteRow.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditEmployeeView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditFireTruckView.resources

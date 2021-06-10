@@ -44,15 +44,24 @@ namespace Fireman_Systemn.View
             {
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
             }
             else
             {
-                int id = int.Parse(row.Cells["CaseID"].Value.ToString());
-                CasesController.Delete(id);
-                Refresh_table();
-                DeleteRow deleteRow = new DeleteRow();
-                deleteRow.ShowDialog();
+                try
+                {
+                    int id = int.Parse(row.Cells["CaseID"].Value.ToString());
+                    CasesController.Delete(id);
+                    Refresh_table();
+                    DeleteRow deleteRow = new DeleteRow();
+                    deleteRow.ShowDialog();
+                }
+                catch 
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                    FormLayout.NavigateForms(this, new CasesView());
+                }
+                
             }
 
         }
@@ -65,7 +74,6 @@ namespace Fireman_Systemn.View
             {
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
             }
             else
             {

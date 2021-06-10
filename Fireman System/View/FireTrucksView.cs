@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
+using Fireman_Systemn.View.EditViews;
 using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View
@@ -37,15 +39,22 @@ namespace Fireman_Systemn.View
             {
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
-                FormLayout.NavigateForms(this, new TeamsView());
             }
             else
             {
-                int id = int.Parse(row.Cells["FireTruckID"].Value.ToString());
-                fireTrucksController.Delete(id);
-                Refresh_table();
-                DeleteRow deleteRow = new DeleteRow();
-                deleteRow.ShowDialog();
+                try
+                {
+                    int id = int.Parse(row.Cells["FireTruckID"].Value.ToString());
+                    fireTrucksController.Delete(id);
+                    Refresh_table();
+                    DeleteRow deleteRow = new DeleteRow();
+                    deleteRow.ShowDialog();
+                }
+                catch 
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
             }
 
         }
@@ -53,6 +62,25 @@ namespace Fireman_Systemn.View
         private void btn_add_fire_truck_Click(object sender, EventArgs e)
         {
             FormLayout.NavigateForms(this, new AddFireTruckView());
+        }
+
+        private void btn_update_table_Click(object sender, EventArgs e)
+        {
+            var row = dgvFireTrucks.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+            }
+            else
+            {
+                int id = int.Parse(row.Cells["FireTruckID"].Value.ToString());
+                using (FiremanSysEntities fse = new FiremanSysEntities())
+                {
+                    var fireTruck = fse.FireTrucks.Where(f => f.fire_truck_id == id).FirstOrDefault();
+                    FormLayout.NavigateForms(this, new EditFireTruckView(fireTruck));
+                }
+            }
         }
     }
 }

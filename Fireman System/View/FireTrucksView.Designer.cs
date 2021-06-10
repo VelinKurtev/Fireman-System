@@ -34,12 +34,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FireTrucksView));
             this.gradientPanelFireTrucks = new Fireman_Systemn.GradientPanel();
             this.dgvFireTrucks = new System.Windows.Forms.DataGridView();
-            this.btn_delete_fire_truck = new System.Windows.Forms.Button();
-            this.btn_update_table = new System.Windows.Forms.Button();
-            this.btn_add_fire_truck = new System.Windows.Forms.Button();
-            this.lbl_Fire_Trucks = new System.Windows.Forms.Label();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.btn_back = new System.Windows.Forms.Button();
             this.FireTruckID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WaterCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +43,12 @@
             this.AvailableFuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotWantedTeamColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_delete_fire_truck = new System.Windows.Forms.Button();
+            this.btn_update_table = new System.Windows.Forms.Button();
+            this.btn_add_fire_truck = new System.Windows.Forms.Button();
+            this.lbl_Fire_Trucks = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.gradientPanelFireTrucks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFireTrucks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -121,83 +121,6 @@
             this.dgvFireTrucks.Size = new System.Drawing.Size(538, 376);
             this.dgvFireTrucks.TabIndex = 12;
             // 
-            // btn_delete_fire_truck
-            // 
-            this.btn_delete_fire_truck.BackColor = System.Drawing.Color.Beige;
-            this.btn_delete_fire_truck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_delete_fire_truck.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete_fire_truck.Location = new System.Drawing.Point(36, 248);
-            this.btn_delete_fire_truck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_delete_fire_truck.Name = "btn_delete_fire_truck";
-            this.btn_delete_fire_truck.Size = new System.Drawing.Size(259, 54);
-            this.btn_delete_fire_truck.TabIndex = 15;
-            this.btn_delete_fire_truck.Text = "Изтрий пожарен автомобил";
-            this.btn_delete_fire_truck.UseVisualStyleBackColor = false;
-            this.btn_delete_fire_truck.Click += new System.EventHandler(this.btn_delete_fire_truck_Click);
-            // 
-            // btn_update_table
-            // 
-            this.btn_update_table.BackColor = System.Drawing.Color.Beige;
-            this.btn_update_table.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update_table.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update_table.Location = new System.Drawing.Point(36, 186);
-            this.btn_update_table.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update_table.Name = "btn_update_table";
-            this.btn_update_table.Size = new System.Drawing.Size(259, 54);
-            this.btn_update_table.TabIndex = 14;
-            this.btn_update_table.Text = "Редактирай таблицата";
-            this.btn_update_table.UseVisualStyleBackColor = false;
-            // 
-            // btn_add_fire_truck
-            // 
-            this.btn_add_fire_truck.BackColor = System.Drawing.Color.Beige;
-            this.btn_add_fire_truck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_add_fire_truck.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_fire_truck.Location = new System.Drawing.Point(36, 124);
-            this.btn_add_fire_truck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_add_fire_truck.Name = "btn_add_fire_truck";
-            this.btn_add_fire_truck.Size = new System.Drawing.Size(259, 54);
-            this.btn_add_fire_truck.TabIndex = 13;
-            this.btn_add_fire_truck.Text = "Добави пожарен автомобил";
-            this.btn_add_fire_truck.UseVisualStyleBackColor = false;
-            this.btn_add_fire_truck.Click += new System.EventHandler(this.btn_add_fire_truck_Click);
-            // 
-            // lbl_Fire_Trucks
-            // 
-            this.lbl_Fire_Trucks.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_Fire_Trucks.AutoSize = true;
-            this.lbl_Fire_Trucks.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Fire_Trucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Fire_Trucks.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(304, 43);
-            this.lbl_Fire_Trucks.Name = "lbl_Fire_Trucks";
-            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(268, 42);
-            this.lbl_Fire_Trucks.TabIndex = 2;
-            this.lbl_Fire_Trucks.Text = "Пожарни коли";
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogo.TabIndex = 5;
-            this.pictureBoxLogo.TabStop = false;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Beige;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 4;
-            this.btn_back.Text = "Обратно";
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
-            // 
             // FireTruckID
             // 
             this.FireTruckID.DataPropertyName = "fire_truck_id";
@@ -261,6 +184,84 @@
             this.NotWantedTeamColumn.Name = "NotWantedTeamColumn";
             this.NotWantedTeamColumn.Visible = false;
             this.NotWantedTeamColumn.Width = 152;
+            // 
+            // btn_delete_fire_truck
+            // 
+            this.btn_delete_fire_truck.BackColor = System.Drawing.Color.Beige;
+            this.btn_delete_fire_truck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete_fire_truck.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete_fire_truck.Location = new System.Drawing.Point(36, 248);
+            this.btn_delete_fire_truck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_delete_fire_truck.Name = "btn_delete_fire_truck";
+            this.btn_delete_fire_truck.Size = new System.Drawing.Size(259, 54);
+            this.btn_delete_fire_truck.TabIndex = 15;
+            this.btn_delete_fire_truck.Text = "Изтрий пожарен автомобил";
+            this.btn_delete_fire_truck.UseVisualStyleBackColor = false;
+            this.btn_delete_fire_truck.Click += new System.EventHandler(this.btn_delete_fire_truck_Click);
+            // 
+            // btn_update_table
+            // 
+            this.btn_update_table.BackColor = System.Drawing.Color.Beige;
+            this.btn_update_table.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update_table.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update_table.Location = new System.Drawing.Point(36, 186);
+            this.btn_update_table.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_update_table.Name = "btn_update_table";
+            this.btn_update_table.Size = new System.Drawing.Size(259, 54);
+            this.btn_update_table.TabIndex = 14;
+            this.btn_update_table.Text = "Редактирай таблицата";
+            this.btn_update_table.UseVisualStyleBackColor = false;
+            this.btn_update_table.Click += new System.EventHandler(this.btn_update_table_Click);
+            // 
+            // btn_add_fire_truck
+            // 
+            this.btn_add_fire_truck.BackColor = System.Drawing.Color.Beige;
+            this.btn_add_fire_truck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add_fire_truck.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_fire_truck.Location = new System.Drawing.Point(36, 124);
+            this.btn_add_fire_truck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_add_fire_truck.Name = "btn_add_fire_truck";
+            this.btn_add_fire_truck.Size = new System.Drawing.Size(259, 54);
+            this.btn_add_fire_truck.TabIndex = 13;
+            this.btn_add_fire_truck.Text = "Добави пожарен автомобил";
+            this.btn_add_fire_truck.UseVisualStyleBackColor = false;
+            this.btn_add_fire_truck.Click += new System.EventHandler(this.btn_add_fire_truck_Click);
+            // 
+            // lbl_Fire_Trucks
+            // 
+            this.lbl_Fire_Trucks.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_Fire_Trucks.AutoSize = true;
+            this.lbl_Fire_Trucks.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Fire_Trucks.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Fire_Trucks.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_Fire_Trucks.Location = new System.Drawing.Point(304, 43);
+            this.lbl_Fire_Trucks.Name = "lbl_Fire_Trucks";
+            this.lbl_Fire_Trucks.Size = new System.Drawing.Size(268, 42);
+            this.lbl_Fire_Trucks.TabIndex = 2;
+            this.lbl_Fire_Trucks.Text = "Пожарни коли";
+            // 
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(12, 382);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(125, 118);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogo.TabIndex = 5;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Beige;
+            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 42);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.Text = "Обратно";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // FireTrucksView
             // 

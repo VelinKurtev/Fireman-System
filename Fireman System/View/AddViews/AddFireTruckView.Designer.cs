@@ -92,6 +92,11 @@ namespace Fireman_Systemn.View
             this.nud_fuel_capacity.DecimalPlaces = 2;
             this.nud_fuel_capacity.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_fuel_capacity.Location = new System.Drawing.Point(406, 163);
+            this.nud_fuel_capacity.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nud_fuel_capacity.Name = "nud_fuel_capacity";
             this.nud_fuel_capacity.Size = new System.Drawing.Size(168, 23);
             this.nud_fuel_capacity.TabIndex = 50;
@@ -101,6 +106,11 @@ namespace Fireman_Systemn.View
             this.nud_available_fuel.DecimalPlaces = 2;
             this.nud_available_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_available_fuel.Location = new System.Drawing.Point(405, 214);
+            this.nud_available_fuel.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nud_available_fuel.Name = "nud_available_fuel";
             this.nud_available_fuel.Size = new System.Drawing.Size(168, 23);
             this.nud_available_fuel.TabIndex = 47;
@@ -134,6 +144,11 @@ namespace Fireman_Systemn.View
             this.nud_available_water.DecimalPlaces = 2;
             this.nud_available_water.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_available_water.Location = new System.Drawing.Point(179, 269);
+            this.nud_available_water.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.nud_available_water.Name = "nud_available_water";
             this.nud_available_water.Size = new System.Drawing.Size(169, 23);
             this.nud_available_water.TabIndex = 41;
@@ -142,6 +157,11 @@ namespace Fireman_Systemn.View
             // 
             this.nud_available_seats.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_available_seats.Location = new System.Drawing.Point(179, 321);
+            this.nud_available_seats.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             this.nud_available_seats.Name = "nud_available_seats";
             this.nud_available_seats.Size = new System.Drawing.Size(170, 23);
             this.nud_available_seats.TabIndex = 40;
@@ -156,6 +176,11 @@ namespace Fireman_Systemn.View
             this.nud_water_capacity.DecimalPlaces = 2;
             this.nud_water_capacity.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_water_capacity.Location = new System.Drawing.Point(180, 214);
+            this.nud_water_capacity.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.nud_water_capacity.Name = "nud_water_capacity";
             this.nud_water_capacity.Size = new System.Drawing.Size(168, 23);
             this.nud_water_capacity.TabIndex = 39;

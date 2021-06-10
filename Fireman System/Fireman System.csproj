@@ -150,6 +150,12 @@
     <Compile Include="View\EditViews\EditEmployeeView.Designer.cs">
       <DependentUpon>EditEmployeeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EditViews\EditFireTruckView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditFireTruckView.Designer.cs">
+      <DependentUpon>EditFireTruckView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EditViews\EditTeamView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -235,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\EditViews\EditEmployeeView.resx">
       <DependentUpon>EditEmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditFireTruckView.resx">
+      <DependentUpon>EditFireTruckView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EditViews\EditTeamView.resx">
       <DependentUpon>EditTeamView.cs</DependentUpon>
