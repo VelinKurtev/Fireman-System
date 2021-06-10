@@ -28,7 +28,6 @@ namespace Fireman_Systemn.View.EditViews
             txt_box_homeAddress.Text = employee.home_address;
             txt_box_personalNum.Text = Convert.ToString(employee.personal_phone_number);
             txt_box_email.Text = employee.email;
-            nud_answered_cases.Value = employee.number_of_answered_cases;
             DateTimeStartBuisnessTrip.Value = employee.business_trip_start_date.Value;
             DateTimeEndBuisnessTrip.Value = employee.buisiness_trip_end_date.Value;
             DateTimeStartVacation.Value = employee.vacation_start_date.Value;
@@ -65,18 +64,16 @@ namespace Fireman_Systemn.View.EditViews
                     oldEmployee.home_address = txt_box_homeAddress.Text.Trim().ToString();
                     oldEmployee.personal_phone_number = Convert.ToInt32(txt_box_personalNum.Text);
                     oldEmployee.email = txt_box_email.Text.Trim().ToString();
-                    oldEmployee.number_of_answered_cases = Convert.ToInt32(nud_answered_cases.Value);
                     oldEmployee.choosen_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
                     oldEmployee.business_trip_start_date = DateTimeStartBuisnessTrip.Value;
                     oldEmployee.buisiness_trip_end_date = DateTimeEndBuisnessTrip.Value;
                     oldEmployee.vacation_start_date = DateTimeStartVacation.Value;
                     oldEmployee.vacation_end_date = DateTimeEndVacation.Value;
 
-                    if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0 || DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) == 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) == 0)
+                    if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || txt_box_personalNum.TextLength > 10 || !txt_box_email.Text.Contains('@'))
                     {
                         EnterValidData enterValidDataException = new EnterValidData();
                         enterValidDataException.ShowDialog();
-                        FormLayout.NavigateForms(this, new EmployeesView());
                     }
                     else
                     {
@@ -85,20 +82,28 @@ namespace Fireman_Systemn.View.EditViews
                         successfullyAddedData.ShowDialog();
                         FormLayout.NavigateForms(this, new EmployeesView());
                     }
-
                 }
                 catch
                 {
                     EnterValidData enterValidDataException = new EnterValidData();
                     enterValidDataException.ShowDialog();
-                    FormLayout.NavigateForms(this, new EmployeesView());
                 }
             }
         }
 
         private void EditEmployeeView_Load(object sender, EventArgs e)
         {
+            FormLayout.FormLoad(this);
+        }
 
+        private void phonenumber_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txt_box_personalNum.Text, "[^0-9]"))
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+                txt_box_personalNum.Text = txt_box_personalNum.Text.Remove(txt_box_personalNum.Text.Length - 1);
+            }
         }
     }
 }

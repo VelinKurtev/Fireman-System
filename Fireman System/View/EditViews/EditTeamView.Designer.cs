@@ -37,8 +37,6 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_buisiness = new System.Windows.Forms.Label();
             this.lbl_activity = new System.Windows.Forms.Label();
             this.cb_activity = new System.Windows.Forms.ComboBox();
-            this.nud_answered_cases = new System.Windows.Forms.NumericUpDown();
-            this.lbl_answered_cases = new System.Windows.Forms.Label();
             this.nud_employees_in_team = new System.Windows.Forms.NumericUpDown();
             this.lbl_employees_in_team = new System.Windows.Forms.Label();
             this.lbl_select_truck = new System.Windows.Forms.Label();
@@ -50,7 +48,6 @@ namespace Fireman_Systemn.View.EditViews
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.gradientPanelAddTeam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_answered_cases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_employees_in_team)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -66,8 +63,6 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddTeam.Controls.Add(this.lbl_buisiness);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_activity);
             this.gradientPanelAddTeam.Controls.Add(this.cb_activity);
-            this.gradientPanelAddTeam.Controls.Add(this.nud_answered_cases);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_answered_cases);
             this.gradientPanelAddTeam.Controls.Add(this.nud_employees_in_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_employees_in_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_select_truck);
@@ -118,7 +113,7 @@ namespace Fireman_Systemn.View.EditViews
             this.cb_buisiness.Items.AddRange(new object[] {
             "Зает",
             "Свободен"});
-            this.cb_buisiness.Location = new System.Drawing.Point(389, 274);
+            this.cb_buisiness.Location = new System.Drawing.Point(389, 218);
             this.cb_buisiness.Name = "cb_buisiness";
             this.cb_buisiness.Size = new System.Drawing.Size(168, 23);
             this.cb_buisiness.TabIndex = 39;
@@ -130,7 +125,7 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_buisiness.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbl_buisiness.ForeColor = System.Drawing.Color.Gold;
             this.lbl_buisiness.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_buisiness.Location = new System.Drawing.Point(385, 248);
+            this.lbl_buisiness.Location = new System.Drawing.Point(385, 192);
             this.lbl_buisiness.Name = "lbl_buisiness";
             this.lbl_buisiness.Size = new System.Drawing.Size(85, 23);
             this.lbl_buisiness.TabIndex = 38;
@@ -143,7 +138,7 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_activity.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbl_activity.ForeColor = System.Drawing.Color.Gold;
             this.lbl_activity.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_activity.Location = new System.Drawing.Point(385, 188);
+            this.lbl_activity.Location = new System.Drawing.Point(385, 132);
             this.lbl_activity.Name = "lbl_activity";
             this.lbl_activity.Size = new System.Drawing.Size(102, 23);
             this.lbl_activity.TabIndex = 37;
@@ -157,36 +152,10 @@ namespace Fireman_Systemn.View.EditViews
             this.cb_activity.Items.AddRange(new object[] {
             "Активен",
             "Неактивен"});
-            this.cb_activity.Location = new System.Drawing.Point(389, 214);
+            this.cb_activity.Location = new System.Drawing.Point(389, 158);
             this.cb_activity.Name = "cb_activity";
             this.cb_activity.Size = new System.Drawing.Size(168, 23);
             this.cb_activity.TabIndex = 36;
-            // 
-            // nud_answered_cases
-            // 
-            this.nud_answered_cases.Font = new System.Drawing.Font("Rockwell", 9.75F);
-            this.nud_answered_cases.Location = new System.Drawing.Point(389, 156);
-            this.nud_answered_cases.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nud_answered_cases.Name = "nud_answered_cases";
-            this.nud_answered_cases.Size = new System.Drawing.Size(168, 23);
-            this.nud_answered_cases.TabIndex = 35;
-            // 
-            // lbl_answered_cases
-            // 
-            this.lbl_answered_cases.AutoSize = true;
-            this.lbl_answered_cases.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answered_cases.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_answered_cases.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_answered_cases.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_answered_cases.Location = new System.Drawing.Point(385, 130);
-            this.lbl_answered_cases.Name = "lbl_answered_cases";
-            this.lbl_answered_cases.Size = new System.Drawing.Size(173, 23);
-            this.lbl_answered_cases.TabIndex = 34;
-            this.lbl_answered_cases.Text = "Отговорени случаи*";
             // 
             // nud_employees_in_team
             // 
@@ -322,7 +291,6 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddTeam.ResumeLayout(false);
             this.gradientPanelAddTeam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_answered_cases)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_employees_in_team)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
@@ -338,8 +306,6 @@ namespace Fireman_Systemn.View.EditViews
         private System.Windows.Forms.Label lbl_buisiness;
         private System.Windows.Forms.Label lbl_activity;
         private System.Windows.Forms.ComboBox cb_activity;
-        private System.Windows.Forms.NumericUpDown nud_answered_cases;
-        private System.Windows.Forms.Label lbl_answered_cases;
         private System.Windows.Forms.NumericUpDown nud_employees_in_team;
         private System.Windows.Forms.Label lbl_employees_in_team;
         private System.Windows.Forms.Label lbl_select_truck;

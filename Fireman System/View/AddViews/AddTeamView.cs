@@ -26,7 +26,7 @@ namespace Fireman_Systemn.View.AddViews
             {
                 cb_choosen_fireTruck.DataSource = fse.FireTrucks.ToList();
                 cb_choosen_fireTruck.ValueMember = "fire_truck_id";
-                cb_choosen_fireTruck.DisplayMember = "fire_truck_id";
+                cb_choosen_fireTruck.DisplayMember = "model";
             }
         }
 
@@ -47,7 +47,6 @@ namespace Fireman_Systemn.View.AddViews
                 Team.team_name = txt_box_team_name.Text.Trim().ToString();
                 Team.number_of_members = Convert.ToInt32(nud_employees_in_team.Value);
                 Team.choosen_fire_truck = Convert.ToInt32(cb_choosen_fireTruck.SelectedValue);
-                Team.number_of_answered_cases = Convert.ToInt32(nud_answered_cases.Value);
                 Team.is_team_active = cb_activity.SelectedItem.ToString();
                 Team.is_team_busy = cb_buisiness.SelectedItem.ToString();
                 
@@ -55,7 +54,6 @@ namespace Fireman_Systemn.View.AddViews
                 {
                     EnterValidData enterValidDataException = new EnterValidData();
                     enterValidDataException.ShowDialog();
-                    FormLayout.NavigateForms(this, new AddTeamView());
                 }
                 else
                 {
@@ -69,7 +67,6 @@ namespace Fireman_Systemn.View.AddViews
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new AddTeamView());
             }
         }
     }

@@ -162,6 +162,11 @@ namespace Fireman_Systemn.View
             0,
             0,
             0});
+            this.nud_available_seats.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nud_available_seats.Name = "nud_available_seats";
             this.nud_available_seats.Size = new System.Drawing.Size(170, 23);
             this.nud_available_seats.TabIndex = 40;

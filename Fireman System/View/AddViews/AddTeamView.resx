@@ -2759,7 +2759,7 @@
     <value>Свободен</value>
   </data>
   <data name="cb_buisiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 274</value>
+    <value>389, 217</value>
   </data>
   <data name="cb_buisiness.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 23</value>
@@ -2789,7 +2789,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_buisiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 248</value>
+    <value>385, 191</value>
   </data>
   <data name="lbl_buisiness.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -2822,7 +2822,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_activity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 188</value>
+    <value>385, 131</value>
   </data>
   <data name="lbl_activity.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 23</value>
@@ -2855,7 +2855,7 @@
     <value>Неактивен</value>
   </data>
   <data name="cb_activity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 214</value>
+    <value>389, 157</value>
   </data>
   <data name="cb_activity.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 23</value>
@@ -2874,63 +2874,6 @@
   </data>
   <data name="&gt;&gt;cb_activity.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="nud_answered_cases.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Rockwell, 9.75pt</value>
-  </data>
-  <data name="nud_answered_cases.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 156</value>
-  </data>
-  <data name="nud_answered_cases.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 23</value>
-  </data>
-  <data name="nud_answered_cases.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;nud_answered_cases.Name" xml:space="preserve">
-    <value>nud_answered_cases</value>
-  </data>
-  <data name="&gt;&gt;nud_answered_cases.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nud_answered_cases.Parent" xml:space="preserve">
-    <value>gradientPanelAddTeam</value>
-  </data>
-  <data name="&gt;&gt;nud_answered_cases.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="lbl_answered_cases.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_answered_cases.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Rockwell, 14.25pt, style=Bold</value>
-  </data>
-  <data name="lbl_answered_cases.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_answered_cases.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 130</value>
-  </data>
-  <data name="lbl_answered_cases.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 23</value>
-  </data>
-  <data name="lbl_answered_cases.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="lbl_answered_cases.Text" xml:space="preserve">
-    <value>Отговорени случаи*</value>
-  </data>
-  <data name="&gt;&gt;lbl_answered_cases.Name" xml:space="preserve">
-    <value>lbl_answered_cases</value>
-  </data>
-  <data name="&gt;&gt;lbl_answered_cases.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_answered_cases.Parent" xml:space="preserve">
-    <value>gradientPanelAddTeam</value>
-  </data>
-  <data name="&gt;&gt;lbl_answered_cases.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="nud_employees_in_team.Font" type="System.Drawing.Font, System.Drawing">
     <value>Rockwell, 9.75pt</value>
@@ -2954,7 +2897,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;nud_employees_in_team.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="lbl_employees_in_team.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2987,7 +2930,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_employees_in_team.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="lbl_select_truck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3020,16 +2963,16 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_select_truck.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="cb_choosen_fireTruck.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Rockwell, 9pt</value>
+    <value>Arial Narrow, 9pt</value>
   </data>
   <data name="cb_choosen_fireTruck.Location" type="System.Drawing.Point, System.Drawing">
     <value>186, 214</value>
   </data>
   <data name="cb_choosen_fireTruck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 22</value>
+    <value>168, 24</value>
   </data>
   <data name="cb_choosen_fireTruck.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -3044,7 +2987,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;cb_choosen_fireTruck.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="txt_box_team_name.Font" type="System.Drawing.Font, System.Drawing">
     <value>Rockwell, 9.75pt</value>
@@ -3068,7 +3011,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;txt_box_team_name.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="lbl_team_name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3080,7 +3023,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_team_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 130</value>
+    <value>182, 131</value>
   </data>
   <data name="lbl_team_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 23</value>
@@ -3101,7 +3044,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_team_name.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="lbl_add_team.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -3140,7 +3083,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_add_team.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="btn_back.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft PhagsPa, 9.75pt, style=Bold</value>
@@ -3170,7 +3113,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;btn_back.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="pictureBoxLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4647,7 +4590,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;pictureBoxLogo.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="gradientPanelAddTeam.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -4659,7 +4602,7 @@
     <value>861, 512</value>
   </data>
   <data name="gradientPanelAddTeam.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;gradientPanelAddTeam.Name" xml:space="preserve">
     <value>gradientPanelAddTeam</value>
@@ -4677,13 +4620,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 14</value>
+    <value>5, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>861, 512</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft PhagsPa, 8.25pt</value>
+    <value>Arial Narrow, 8.25pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -8956,6 +8899,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 3, 2, 3</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Fireman System - Добави екип</value>

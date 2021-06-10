@@ -58,13 +58,11 @@ namespace Fireman_Systemn.View
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new Add_Case_View());
             }
             else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new Add_Case_View());
             }
             else
             {

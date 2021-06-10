@@ -33,8 +33,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
             this.cb_choosen_team = new System.Windows.Forms.ComboBox();
             this.lbl_chose_team = new System.Windows.Forms.Label();
-            this.nud_answered_cases = new System.Windows.Forms.NumericUpDown();
-            this.lbl_answered_cases = new System.Windows.Forms.Label();
             this.lbl_startDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.lbl_End_Date_Vacation = new System.Windows.Forms.Label();
@@ -65,7 +63,6 @@ namespace Fireman_Systemn.View.AddViews
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox_fireman = new System.Windows.Forms.PictureBox();
             this.gradientPanelAddTeam.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_answered_cases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_age)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_fireman)).BeginInit();
@@ -76,12 +73,10 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.Angle = 0F;
             this.gradientPanelAddTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gradientPanelAddTeam.BottomColor = System.Drawing.Color.Empty;
+            this.gradientPanelAddTeam.Controls.Add(this.lbl_endDate_BuisnessTrip);
             this.gradientPanelAddTeam.Controls.Add(this.cb_choosen_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_chose_team);
-            this.gradientPanelAddTeam.Controls.Add(this.nud_answered_cases);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_answered_cases);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_startDate_BuisnessTrip);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_endDate_BuisnessTrip);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_End_Date_Vacation);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_startOfVacation);
             this.gradientPanelAddTeam.Controls.Add(this.DateTimeStartVacation);
@@ -123,7 +118,7 @@ namespace Fireman_Systemn.View.AddViews
             this.cb_choosen_team.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_choosen_team.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_choosen_team.FormattingEnabled = true;
-            this.cb_choosen_team.Location = new System.Drawing.Point(440, 362);
+            this.cb_choosen_team.Location = new System.Drawing.Point(346, 358);
             this.cb_choosen_team.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cb_choosen_team.Name = "cb_choosen_team";
             this.cb_choosen_team.Size = new System.Drawing.Size(167, 24);
@@ -135,40 +130,12 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_chose_team.BackColor = System.Drawing.Color.Transparent;
             this.lbl_chose_team.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_chose_team.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_chose_team.Location = new System.Drawing.Point(436, 336);
+            this.lbl_chose_team.Location = new System.Drawing.Point(343, 332);
             this.lbl_chose_team.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_chose_team.Name = "lbl_chose_team";
             this.lbl_chose_team.Size = new System.Drawing.Size(131, 23);
             this.lbl_chose_team.TabIndex = 66;
             this.lbl_chose_team.Text = "Избран отбор*";
-            // 
-            // nud_answered_cases
-            // 
-            this.nud_answered_cases.Font = new System.Drawing.Font("Rockwell", 9.75F);
-            this.nud_answered_cases.Location = new System.Drawing.Point(236, 362);
-            this.nud_answered_cases.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.nud_answered_cases.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nud_answered_cases.Name = "nud_answered_cases";
-            this.nud_answered_cases.Size = new System.Drawing.Size(168, 23);
-            this.nud_answered_cases.TabIndex = 65;
-            // 
-            // lbl_answered_cases
-            // 
-            this.lbl_answered_cases.AutoSize = true;
-            this.lbl_answered_cases.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_answered_cases.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_answered_cases.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_answered_cases.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_answered_cases.Location = new System.Drawing.Point(232, 336);
-            this.lbl_answered_cases.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_answered_cases.Name = "lbl_answered_cases";
-            this.lbl_answered_cases.Size = new System.Drawing.Size(173, 23);
-            this.lbl_answered_cases.TabIndex = 64;
-            this.lbl_answered_cases.Text = "Отговорени случаи*";
             // 
             // lbl_startDate_BuisnessTrip
             // 
@@ -188,15 +155,15 @@ namespace Fireman_Systemn.View.AddViews
             // 
             this.lbl_endDate_BuisnessTrip.AutoSize = true;
             this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
             this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(541, 272);
+            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(541, 275);
             this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
-            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(159, 23);
+            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(178, 19);
             this.lbl_endDate_BuisnessTrip.TabIndex = 62;
-            this.lbl_endDate_BuisnessTrip.Text = "Начало на отпуска";
+            this.lbl_endDate_BuisnessTrip.Text = "Начало на командировка";
             // 
             // lbl_End_Date_Vacation
             // 
@@ -562,7 +529,6 @@ namespace Fireman_Systemn.View.AddViews
             this.Load += new System.EventHandler(this.AddEmployeeView_Load);
             this.gradientPanelAddTeam.ResumeLayout(false);
             this.gradientPanelAddTeam.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_answered_cases)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_age)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_fireman)).EndInit();
@@ -602,9 +568,7 @@ namespace Fireman_Systemn.View.AddViews
         private System.Windows.Forms.DateTimePicker DateTimeStartBuisnessTrip;
         private System.Windows.Forms.Label lbl_startDate_BuisnessTrip;
         private System.Windows.Forms.Label lbl_endDate_BuisnessTrip;
-        private System.Windows.Forms.NumericUpDown nud_answered_cases;
-        private System.Windows.Forms.Label lbl_answered_cases;
-        private System.Windows.Forms.ComboBox cb_choosen_team;
         private System.Windows.Forms.Label lbl_chose_team;
+        private System.Windows.Forms.ComboBox cb_choosen_team;
     }
 }
