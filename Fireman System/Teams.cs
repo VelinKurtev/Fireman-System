@@ -23,7 +23,7 @@ namespace Fireman_Systemn
     
         public int team_id { get; set; }
         public string team_name { get; set; }
-        public string number_of_members { get; set; }
+        public int number_of_members { get; set; }
         public int choosen_fire_truck { get; set; }
         public int number_of_answered_cases { get; set; }
         public string is_team_active { get; set; }
@@ -33,5 +33,6 @@ namespace Fireman_Systemn
         public virtual ICollection<Cases> Cases { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employees> Employees { get; set; }
+        public virtual FireTrucks FireTrucks { get; set; }
     }
 }

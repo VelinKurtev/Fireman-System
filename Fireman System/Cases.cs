@@ -14,7 +14,7 @@ namespace Fireman_Systemn
     
     public partial class Cases
     {
-        public int Case_id { get; set; }
+        public int case_id { get; set; }
         public string Region { get; set; }
         public string Town { get; set; }
         public string Street { get; set; }
@@ -28,6 +28,7 @@ namespace Fireman_Systemn
         public System.DateTime Date_time_of_case { get; set; }
         public System.DateTime End_date_time_of_case { get; set; }
         public Nullable<double> Used_water_resources { get; set; }
+        public double Used_fuel { get; set; }
     
         public virtual Teams Teams { get; set; }
     }

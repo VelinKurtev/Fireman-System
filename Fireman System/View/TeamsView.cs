@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
+using Fireman_Systemn.Controller;
+using Fireman_Systemn.View.AddViews;
+using Fireman_Systemn.View.EditViews;
+using Fireman_Systemn.View.Pop_Ups;
 
 namespace Fireman_Systemn.View
 {
     public partial class TeamsView : Form
     {
+        TeamsController teamsController = new TeamsController();
         public TeamsView()
         {
             InitializeComponent();
@@ -25,6 +23,64 @@ namespace Fireman_Systemn.View
         private void Teams_and_Employees_Load(object sender, EventArgs e)
         {
             FormLayout.FormLoad(this);
+            Refresh_table();
+        }
+
+        private void Refresh_table()
+        {
+            dgvTeams.DataSource = teamsController.GetAll();
+        }
+
+        private void btn_add_team_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new AddTeamView());
+        }
+
+        private void btn_delete_team_Click(object sender, EventArgs e)
+        {
+            var row = dgvTeams.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+            }
+            else
+            {
+                try
+                {
+                    int id = int.Parse(row.Cells["TeamID"].Value.ToString());
+                    teamsController.Delete(id);
+                    Refresh_table();
+                    DeleteRow deleteRow = new DeleteRow();
+                    deleteRow.ShowDialog();
+                }
+                catch 
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
+                
+            }
+        }
+
+        private void btn_update_table_Click(object sender, EventArgs e)
+        {
+            var row = dgvTeams.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+            }
+            else
+            {
+                int id = int.Parse(row.Cells["TeamID"].Value.ToString());
+                using (FiremanSysEntities fse = new FiremanSysEntities())
+                {
+                    var team = fse.Teams.Where(t => t.team_id == id).FirstOrDefault();
+                    FormLayout.NavigateForms(this, new EditTeamView(team));
+                }
+            }
+
         }
     }
 }

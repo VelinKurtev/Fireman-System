@@ -17,6 +17,27 @@ namespace Fireman_Systemn.Controller
             }
         }
 
+        public void Insert(FireTrucks FireTruck)
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                FireTruck.fire_truck_id = fse.FireTrucks.Count() + 1;
+                fse.FireTrucks.Add(FireTruck);
+                fse.SaveChanges();
+            }
+        }
+
+        public void Update(FireTrucks fireTruck)
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                fse.FireTrucks.Attach(fireTruck);
+                fse.Entry(fireTruck).State = System.Data.Entity.EntityState.Modified;
+                fse.SaveChanges();
+            }
+        }
+
+
         public void Delete(int id)
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())

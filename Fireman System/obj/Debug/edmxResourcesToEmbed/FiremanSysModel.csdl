@@ -1,90 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FiremanSysModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Employees" EntityType="FiremanSysModel.Employees" />
-    <EntitySet Name="Teams" EntityType="FiremanSysModel.Teams" />
-    <EntitySet Name="Cases" EntityType="FiremanSysModel.Cases" />
-    <EntitySet Name="FireTrucks" EntityType="FiremanSysModel.FireTrucks" />
-    <AssociationSet Name="FK_Cases_Teams" Association="FiremanSysModel.FK_Cases_Teams">
-      <End Role="Teams" EntitySet="Teams" />
-      <End Role="Cases" EntitySet="Cases" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Employees_Teams" Association="FiremanSysModel.FK_Employees_Teams">
-      <End Role="Teams" EntitySet="Teams" />
-      <End Role="Employees" EntitySet="Employees" />
-    </AssociationSet>
-  </EntityContainer>
+  <EntityType Name="Cases">
+    <Key>
+      <PropertyRef Name="case_id" />
+    </Key>
+    <Property Name="case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Region" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Town" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Street" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Neighborhood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address_number" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int32" />
+    <Property Name="Apartment" Type="Int32" />
+    <Property Name="Case_type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Selected_team" Type="Int32" Nullable="false" />
+    <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Used_water_resources" Type="Double" />
+    <Property Name="Used_fuel" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Teams" Relationship="Self.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
+  </EntityType>
   <EntityType Name="Employees">
     <Key>
       <PropertyRef Name="employee_id" />
     </Key>
     <Property Name="employee_id" Type="Int32" Nullable="false" />
-    <Property Name="first_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="middle_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="last_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="first_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="middle_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="age" Type="Int32" Nullable="false" />
-    <Property Name="rank" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="personal_phone_number" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="email" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rank" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="personal_phone_number" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
     <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
     <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
-    <Property Name="buisiness_trip_start_date" Type="DateTime" Precision="3" />
-    <Property Name="number_of_answered_cases" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="choosen_team" Type="Int32" />
-    <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />
-  </EntityType>
-  <EntityType Name="Teams">
-    <Key>
-      <PropertyRef Name="team_id" />
-    </Key>
-    <Property Name="team_id" Type="Int32" Nullable="false" />
-    <Property Name="team_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="number_of_members" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
+    <Property Name="buisiness_trip_end_date" Type="DateTime" Precision="3" />
     <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
-    <Property Name="is_team_active" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="is_team_busy" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Cases" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Teams" ToRole="Cases" />
-    <NavigationProperty Name="Employees" Relationship="FiremanSysModel.FK_Employees_Teams" FromRole="Teams" ToRole="Employees" />
-  </EntityType>
-  <EntityType Name="Cases">
-    <Key>
-      <PropertyRef Name="Case_id" />
-    </Key>
-    <Property Name="Case_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Region" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Town" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Street" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Neighborhood" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Address_number" Type="Int32" Nullable="false" />
-    <Property Name="Floor" Type="Int32" />
-    <Property Name="Apartment" Type="Int32" />
-    <Property Name="Case_type" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Selected_team" Type="Int32" Nullable="false" />
-    <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Used_water_resources" Type="Double" />
-    <NavigationProperty Name="Teams" Relationship="FiremanSysModel.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
+    <Property Name="choosen_team" Type="Int32" />
+    <NavigationProperty Name="Teams" Relationship="Self.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />
   </EntityType>
   <EntityType Name="FireTrucks">
     <Key>
       <PropertyRef Name="fire_truck_id" />
     </Key>
     <Property Name="fire_truck_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="model" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="water_capacity" Type="Double" Nullable="false" />
     <Property Name="staff_capacity" Type="Double" Nullable="false" />
     <Property Name="available_water" Type="Double" Nullable="false" />
     <Property Name="fuel_capacity" Type="Double" Nullable="false" />
     <Property Name="available_fuel" Type="Double" Nullable="false" />
     <Property Name="answered_cases" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Teams" Relationship="Self.FK_Teams_FireTrucks" FromRole="FireTrucks" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="Teams">
+    <Key>
+      <PropertyRef Name="team_id" />
+    </Key>
+    <Property Name="team_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="team_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="number_of_members" Type="Int32" Nullable="false" />
+    <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
+    <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
+    <Property Name="is_team_active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="is_team_busy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Cases" Relationship="Self.FK_Cases_Teams" FromRole="Teams" ToRole="Cases" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_Employees_Teams" FromRole="Teams" ToRole="Employees" />
+    <NavigationProperty Name="FireTrucks" Relationship="Self.FK_Teams_FireTrucks" FromRole="Teams" ToRole="FireTrucks" />
   </EntityType>
   <Association Name="FK_Cases_Teams">
-    <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="1" />
-    <End Type="FiremanSysModel.Cases" Role="Cases" Multiplicity="*" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+    <End Role="Cases" Type="Self.Cases" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Teams">
         <PropertyRef Name="team_id" />
@@ -95,8 +84,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Employees_Teams">
-    <End Type="FiremanSysModel.Teams" Role="Teams" Multiplicity="0..1" />
-    <End Type="FiremanSysModel.Employees" Role="Employees" Multiplicity="*" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Teams">
         <PropertyRef Name="team_id" />
@@ -106,4 +95,34 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Teams_FireTrucks">
+    <End Role="FireTrucks" Type="Self.FireTrucks" Multiplicity="1" />
+    <End Role="Teams" Type="Self.Teams" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FireTrucks">
+        <PropertyRef Name="fire_truck_id" />
+      </Principal>
+      <Dependent Role="Teams">
+        <PropertyRef Name="choosen_fire_truck" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FiremanSysEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cases" EntityType="Self.Cases" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="FireTrucks" EntityType="Self.FireTrucks" />
+    <EntitySet Name="Teams" EntityType="Self.Teams" />
+    <AssociationSet Name="FK_Cases_Teams" Association="Self.FK_Cases_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Cases" EntitySet="Cases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Teams" Association="Self.FK_Employees_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teams_FireTrucks" Association="Self.FK_Teams_FireTrucks">
+      <End Role="FireTrucks" EntitySet="FireTrucks" />
+      <End Role="Teams" EntitySet="Teams" />
+    </AssociationSet>
+  </EntityContainer>
 </Schema>

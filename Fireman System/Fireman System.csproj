@@ -77,7 +77,9 @@
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Controller\CasesController.cs" />
+    <Compile Include="Controller\EmployeesController.cs" />
     <Compile Include="Controller\FireTrucksController.cs" />
+    <Compile Include="Controller\TeamsController.cs" />
     <Compile Include="Employees.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
@@ -106,11 +108,35 @@
     <Compile Include="Teams.cs">
       <DependentUpon>FiremanSysModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="View\AddCaseView.cs">
+    <Compile Include="View\AddViews\AddCaseView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\AddCaseView.Designer.cs">
+    <Compile Include="View\AddViews\AddCaseView.Designer.cs">
       <DependentUpon>AddCaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddEmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddEmployeeView.Designer.cs">
+      <DependentUpon>AddEmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddFireTruckView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddFireTruckView.Designer.cs">
+      <DependentUpon>AddFireTruckView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddViews\AddTeamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AddViews\AddTeamView.Designer.cs">
+      <DependentUpon>AddTeamView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BonusViews\EmployeesByCaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BonusViews\EmployeesByCaseView.Designer.cs">
+      <DependentUpon>EmployeesByCaseView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
@@ -118,17 +144,65 @@
     <Compile Include="View\CasesView.Designer.cs">
       <DependentUpon>CasesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\EditViews\EditCaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditCaseView.Designer.cs">
+      <DependentUpon>EditCaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditViews\EditEmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditEmployeeView.Designer.cs">
+      <DependentUpon>EditEmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditViews\EditFireTruckView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditFireTruckView.Designer.cs">
+      <DependentUpon>EditFireTruckView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditViews\EditTeamView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EditViews\EditTeamView.Designer.cs">
+      <DependentUpon>EditTeamView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\EmployeesView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\EmployeesView.Designer.cs">
       <DependentUpon>EmployeesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Pop-Ups\DeleteRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\DeleteRow.Designer.cs">
+      <DependentUpon>DeleteRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pop-Ups\EnterValidData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\EnterValidData.Designer.cs">
+      <DependentUpon>EnterValidData.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FireTrucksView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FireTrucksView.Designer.cs">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pop-Ups\InvalidRowSelected.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\InvalidRowSelected.Designer.cs">
+      <DependentUpon>InvalidRowSelected.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pop-Ups\SuccessfullyAddedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\SuccessfullyAddedData.Designer.cs">
+      <DependentUpon>SuccessfullyAddedData.cs</DependentUpon>
     </Compile>
     <Compile Include="View\TeamsView.cs">
       <SubType>Form</SubType>
@@ -153,17 +227,53 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\AddCaseView.resx">
+    <EmbeddedResource Include="View\AddViews\AddCaseView.resx">
       <DependentUpon>AddCaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddEmployeeView.resx">
+      <DependentUpon>AddEmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddFireTruckView.resx">
+      <DependentUpon>AddFireTruckView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddViews\AddTeamView.resx">
+      <DependentUpon>AddTeamView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BonusViews\EmployeesByCaseView.resx">
+      <DependentUpon>EmployeesByCaseView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CasesView.resx">
       <DependentUpon>CasesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditCaseView.resx">
+      <DependentUpon>EditCaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditEmployeeView.resx">
+      <DependentUpon>EditEmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditFireTruckView.resx">
+      <DependentUpon>EditFireTruckView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EditViews\EditTeamView.resx">
+      <DependentUpon>EditTeamView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\EmployeesView.resx">
       <DependentUpon>EmployeesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FireTrucksView.resx">
       <DependentUpon>FireTrucksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\DeleteRow.resx">
+      <DependentUpon>DeleteRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\EnterValidData.resx">
+      <DependentUpon>EnterValidData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\InvalidRowSelected.resx">
+      <DependentUpon>InvalidRowSelected.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\SuccessfullyAddedData.resx">
+      <DependentUpon>SuccessfullyAddedData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TeamsView.resx">
       <DependentUpon>TeamsView.cs</DependentUpon>
@@ -209,8 +319,8 @@
     <Content Include="FiremanSys.mdf" />
     <Content Include="FiremanSysModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
       <DependentUpon>FiremanSysModel.edmx</DependentUpon>
+      <LastGenOutput>FiremanSysModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="FiremanSysModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

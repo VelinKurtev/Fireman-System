@@ -28,9 +28,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CasesView));
             this.gradientPanelCases = new Fireman_Systemn.GradientPanel();
             this.dgvCases = new System.Windows.Forms.DataGridView();
+            this.CaseID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Town = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Region = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Street = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Neighbohood = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AddressNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Floor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TypeOfTheCase = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DangerousSubstances = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChosenTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartOfCase = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EndOfCase = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UsedWaterResources = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UsedOil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedTeamsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_delete_case = new System.Windows.Forms.Button();
             this.lbl_cases = new System.Windows.Forms.Label();
-            this.btn_update_table = new System.Windows.Forms.Button();
+            this.btn_update_case = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btn_add_case = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
@@ -47,7 +63,7 @@
             this.gradientPanelCases.Controls.Add(this.dgvCases);
             this.gradientPanelCases.Controls.Add(this.btn_delete_case);
             this.gradientPanelCases.Controls.Add(this.lbl_cases);
-            this.gradientPanelCases.Controls.Add(this.btn_update_table);
+            this.gradientPanelCases.Controls.Add(this.btn_update_case);
             this.gradientPanelCases.Controls.Add(this.pictureBoxLogo);
             this.gradientPanelCases.Controls.Add(this.btn_add_case);
             this.gradientPanelCases.Controls.Add(this.btn_back);
@@ -74,14 +90,32 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CaseID,
+            this.Town,
+            this.Region,
+            this.Street,
+            this.Neighbohood,
+            this.AddressNumber,
+            this.Floor,
+            this.Apartment,
+            this.TypeOfTheCase,
+            this.DangerousSubstances,
+            this.ChosenTeam,
+            this.StartOfCase,
+            this.EndOfCase,
+            this.UsedWaterResources,
+            this.UsedOil,
+            this.NotWantedTeamsColumn});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvCases.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCases.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgvCases.Location = new System.Drawing.Point(311, 124);
             this.dgvCases.Name = "dgvCases";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -95,6 +129,119 @@
             this.dgvCases.RowHeadersWidth = 20;
             this.dgvCases.Size = new System.Drawing.Size(538, 376);
             this.dgvCases.TabIndex = 12;
+            // 
+            // CaseID
+            // 
+            this.CaseID.DataPropertyName = "case_id";
+            this.CaseID.HeaderText = "ИД на Случай";
+            this.CaseID.Name = "CaseID";
+            this.CaseID.Width = 102;
+            // 
+            // Town
+            // 
+            this.Town.DataPropertyName = "Town";
+            this.Town.HeaderText = "Град";
+            this.Town.Name = "Town";
+            this.Town.Width = 56;
+            // 
+            // Region
+            // 
+            this.Region.DataPropertyName = "Region";
+            this.Region.HeaderText = "Област";
+            this.Region.Name = "Region";
+            this.Region.Width = 69;
+            // 
+            // Street
+            // 
+            this.Street.DataPropertyName = "Street";
+            this.Street.HeaderText = "Улица";
+            this.Street.Name = "Street";
+            this.Street.Width = 64;
+            // 
+            // Neighbohood
+            // 
+            this.Neighbohood.DataPropertyName = "Neighborhood";
+            this.Neighbohood.HeaderText = "Квартал/Комплекс";
+            this.Neighbohood.Name = "Neighbohood";
+            this.Neighbohood.Width = 129;
+            // 
+            // AddressNumber
+            // 
+            this.AddressNumber.DataPropertyName = "Address_number";
+            this.AddressNumber.HeaderText = "Номер на сграда";
+            this.AddressNumber.Name = "AddressNumber";
+            this.AddressNumber.Width = 119;
+            // 
+            // Floor
+            // 
+            this.Floor.DataPropertyName = "Floor";
+            this.Floor.HeaderText = "Етаж";
+            this.Floor.Name = "Floor";
+            this.Floor.Width = 58;
+            // 
+            // Apartment
+            // 
+            this.Apartment.DataPropertyName = "Apartment";
+            this.Apartment.HeaderText = "Апартамент";
+            this.Apartment.Name = "Apartment";
+            this.Apartment.Width = 93;
+            // 
+            // TypeOfTheCase
+            // 
+            this.TypeOfTheCase.DataPropertyName = "Case_type";
+            this.TypeOfTheCase.HeaderText = "Вид на произшествието";
+            this.TypeOfTheCase.Name = "TypeOfTheCase";
+            this.TypeOfTheCase.Width = 153;
+            // 
+            // DangerousSubstances
+            // 
+            this.DangerousSubstances.DataPropertyName = "Dangerous_substances_info";
+            this.DangerousSubstances.HeaderText = "Опасни вещества";
+            this.DangerousSubstances.Name = "DangerousSubstances";
+            this.DangerousSubstances.Width = 123;
+            // 
+            // ChosenTeam
+            // 
+            this.ChosenTeam.DataPropertyName = "Selected_team";
+            this.ChosenTeam.HeaderText = "Избран отбор";
+            this.ChosenTeam.Name = "ChosenTeam";
+            this.ChosenTeam.Width = 102;
+            // 
+            // StartOfCase
+            // 
+            this.StartOfCase.DataPropertyName = "Date_time_of_case";
+            this.StartOfCase.HeaderText = "Начало на произшествието";
+            this.StartOfCase.Name = "StartOfCase";
+            this.StartOfCase.Width = 171;
+            // 
+            // EndOfCase
+            // 
+            this.EndOfCase.DataPropertyName = "End_date_time_of_case";
+            this.EndOfCase.HeaderText = "Край на произшествието";
+            this.EndOfCase.Name = "EndOfCase";
+            this.EndOfCase.Width = 159;
+            // 
+            // UsedWaterResources
+            // 
+            this.UsedWaterResources.DataPropertyName = "Used_water_resources";
+            this.UsedWaterResources.HeaderText = "Използвана вода";
+            this.UsedWaterResources.Name = "UsedWaterResources";
+            this.UsedWaterResources.Width = 121;
+            // 
+            // UsedOil
+            // 
+            this.UsedOil.DataPropertyName = "Used_fuel";
+            this.UsedOil.HeaderText = "Използвано гориво";
+            this.UsedOil.Name = "UsedOil";
+            this.UsedOil.Width = 132;
+            // 
+            // NotWantedTeamsColumn
+            // 
+            this.NotWantedTeamsColumn.DataPropertyName = "Teams";
+            this.NotWantedTeamsColumn.HeaderText = "NotWantedTeamsColumn";
+            this.NotWantedTeamsColumn.Name = "NotWantedTeamsColumn";
+            this.NotWantedTeamsColumn.Visible = false;
+            this.NotWantedTeamsColumn.Width = 157;
             // 
             // btn_delete_case
             // 
@@ -123,18 +270,19 @@
             this.lbl_cases.Text = "Произшествия";
             this.lbl_cases.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btn_update_table
+            // btn_update_case
             // 
-            this.btn_update_table.BackColor = System.Drawing.Color.Beige;
-            this.btn_update_table.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update_table.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update_table.Location = new System.Drawing.Point(36, 186);
-            this.btn_update_table.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update_table.Name = "btn_update_table";
-            this.btn_update_table.Size = new System.Drawing.Size(259, 54);
-            this.btn_update_table.TabIndex = 8;
-            this.btn_update_table.Text = "Редактирай таблицата";
-            this.btn_update_table.UseVisualStyleBackColor = false;
+            this.btn_update_case.BackColor = System.Drawing.Color.Beige;
+            this.btn_update_case.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update_case.Location = new System.Drawing.Point(36, 186);
+            this.btn_update_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_update_case.Name = "btn_update_case";
+            this.btn_update_case.Size = new System.Drawing.Size(259, 54);
+            this.btn_update_case.TabIndex = 8;
+            this.btn_update_case.Text = "Редактирай произшествие";
+            this.btn_update_case.UseVisualStyleBackColor = false;
+            this.btn_update_case.Click += new System.EventHandler(this.btn_update_table_Click);
             // 
             // pictureBoxLogo
             // 
@@ -198,9 +346,25 @@
         private System.Windows.Forms.Label lbl_cases;
         private System.Windows.Forms.Button btn_add_case;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Button btn_update_table;
         private System.Windows.Forms.Button btn_delete_case;
         private GradientPanel gradientPanelCases;
         private System.Windows.Forms.DataGridView dgvCases;
+        private System.Windows.Forms.Button btn_update_case;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CaseID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Town;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Region;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Street;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Neighbohood;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AddressNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Floor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apartment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TypeOfTheCase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DangerousSubstances;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChosenTeam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StartOfCase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EndOfCase;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UsedWaterResources;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UsedOil;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedTeamsColumn;
     }
 }
