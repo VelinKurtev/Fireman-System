@@ -31,10 +31,10 @@ namespace Fireman_Systemn.View.AddViews
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployeeView));
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
+            this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.cb_choosen_team = new System.Windows.Forms.ComboBox();
             this.lbl_chose_team = new System.Windows.Forms.Label();
             this.lbl_startDate_BuisnessTrip = new System.Windows.Forms.Label();
-            this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.lbl_End_Date_Vacation = new System.Windows.Forms.Label();
             this.lbl_startOfVacation = new System.Windows.Forms.Label();
             this.DateTimeStartVacation = new System.Windows.Forms.DateTimePicker();
@@ -112,6 +112,20 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.TabIndex = 9;
             this.gradientPanelAddTeam.TopColor = System.Drawing.Color.Black;
             // 
+            // lbl_endDate_BuisnessTrip
+            // 
+            this.lbl_endDate_BuisnessTrip.AutoSize = true;
+            this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(531, 275);
+            this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
+            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(190, 23);
+            this.lbl_endDate_BuisnessTrip.TabIndex = 62;
+            this.lbl_endDate_BuisnessTrip.Text = "Край на командировка";
+            // 
             // cb_choosen_team
             // 
             this.cb_choosen_team.BackColor = System.Drawing.Color.White;
@@ -150,20 +164,6 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_startDate_BuisnessTrip.Size = new System.Drawing.Size(211, 23);
             this.lbl_startDate_BuisnessTrip.TabIndex = 61;
             this.lbl_startDate_BuisnessTrip.Text = "Начало на командировка";
-            // 
-            // lbl_endDate_BuisnessTrip
-            // 
-            this.lbl_endDate_BuisnessTrip.AutoSize = true;
-            this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(541, 275);
-            this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
-            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(178, 19);
-            this.lbl_endDate_BuisnessTrip.TabIndex = 62;
-            this.lbl_endDate_BuisnessTrip.Text = "Начало на командировка";
             // 
             // lbl_End_Date_Vacation
             // 
@@ -251,9 +251,9 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_email.Location = new System.Drawing.Point(342, 272);
             this.lbl_email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(62, 23);
+            this.lbl_email.Size = new System.Drawing.Size(73, 23);
             this.lbl_email.TabIndex = 54;
-            this.lbl_email.Text = "Имейл";
+            this.lbl_email.Text = "Имейл*";
             // 
             // DateTimeEndVacation
             // 
@@ -278,9 +278,9 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_personalNum.Location = new System.Drawing.Point(342, 220);
             this.lbl_personalNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_personalNum.Name = "lbl_personalNum";
-            this.lbl_personalNum.Size = new System.Drawing.Size(132, 23);
+            this.lbl_personalNum.Size = new System.Drawing.Size(143, 23);
             this.lbl_personalNum.TabIndex = 52;
-            this.lbl_personalNum.Text = "Личен телефон";
+            this.lbl_personalNum.Text = "Личен телефон*";
             // 
             // txt_box_personalNum
             // 

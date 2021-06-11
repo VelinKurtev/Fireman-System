@@ -31,6 +31,7 @@ namespace Fireman_Systemn.View.EditViews
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditEmployeeView));
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
+            this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.cb_choosen_team = new System.Windows.Forms.ComboBox();
             this.lbl_chose_team = new System.Windows.Forms.Label();
             this.lbl_startDate_BuisnessTrip = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@ namespace Fireman_Systemn.View.EditViews
             this.btn_back = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox_fireman = new System.Windows.Forms.PictureBox();
-            this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.gradientPanelAddTeam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_age)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -111,6 +111,20 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelAddTeam.Size = new System.Drawing.Size(860, 512);
             this.gradientPanelAddTeam.TabIndex = 10;
             this.gradientPanelAddTeam.TopColor = System.Drawing.Color.Black;
+            // 
+            // lbl_endDate_BuisnessTrip
+            // 
+            this.lbl_endDate_BuisnessTrip.AutoSize = true;
+            this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(522, 275);
+            this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
+            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(190, 23);
+            this.lbl_endDate_BuisnessTrip.TabIndex = 68;
+            this.lbl_endDate_BuisnessTrip.Text = "Край на командировка";
             // 
             // cb_choosen_team
             // 
@@ -500,20 +514,6 @@ namespace Fireman_Systemn.View.EditViews
             this.pictureBox_fireman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_fireman.TabIndex = 41;
             this.pictureBox_fireman.TabStop = false;
-            // 
-            // lbl_endDate_BuisnessTrip
-            // 
-            this.lbl_endDate_BuisnessTrip.AutoSize = true;
-            this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(541, 276);
-            this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
-            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(178, 19);
-            this.lbl_endDate_BuisnessTrip.TabIndex = 68;
-            this.lbl_endDate_BuisnessTrip.Text = "Начало на командировка";
             // 
             // EditEmployeeView
             // 

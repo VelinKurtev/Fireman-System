@@ -23,18 +23,14 @@
        
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesView));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesView));
             this.gradientPanelEmployees = new Fireman_Systemn.GradientPanel();
+            this.btn_firemen_by_case = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
-            this.btn_add_employee = new System.Windows.Forms.Button();
-            this.btn_delete_employee = new System.Windows.Forms.Button();
-            this.btn_update_employee = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_back = new System.Windows.Forms.Button();
-            this.lbl_employees = new System.Windows.Forms.Label();
             this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AmountOfAnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChoosenTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +47,14 @@
             this.BuisinessTripStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BuisinessTripEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotWantedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_add_employee = new System.Windows.Forms.Button();
+            this.btn_delete_employee = new System.Windows.Forms.Button();
+            this.btn_update_employee = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.lbl_employees = new System.Windows.Forms.Label();
             this.gradientPanelEmployees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_firemen_by_case)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +64,8 @@
             this.gradientPanelEmployees.Angle = 0F;
             this.gradientPanelEmployees.BackColor = System.Drawing.Color.Transparent;
             this.gradientPanelEmployees.BottomColor = System.Drawing.Color.DarkRed;
+            this.gradientPanelEmployees.Controls.Add(this.btn_firemen_by_case);
+            this.gradientPanelEmployees.Controls.Add(this.button1);
             this.gradientPanelEmployees.Controls.Add(this.dgvEmployees);
             this.gradientPanelEmployees.Controls.Add(this.btn_add_employee);
             this.gradientPanelEmployees.Controls.Add(this.btn_delete_employee);
@@ -74,6 +79,26 @@
             this.gradientPanelEmployees.Size = new System.Drawing.Size(861, 512);
             this.gradientPanelEmployees.TabIndex = 5;
             this.gradientPanelEmployees.TopColor = System.Drawing.Color.Black;
+            // 
+            // btn_firemen_by_case
+            // 
+            this.btn_firemen_by_case.BackColor = System.Drawing.Color.White;
+            this.btn_firemen_by_case.Image = ((System.Drawing.Image)(resources.GetObject("btn_firemen_by_case.Image")));
+            this.btn_firemen_by_case.Location = new System.Drawing.Point(224, 418);
+            this.btn_firemen_by_case.Name = "btn_firemen_by_case";
+            this.btn_firemen_by_case.Size = new System.Drawing.Size(71, 70);
+            this.btn_firemen_by_case.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_firemen_by_case.TabIndex = 17;
+            this.btn_firemen_by_case.TabStop = false;
+            this.btn_firemen_by_case.Click += new System.EventHandler(this.btn_firemen_by_case_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(215, 410);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 87);
+            this.button1.TabIndex = 18;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dgvEmployees
             // 
@@ -130,83 +155,6 @@
             this.dgvEmployees.RowHeadersWidth = 20;
             this.dgvEmployees.Size = new System.Drawing.Size(538, 376);
             this.dgvEmployees.TabIndex = 16;
-            // 
-            // btn_add_employee
-            // 
-            this.btn_add_employee.BackColor = System.Drawing.Color.Beige;
-            this.btn_add_employee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_add_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_employee.Location = new System.Drawing.Point(36, 124);
-            this.btn_add_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_add_employee.Name = "btn_add_employee";
-            this.btn_add_employee.Size = new System.Drawing.Size(259, 54);
-            this.btn_add_employee.TabIndex = 15;
-            this.btn_add_employee.Text = "Добави пожарникар";
-            this.btn_add_employee.UseVisualStyleBackColor = false;
-            this.btn_add_employee.Click += new System.EventHandler(this.btn_add_employee_Click);
-            // 
-            // btn_delete_employee
-            // 
-            this.btn_delete_employee.BackColor = System.Drawing.Color.Beige;
-            this.btn_delete_employee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_delete_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete_employee.Location = new System.Drawing.Point(36, 248);
-            this.btn_delete_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_delete_employee.Name = "btn_delete_employee";
-            this.btn_delete_employee.Size = new System.Drawing.Size(259, 54);
-            this.btn_delete_employee.TabIndex = 14;
-            this.btn_delete_employee.Text = "Изтрий пожарникар";
-            this.btn_delete_employee.UseVisualStyleBackColor = false;
-            this.btn_delete_employee.Click += new System.EventHandler(this.btn_delete_employee_Click);
-            // 
-            // btn_update_employee
-            // 
-            this.btn_update_employee.BackColor = System.Drawing.Color.Beige;
-            this.btn_update_employee.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_update_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_update_employee.Location = new System.Drawing.Point(36, 186);
-            this.btn_update_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update_employee.Name = "btn_update_employee";
-            this.btn_update_employee.Size = new System.Drawing.Size(259, 54);
-            this.btn_update_employee.TabIndex = 13;
-            this.btn_update_employee.Text = "Редактирай пожарникар";
-            this.btn_update_employee.UseVisualStyleBackColor = false;
-            this.btn_update_employee.Click += new System.EventHandler(this.btn_update_employee_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 382);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 118);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.Color.Beige;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(12, 12);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(83, 42);
-            this.btn_back.TabIndex = 4;
-            this.btn_back.Text = "Обратно";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
-            // 
-            // lbl_employees
-            // 
-            this.lbl_employees.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbl_employees.AutoSize = true;
-            this.lbl_employees.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_employees.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_employees.Location = new System.Drawing.Point(304, 43);
-            this.lbl_employees.Name = "lbl_employees";
-            this.lbl_employees.Size = new System.Drawing.Size(258, 42);
-            this.lbl_employees.TabIndex = 2;
-            this.lbl_employees.Text = "Пожарникари";
-            this.lbl_employees.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // EmployeeID
             // 
@@ -321,6 +269,83 @@
             this.NotWantedColumn.Visible = false;
             this.NotWantedColumn.Width = 127;
             // 
+            // btn_add_employee
+            // 
+            this.btn_add_employee.BackColor = System.Drawing.Color.Beige;
+            this.btn_add_employee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_employee.Location = new System.Drawing.Point(36, 124);
+            this.btn_add_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_add_employee.Name = "btn_add_employee";
+            this.btn_add_employee.Size = new System.Drawing.Size(259, 54);
+            this.btn_add_employee.TabIndex = 15;
+            this.btn_add_employee.Text = "Добави пожарникар";
+            this.btn_add_employee.UseVisualStyleBackColor = false;
+            this.btn_add_employee.Click += new System.EventHandler(this.btn_add_employee_Click);
+            // 
+            // btn_delete_employee
+            // 
+            this.btn_delete_employee.BackColor = System.Drawing.Color.Beige;
+            this.btn_delete_employee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_delete_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete_employee.Location = new System.Drawing.Point(36, 248);
+            this.btn_delete_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_delete_employee.Name = "btn_delete_employee";
+            this.btn_delete_employee.Size = new System.Drawing.Size(259, 54);
+            this.btn_delete_employee.TabIndex = 14;
+            this.btn_delete_employee.Text = "Изтрий пожарникар";
+            this.btn_delete_employee.UseVisualStyleBackColor = false;
+            this.btn_delete_employee.Click += new System.EventHandler(this.btn_delete_employee_Click);
+            // 
+            // btn_update_employee
+            // 
+            this.btn_update_employee.BackColor = System.Drawing.Color.Beige;
+            this.btn_update_employee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_update_employee.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update_employee.Location = new System.Drawing.Point(36, 186);
+            this.btn_update_employee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_update_employee.Name = "btn_update_employee";
+            this.btn_update_employee.Size = new System.Drawing.Size(259, 54);
+            this.btn_update_employee.TabIndex = 13;
+            this.btn_update_employee.Text = "Редактирай пожарникар";
+            this.btn_update_employee.UseVisualStyleBackColor = false;
+            this.btn_update_employee.Click += new System.EventHandler(this.btn_update_employee_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 382);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 118);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.Color.Beige;
+            this.btn_back.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Location = new System.Drawing.Point(12, 12);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(83, 42);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.Text = "Обратно";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
+            // lbl_employees
+            // 
+            this.lbl_employees.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_employees.AutoSize = true;
+            this.lbl_employees.Font = new System.Drawing.Font("Microsoft PhagsPa", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_employees.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_employees.Location = new System.Drawing.Point(304, 43);
+            this.lbl_employees.Name = "lbl_employees";
+            this.lbl_employees.Size = new System.Drawing.Size(258, 42);
+            this.lbl_employees.TabIndex = 2;
+            this.lbl_employees.Text = "Пожарникари";
+            this.lbl_employees.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // EmployeesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -337,6 +362,7 @@
             this.Load += new System.EventHandler(this.Employees_Load);
             this.gradientPanelEmployees.ResumeLayout(false);
             this.gradientPanelEmployees.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_firemen_by_case)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -366,5 +392,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BuisinessTripStartDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn BuisinessTripEndDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumn;
+        private System.Windows.Forms.PictureBox btn_firemen_by_case;
+        private System.Windows.Forms.Button button1;
     }
 }

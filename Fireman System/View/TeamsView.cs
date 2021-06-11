@@ -43,7 +43,6 @@ namespace Fireman_Systemn.View
             {
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
-                FormLayout.NavigateForms(this, new TeamsView());
             }
             else
             {
@@ -59,7 +58,6 @@ namespace Fireman_Systemn.View
                 {
                     InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                     invalidRowSelected.ShowDialog();
-                    FormLayout.NavigateForms(this, new TeamsView());
                 }
                 
             }
@@ -72,7 +70,6 @@ namespace Fireman_Systemn.View
             {
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
-                FormLayout.NavigateForms(this, new TeamsView());
             }
             else
             {

@@ -132,6 +132,12 @@
     <Compile Include="View\AddViews\AddTeamView.Designer.cs">
       <DependentUpon>AddTeamView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\BonusViews\EmployeesByCaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BonusViews\EmployeesByCaseView.Designer.cs">
+      <DependentUpon>EmployeesByCaseView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\CasesView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\AddViews\AddTeamView.resx">
       <DependentUpon>AddTeamView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BonusViews\EmployeesByCaseView.resx">
+      <DependentUpon>EmployeesByCaseView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CasesView.resx">
       <DependentUpon>CasesView.cs</DependentUpon>

@@ -37,7 +37,7 @@ namespace Fireman_Systemn.View.EditViews
 
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                cb_choosen_team.DataSource = fse.Teams.ToList();
+                cb_choosen_team.DataSource = fse.Teams.Where(t => t.is_team_active == "Активен" && t.is_team_busy == "Свободен").ToList();
                 cb_choosen_team.ValueMember = "team_id";
                 cb_choosen_team.DisplayMember = "team_name";
 

@@ -87,5 +87,10 @@ namespace Fireman_Systemn.View
                 }
             }
         }
+
+        private void btn_firemen_by_case_Click(object sender, EventArgs e)
+        {
+            FormLayout.NavigateForms(this, new EmployeesByCaseView());
+        }
     }
 }

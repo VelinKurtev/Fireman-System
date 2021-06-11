@@ -17,6 +17,15 @@ namespace Fireman_Systemn.Controller
             }
         }
 
+        public List<Employees> GetAllEmployeesByCases()
+        {
+            using (FiremanSysEntities fse = new FiremanSysEntities())
+            {
+                var employees = fse.Employees.OrderByDescending(employee => employee.number_of_answered_cases).ToList();
+                return employees;
+            }
+        }
+
         public void Insert(Employees Employee)
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())

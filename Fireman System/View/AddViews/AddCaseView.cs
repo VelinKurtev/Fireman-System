@@ -21,7 +21,7 @@ namespace Fireman_Systemn.View
         {
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
-                cb_choosen_team.DataSource = fse.Teams.ToList();
+                cb_choosen_team.DataSource = fse.Teams.Where(t => t.is_team_active == "Активен" && t.is_team_busy == "Свободен").ToList();
                 cb_choosen_team.ValueMember = "team_id";
                 cb_choosen_team.DisplayMember = "team_name";
             }
@@ -64,6 +64,11 @@ namespace Fireman_Systemn.View
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
             }
+            //else if (nud_Used_water_resources.Value > Case.Selected_team.)
+            //{
+            //    EnterValidData enterValidDataException = new EnterValidData();
+            //    enterValidDataException.ShowDialog();
+            //}
             else
             {
                 CaseController.Insert(Case);
