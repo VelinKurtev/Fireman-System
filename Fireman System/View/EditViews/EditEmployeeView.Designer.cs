@@ -251,9 +251,9 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_email.Location = new System.Drawing.Point(342, 272);
             this.lbl_email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(62, 23);
+            this.lbl_email.Size = new System.Drawing.Size(73, 23);
             this.lbl_email.TabIndex = 54;
-            this.lbl_email.Text = "Имейл";
+            this.lbl_email.Text = "Имейл*";
             // 
             // DateTimeEndVacation
             // 
@@ -278,9 +278,9 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_personalNum.Location = new System.Drawing.Point(342, 220);
             this.lbl_personalNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_personalNum.Name = "lbl_personalNum";
-            this.lbl_personalNum.Size = new System.Drawing.Size(132, 23);
+            this.lbl_personalNum.Size = new System.Drawing.Size(143, 23);
             this.lbl_personalNum.TabIndex = 52;
-            this.lbl_personalNum.Text = "Личен телефон";
+            this.lbl_personalNum.Text = "Личен телефон*";
             // 
             // txt_box_personalNum
             // 

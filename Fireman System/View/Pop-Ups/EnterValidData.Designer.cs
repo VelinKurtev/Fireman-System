@@ -31,9 +31,9 @@ namespace Fireman_Systemn.View.Pop_Ups
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterValidData));
             this.gradientPanelInvalidInfo = new Fireman_Systemn.GradientPanel();
+            this.btn_ok = new System.Windows.Forms.Button();
             this.lbl_invalid_info = new System.Windows.Forms.Label();
             this.pictureBoxInvalidInfoIcon = new System.Windows.Forms.PictureBox();
-            this.btn_ok = new System.Windows.Forms.Button();
             this.gradientPanelInvalidInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInvalidInfoIcon)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,17 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.gradientPanelInvalidInfo.Size = new System.Drawing.Size(397, 222);
             this.gradientPanelInvalidInfo.TabIndex = 0;
             this.gradientPanelInvalidInfo.TopColor = System.Drawing.Color.Black;
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ok.Location = new System.Drawing.Point(230, 125);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(126, 33);
+            this.btn_ok.TabIndex = 3;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // lbl_invalid_info
             // 
@@ -76,17 +87,6 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.pictureBoxInvalidInfoIcon.TabIndex = 0;
             this.pictureBoxInvalidInfoIcon.TabStop = false;
             // 
-            // btn_ok
-            // 
-            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ok.Location = new System.Drawing.Point(230, 125);
-            this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(126, 33);
-            this.btn_ok.TabIndex = 3;
-            this.btn_ok.Text = "OK";
-            this.btn_ok.UseVisualStyleBackColor = true;
-            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
-            // 
             // EnterValidData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -99,6 +99,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EnterValidData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fireman System - Инвалидна информация";
             this.gradientPanelInvalidInfo.ResumeLayout(false);
             this.gradientPanelInvalidInfo.PerformLayout();

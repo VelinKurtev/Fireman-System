@@ -64,11 +64,11 @@ namespace Fireman_Systemn.View
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
             }
-            //else if (nud_Used_water_resources.Value > Case.Selected_team.)
-            //{
-            //    EnterValidData enterValidDataException = new EnterValidData();
-            //    enterValidDataException.ShowDialog();
-            //}
+            else if (nud_Used_water_resources.Value > )
+            {
+                EnterValidData enterValidDataException = new EnterValidData();
+                enterValidDataException.ShowDialog();
+            }
             else
             {
                 CaseController.Insert(Case);

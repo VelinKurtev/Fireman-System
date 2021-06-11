@@ -31,9 +31,9 @@ namespace Fireman_Systemn.View.Pop_Ups
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvalidRowSelected));
             this.gradientPanelInvalidInfo = new Fireman_Systemn.GradientPanel();
+            this.btn_ok = new System.Windows.Forms.Button();
             this.pictureBoxInvalidInfoIcon = new System.Windows.Forms.PictureBox();
             this.lbl_invalid_row = new System.Windows.Forms.Label();
-            this.btn_ok = new System.Windows.Forms.Button();
             this.gradientPanelInvalidInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInvalidInfoIcon)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,17 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.gradientPanelInvalidInfo.Size = new System.Drawing.Size(397, 222);
             this.gradientPanelInvalidInfo.TabIndex = 1;
             this.gradientPanelInvalidInfo.TopColor = System.Drawing.Color.Black;
+            // 
+            // btn_ok
+            // 
+            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ok.Location = new System.Drawing.Point(227, 119);
+            this.btn_ok.Name = "btn_ok";
+            this.btn_ok.Size = new System.Drawing.Size(126, 33);
+            this.btn_ok.TabIndex = 3;
+            this.btn_ok.Text = "OK";
+            this.btn_ok.UseVisualStyleBackColor = true;
+            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // pictureBoxInvalidInfoIcon
             // 
@@ -76,17 +87,6 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.lbl_invalid_row.TabIndex = 1;
             this.lbl_invalid_row.Text = "Избран невалиден ред!\r\nМоля изберете нов!\r\n\r\n\r\n";
             // 
-            // btn_ok
-            // 
-            this.btn_ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ok.Location = new System.Drawing.Point(227, 119);
-            this.btn_ok.Name = "btn_ok";
-            this.btn_ok.Size = new System.Drawing.Size(126, 33);
-            this.btn_ok.TabIndex = 3;
-            this.btn_ok.Text = "OK";
-            this.btn_ok.UseVisualStyleBackColor = true;
-            this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
-            // 
             // InvalidRowSelected
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +96,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InvalidRowSelected";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fireman System - Невалиден ред";
             this.gradientPanelInvalidInfo.ResumeLayout(false);
             this.gradientPanelInvalidInfo.PerformLayout();

@@ -98,6 +98,7 @@ namespace Fireman_Systemn.View.Pop_Ups
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DeleteRow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Fireman System - Успешно изтрит запис";
             this.gradientPanelInvalidInfo.ResumeLayout(false);
             this.gradientPanelInvalidInfo.PerformLayout();
