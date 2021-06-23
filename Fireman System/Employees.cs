@@ -23,10 +23,6 @@ namespace Fireman_Systemn
         public string home_address { get; set; }
         public Nullable<int> personal_phone_number { get; set; }
         public string email { get; set; }
-        public Nullable<System.DateTime> vacation_start_date { get; set; }
-        public Nullable<System.DateTime> vacation_end_date { get; set; }
-        public Nullable<System.DateTime> business_trip_start_date { get; set; }
-        public Nullable<System.DateTime> buisiness_trip_end_date { get; set; }
         public int number_of_answered_cases { get; set; }
         public Nullable<int> choosen_team { get; set; }
     

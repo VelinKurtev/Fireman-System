@@ -22,9 +22,9 @@
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CasesView));
             this.gradientPanelCases = new Fireman_Systemn.GradientPanel();
             this.dgvCases = new System.Windows.Forms.DataGridView();
@@ -50,6 +50,7 @@
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.btn_add_case = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_end_case = new System.Windows.Forms.Button();
             this.gradientPanelCases.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCases)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -60,6 +61,7 @@
             this.gradientPanelCases.Angle = 0F;
             this.gradientPanelCases.BackColor = System.Drawing.Color.Transparent;
             this.gradientPanelCases.BottomColor = System.Drawing.Color.DarkRed;
+            this.gradientPanelCases.Controls.Add(this.btn_end_case);
             this.gradientPanelCases.Controls.Add(this.dgvCases);
             this.gradientPanelCases.Controls.Add(this.btn_delete_case);
             this.gradientPanelCases.Controls.Add(this.lbl_cases);
@@ -81,14 +83,14 @@
             this.dgvCases.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.dgvCases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvCases.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CaseID,
@@ -107,25 +109,25 @@
             this.UsedWaterResources,
             this.UsedOil,
             this.NotWantedTeamsColumn});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCases.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvCases.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgvCases.Location = new System.Drawing.Point(311, 124);
             this.dgvCases.Name = "dgvCases";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCases.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft PhagsPa", 7.8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCases.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCases.RowHeadersWidth = 20;
             this.dgvCases.Size = new System.Drawing.Size(538, 376);
             this.dgvCases.TabIndex = 12;
@@ -320,6 +322,20 @@
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_end_case
+            // 
+            this.btn_end_case.BackColor = System.Drawing.Color.Beige;
+            this.btn_end_case.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_end_case.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_end_case.Location = new System.Drawing.Point(167, 310);
+            this.btn_end_case.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_end_case.Name = "btn_end_case";
+            this.btn_end_case.Size = new System.Drawing.Size(128, 54);
+            this.btn_end_case.TabIndex = 13;
+            this.btn_end_case.Text = "Край на произшествие";
+            this.btn_end_case.UseVisualStyleBackColor = false;
+            this.btn_end_case.Click += new System.EventHandler(this.btn_end_case_Click);
+            // 
             // CasesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -366,5 +382,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UsedWaterResources;
         private System.Windows.Forms.DataGridViewTextBoxColumn UsedOil;
         private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedTeamsColumn;
+        private System.Windows.Forms.Button btn_end_case;
     }
 }

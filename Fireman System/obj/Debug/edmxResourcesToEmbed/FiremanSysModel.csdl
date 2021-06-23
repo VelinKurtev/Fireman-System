@@ -16,9 +16,9 @@
     <Property Name="Dangerous_substances_info" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Selected_team" Type="Int32" Nullable="false" />
     <Property Name="Date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="End_date_time_of_case" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="End_date_time_of_case" Type="DateTime" Precision="3" />
     <Property Name="Used_water_resources" Type="Double" />
-    <Property Name="Used_fuel" Type="Double" Nullable="false" />
+    <Property Name="Used_fuel" Type="Double" />
     <NavigationProperty Name="Teams" Relationship="Self.FK_Cases_Teams" FromRole="Cases" ToRole="Teams" />
   </EntityType>
   <EntityType Name="Employees">
@@ -34,10 +34,6 @@
     <Property Name="home_address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="personal_phone_number" Type="Int32" />
     <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="vacation_start_date" Type="DateTime" Precision="3" />
-    <Property Name="vacation_end_date" Type="DateTime" Precision="3" />
-    <Property Name="business_trip_start_date" Type="DateTime" Precision="3" />
-    <Property Name="buisiness_trip_end_date" Type="DateTime" Precision="3" />
     <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
     <Property Name="choosen_team" Type="Int32" />
     <NavigationProperty Name="Teams" Relationship="Self.FK_Employees_Teams" FromRole="Employees" ToRole="Teams" />

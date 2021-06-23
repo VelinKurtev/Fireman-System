@@ -47,10 +47,10 @@ namespace Fireman_Systemn.View.AddViews
                 Team.team_name = txt_box_team_name.Text.Trim().ToString();
                 Team.number_of_members = Convert.ToInt32(nud_employees_in_team.Value);
                 Team.choosen_fire_truck = Convert.ToInt32(cb_choosen_fireTruck.SelectedValue);
-                Team.is_team_active = cb_activity.SelectedItem.ToString();
-                Team.is_team_busy = cb_buisiness.SelectedItem.ToString();
-                
-                if (txt_box_team_name.Text == string.Empty || cb_activity.SelectedItem == null || cb_buisiness.SelectedItem == null || cb_choosen_fireTruck.SelectedItem == null)
+                Team.is_team_active = "Активен";
+                Team.is_team_busy = "Свободен";
+
+                if (txt_box_team_name.Text == string.Empty || cb_choosen_fireTruck.SelectedItem == null)
                 {
                     EnterValidData enterValidDataException = new EnterValidData();
                     enterValidDataException.ShowDialog();
@@ -63,7 +63,7 @@ namespace Fireman_Systemn.View.AddViews
                     FormLayout.NavigateForms(this, new TeamsView());
                 }
             }
-            catch 
+            catch
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();

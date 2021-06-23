@@ -50,7 +50,6 @@ namespace Fireman_Systemn.View
             Case.Dangerous_substances_info = txt_box_dangerous_substances.Text.Trim().ToString();
             Case.Selected_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
             Case.Date_time_of_case = start_date_case_time_picker.Value;
-            Case.End_date_time_of_case = end_date_case_time_picker.Value;
             Case.Used_water_resources = Convert.ToDouble(nud_Used_water_resources.Value);
             Case.Used_fuel = Convert.ToDouble(nud_used_fuel.Value);
 
@@ -59,23 +58,49 @@ namespace Fireman_Systemn.View
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
             }
-            else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-            }
-            else if (nud_Used_water_resources.Value > )
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-            }
             else
             {
+                using (FiremanSysEntities fse = new FiremanSysEntities())
+                {
+                    var team = fse.Teams.Where(t => t.team_id == Case.Selected_team).FirstOrDefault();
+                    var fireTruck = fse.FireTrucks.Where(c => c.fire_truck_id == team.choosen_fire_truck).FirstOrDefault();
+
+                    if (team != null && fireTruck != null)
+                    {
+                        ++team.number_of_answered_cases; //pre-post increment, in this case using pre increment is better.
+                        ++fireTruck.answered_cases;
+
+                        //i could create TeamsController instance to use .Update method, but its impossible because we are in a scope of ` using (FiremanSysEntities fse = new FiremanSysEntities())` so using instance of the same class will just crash
+                        //if u want to make the code cleaner, add a function called `GetTeamById` for example in the class
+                        fse.Teams.Attach(team);
+                        fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                        fse.SaveChanges();
+
+                        fse.FireTrucks.Attach(fireTruck);
+                        fse.Entry(fireTruck).State = System.Data.Entity.EntityState.Modified;
+                        fse.SaveChanges();
+
+                        foreach (var employee in team.Employees)
+                        {
+                            ++employee.number_of_answered_cases;
+
+                            fse.Employees.Attach(employee);
+                            fse.Entry(employee).State = System.Data.Entity.EntityState.Modified;
+                            fse.SaveChanges();
+                        }
+                    }
+                    else
+                    {
+                        //maybe make error here, but this should be impossible to fail
+                    }
+                }
+
                 CaseController.Insert(Case);
                 SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
                 successfullyAddedData.ShowDialog();
                 FormLayout.NavigateForms(this, new CasesView());
             }
+            
         }
 
     }

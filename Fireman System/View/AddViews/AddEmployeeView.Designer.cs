@@ -31,18 +31,10 @@ namespace Fireman_Systemn.View.AddViews
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddEmployeeView));
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
-            this.lbl_endDate_BuisnessTrip = new System.Windows.Forms.Label();
             this.cb_choosen_team = new System.Windows.Forms.ComboBox();
             this.lbl_chose_team = new System.Windows.Forms.Label();
-            this.lbl_startDate_BuisnessTrip = new System.Windows.Forms.Label();
-            this.lbl_End_Date_Vacation = new System.Windows.Forms.Label();
-            this.lbl_startOfVacation = new System.Windows.Forms.Label();
-            this.DateTimeStartVacation = new System.Windows.Forms.DateTimePicker();
-            this.DateTimeEndBuisnessTrip = new System.Windows.Forms.DateTimePicker();
-            this.DateTimeStartBuisnessTrip = new System.Windows.Forms.DateTimePicker();
             this.txt_box_email = new System.Windows.Forms.TextBox();
             this.lbl_email = new System.Windows.Forms.Label();
-            this.DateTimeEndVacation = new System.Windows.Forms.DateTimePicker();
             this.lbl_personalNum = new System.Windows.Forms.Label();
             this.txt_box_personalNum = new System.Windows.Forms.TextBox();
             this.txt_box_homeAddress = new System.Windows.Forms.TextBox();
@@ -73,18 +65,10 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.Angle = 0F;
             this.gradientPanelAddTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.gradientPanelAddTeam.BottomColor = System.Drawing.Color.Empty;
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_endDate_BuisnessTrip);
             this.gradientPanelAddTeam.Controls.Add(this.cb_choosen_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_chose_team);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_startDate_BuisnessTrip);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_End_Date_Vacation);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_startOfVacation);
-            this.gradientPanelAddTeam.Controls.Add(this.DateTimeStartVacation);
-            this.gradientPanelAddTeam.Controls.Add(this.DateTimeEndBuisnessTrip);
-            this.gradientPanelAddTeam.Controls.Add(this.DateTimeStartBuisnessTrip);
             this.gradientPanelAddTeam.Controls.Add(this.txt_box_email);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_email);
-            this.gradientPanelAddTeam.Controls.Add(this.DateTimeEndVacation);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_personalNum);
             this.gradientPanelAddTeam.Controls.Add(this.txt_box_personalNum);
             this.gradientPanelAddTeam.Controls.Add(this.txt_box_homeAddress);
@@ -112,20 +96,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.TabIndex = 9;
             this.gradientPanelAddTeam.TopColor = System.Drawing.Color.Black;
             // 
-            // lbl_endDate_BuisnessTrip
-            // 
-            this.lbl_endDate_BuisnessTrip.AutoSize = true;
-            this.lbl_endDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_endDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_endDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_endDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_endDate_BuisnessTrip.Location = new System.Drawing.Point(531, 275);
-            this.lbl_endDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_endDate_BuisnessTrip.Name = "lbl_endDate_BuisnessTrip";
-            this.lbl_endDate_BuisnessTrip.Size = new System.Drawing.Size(190, 23);
-            this.lbl_endDate_BuisnessTrip.TabIndex = 62;
-            this.lbl_endDate_BuisnessTrip.Text = "Край на командировка";
-            // 
             // cb_choosen_team
             // 
             this.cb_choosen_team.BackColor = System.Drawing.Color.White;
@@ -151,87 +121,6 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_chose_team.TabIndex = 66;
             this.lbl_chose_team.Text = "Избран отбор*";
             // 
-            // lbl_startDate_BuisnessTrip
-            // 
-            this.lbl_startDate_BuisnessTrip.AutoSize = true;
-            this.lbl_startDate_BuisnessTrip.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_startDate_BuisnessTrip.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_startDate_BuisnessTrip.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_startDate_BuisnessTrip.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_startDate_BuisnessTrip.Location = new System.Drawing.Point(541, 223);
-            this.lbl_startDate_BuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_startDate_BuisnessTrip.Name = "lbl_startDate_BuisnessTrip";
-            this.lbl_startDate_BuisnessTrip.Size = new System.Drawing.Size(211, 23);
-            this.lbl_startDate_BuisnessTrip.TabIndex = 61;
-            this.lbl_startDate_BuisnessTrip.Text = "Начало на командировка";
-            // 
-            // lbl_End_Date_Vacation
-            // 
-            this.lbl_End_Date_Vacation.AutoSize = true;
-            this.lbl_End_Date_Vacation.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_End_Date_Vacation.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_End_Date_Vacation.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_End_Date_Vacation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_End_Date_Vacation.Location = new System.Drawing.Point(541, 168);
-            this.lbl_End_Date_Vacation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_End_Date_Vacation.Name = "lbl_End_Date_Vacation";
-            this.lbl_End_Date_Vacation.Size = new System.Drawing.Size(138, 23);
-            this.lbl_End_Date_Vacation.TabIndex = 60;
-            this.lbl_End_Date_Vacation.Text = "Край на отпуска";
-            // 
-            // lbl_startOfVacation
-            // 
-            this.lbl_startOfVacation.AutoSize = true;
-            this.lbl_startOfVacation.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_startOfVacation.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbl_startOfVacation.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_startOfVacation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lbl_startOfVacation.Location = new System.Drawing.Point(541, 115);
-            this.lbl_startOfVacation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_startOfVacation.Name = "lbl_startOfVacation";
-            this.lbl_startOfVacation.Size = new System.Drawing.Size(159, 23);
-            this.lbl_startOfVacation.TabIndex = 59;
-            this.lbl_startOfVacation.Text = "Начало на отпуска";
-            // 
-            // DateTimeStartVacation
-            // 
-            this.DateTimeStartVacation.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeStartVacation.CustomFormat = "dd MMMM yyyy HH:mm";
-            this.DateTimeStartVacation.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeStartVacation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimeStartVacation.Location = new System.Drawing.Point(545, 145);
-            this.DateTimeStartVacation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.DateTimeStartVacation.Name = "DateTimeStartVacation";
-            this.DateTimeStartVacation.Size = new System.Drawing.Size(167, 20);
-            this.DateTimeStartVacation.TabIndex = 58;
-            this.DateTimeStartVacation.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            // 
-            // DateTimeEndBuisnessTrip
-            // 
-            this.DateTimeEndBuisnessTrip.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeEndBuisnessTrip.CustomFormat = "dd MMMM yyyy HH:mm";
-            this.DateTimeEndBuisnessTrip.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeEndBuisnessTrip.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimeEndBuisnessTrip.Location = new System.Drawing.Point(545, 301);
-            this.DateTimeEndBuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.DateTimeEndBuisnessTrip.Name = "DateTimeEndBuisnessTrip";
-            this.DateTimeEndBuisnessTrip.Size = new System.Drawing.Size(167, 20);
-            this.DateTimeEndBuisnessTrip.TabIndex = 57;
-            this.DateTimeEndBuisnessTrip.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            // 
-            // DateTimeStartBuisnessTrip
-            // 
-            this.DateTimeStartBuisnessTrip.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeStartBuisnessTrip.CustomFormat = "dd MMMM yyyy HH:mm";
-            this.DateTimeStartBuisnessTrip.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeStartBuisnessTrip.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimeStartBuisnessTrip.Location = new System.Drawing.Point(545, 249);
-            this.DateTimeStartBuisnessTrip.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.DateTimeStartBuisnessTrip.Name = "DateTimeStartBuisnessTrip";
-            this.DateTimeStartBuisnessTrip.Size = new System.Drawing.Size(167, 20);
-            this.DateTimeStartBuisnessTrip.TabIndex = 56;
-            this.DateTimeStartBuisnessTrip.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            // 
             // txt_box_email
             // 
             this.txt_box_email.Font = new System.Drawing.Font("Rockwell", 9.75F);
@@ -254,19 +143,6 @@ namespace Fireman_Systemn.View.AddViews
             this.lbl_email.Size = new System.Drawing.Size(73, 23);
             this.lbl_email.TabIndex = 54;
             this.lbl_email.Text = "Имейл*";
-            // 
-            // DateTimeEndVacation
-            // 
-            this.DateTimeEndVacation.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeEndVacation.CustomFormat = "dd MMMM yyyy HH:mm";
-            this.DateTimeEndVacation.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimeEndVacation.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateTimeEndVacation.Location = new System.Drawing.Point(545, 193);
-            this.DateTimeEndVacation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.DateTimeEndVacation.Name = "DateTimeEndVacation";
-            this.DateTimeEndVacation.Size = new System.Drawing.Size(167, 20);
-            this.DateTimeEndVacation.TabIndex = 53;
-            this.DateTimeEndVacation.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             // 
             // lbl_personalNum
             // 
@@ -507,7 +383,7 @@ namespace Fireman_Systemn.View.AddViews
             // 
             this.pictureBox_fireman.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_fireman.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_fireman.Image")));
-            this.pictureBox_fireman.Location = new System.Drawing.Point(594, 240);
+            this.pictureBox_fireman.Location = new System.Drawing.Point(552, 216);
             this.pictureBox_fireman.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox_fireman.Name = "pictureBox_fireman";
             this.pictureBox_fireman.Size = new System.Drawing.Size(266, 272);
@@ -558,16 +434,8 @@ namespace Fireman_Systemn.View.AddViews
         private System.Windows.Forms.TextBox txt_box_homeAddress;
         private System.Windows.Forms.Label lbl_personalNum;
         private System.Windows.Forms.TextBox txt_box_personalNum;
-        private System.Windows.Forms.DateTimePicker DateTimeEndVacation;
         private System.Windows.Forms.TextBox txt_box_email;
         private System.Windows.Forms.Label lbl_email;
-        private System.Windows.Forms.Label lbl_End_Date_Vacation;
-        private System.Windows.Forms.Label lbl_startOfVacation;
-        private System.Windows.Forms.DateTimePicker DateTimeStartVacation;
-        private System.Windows.Forms.DateTimePicker DateTimeEndBuisnessTrip;
-        private System.Windows.Forms.DateTimePicker DateTimeStartBuisnessTrip;
-        private System.Windows.Forms.Label lbl_startDate_BuisnessTrip;
-        private System.Windows.Forms.Label lbl_endDate_BuisnessTrip;
         private System.Windows.Forms.Label lbl_chose_team;
         private System.Windows.Forms.ComboBox cb_choosen_team;
     }

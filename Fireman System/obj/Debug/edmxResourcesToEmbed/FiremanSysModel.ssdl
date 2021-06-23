@@ -16,9 +16,9 @@
     <Property Name="Dangerous_substances_info" Type="nvarchar(max)" />
     <Property Name="Selected_team" Type="int" Nullable="false" />
     <Property Name="Date_time_of_case" Type="datetime" Nullable="false" />
-    <Property Name="End_date_time_of_case" Type="datetime" Nullable="false" />
+    <Property Name="End_date_time_of_case" Type="datetime" />
     <Property Name="Used_water_resources" Type="float" />
-    <Property Name="Used_fuel" Type="float" Nullable="false" />
+    <Property Name="Used_fuel" Type="float" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>
@@ -33,10 +33,6 @@
     <Property Name="home_address" Type="nvarchar(max)" />
     <Property Name="personal_phone_number" Type="int" />
     <Property Name="email" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="vacation_start_date" Type="datetime" />
-    <Property Name="vacation_end_date" Type="datetime" />
-    <Property Name="business_trip_start_date" Type="datetime" />
-    <Property Name="buisiness_trip_end_date" Type="datetime" />
     <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
     <Property Name="choosen_team" Type="int" />
   </EntityType>

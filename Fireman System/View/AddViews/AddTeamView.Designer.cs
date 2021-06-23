@@ -35,10 +35,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_submit_team = new System.Windows.Forms.Button();
-            this.cb_buisiness = new System.Windows.Forms.ComboBox();
-            this.lbl_buisiness = new System.Windows.Forms.Label();
-            this.lbl_activity = new System.Windows.Forms.Label();
-            this.cb_activity = new System.Windows.Forms.ComboBox();
             this.nud_employees_in_team = new System.Windows.Forms.NumericUpDown();
             this.lbl_employees_in_team = new System.Windows.Forms.Label();
             this.lbl_select_truck = new System.Windows.Forms.Label();
@@ -61,10 +57,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.BottomColor = System.Drawing.Color.Empty;
             this.gradientPanelAddTeam.Controls.Add(this.pictureBox1);
             this.gradientPanelAddTeam.Controls.Add(this.btn_submit_team);
-            this.gradientPanelAddTeam.Controls.Add(this.cb_buisiness);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_buisiness);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_activity);
-            this.gradientPanelAddTeam.Controls.Add(this.cb_activity);
             this.gradientPanelAddTeam.Controls.Add(this.nud_employees_in_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_employees_in_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_select_truck);
@@ -93,40 +85,6 @@ namespace Fireman_Systemn.View.AddViews
             this.btn_submit_team.Name = "btn_submit_team";
             this.btn_submit_team.UseVisualStyleBackColor = false;
             this.btn_submit_team.Click += new System.EventHandler(this.btn_submit_team_Click);
-            // 
-            // cb_buisiness
-            // 
-            this.cb_buisiness.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.cb_buisiness, "cb_buisiness");
-            this.cb_buisiness.FormattingEnabled = true;
-            this.cb_buisiness.Items.AddRange(new object[] {
-            resources.GetString("cb_buisiness.Items"),
-            resources.GetString("cb_buisiness.Items1")});
-            this.cb_buisiness.Name = "cb_buisiness";
-            // 
-            // lbl_buisiness
-            // 
-            resources.ApplyResources(this.lbl_buisiness, "lbl_buisiness");
-            this.lbl_buisiness.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_buisiness.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_buisiness.Name = "lbl_buisiness";
-            // 
-            // lbl_activity
-            // 
-            resources.ApplyResources(this.lbl_activity, "lbl_activity");
-            this.lbl_activity.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_activity.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_activity.Name = "lbl_activity";
-            // 
-            // cb_activity
-            // 
-            this.cb_activity.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.cb_activity, "cb_activity");
-            this.cb_activity.FormattingEnabled = true;
-            this.cb_activity.Items.AddRange(new object[] {
-            resources.GetString("cb_activity.Items"),
-            resources.GetString("cb_activity.Items1")});
-            this.cb_activity.Name = "cb_activity";
             // 
             // nud_employees_in_team
             // 
@@ -223,10 +181,6 @@ namespace Fireman_Systemn.View.AddViews
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_submit_team;
-        private System.Windows.Forms.ComboBox cb_buisiness;
-        private System.Windows.Forms.Label lbl_buisiness;
-        private System.Windows.Forms.Label lbl_activity;
-        private System.Windows.Forms.ComboBox cb_activity;
         private System.Windows.Forms.NumericUpDown nud_employees_in_team;
         private System.Windows.Forms.Label lbl_employees_in_team;
         private System.Windows.Forms.Label lbl_select_truck;

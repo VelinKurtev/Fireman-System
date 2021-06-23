@@ -81,10 +81,47 @@ namespace Fireman_Systemn.View
                 using (FiremanSysEntities fse = new FiremanSysEntities())
                 {
                     var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
-                    FormLayout.NavigateForms(this, new EditCaseView(fireCase));
+                    FormLayout.NavigateForms(this, new CaseView(fireCase));
                 }
             }
         }
 
+        private void btn_end_case_Click(object sender, EventArgs e)
+        {
+            var row = dgvCases.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+            }
+            else
+            {
+                try
+                {
+                    int id = int.Parse(row.Cells["CaseID"].Value.ToString());
+                    using (FiremanSysEntities fse = new FiremanSysEntities())
+                    {
+                        var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
+                        if (fireCase.End_date_time_of_case == null)
+                        {
+                            fireCase.End_date_time_of_case = DateTime.Now;
+                            fse.SaveChanges();
+                            FormLayout.NavigateForms(this, new CasesView());
+                        }
+                        else
+                        {
+                            InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                            invalidRowSelected.ShowDialog();
+                        }
+                    }
+                }
+                catch
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
+
+            }
+        }
     }
 }
