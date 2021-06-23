@@ -95,39 +95,42 @@ namespace Fireman_Systemn.View
                 InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                 invalidRowSelected.ShowDialog();
             }
-
-
-            try
+            else
             {
-                int id = int.Parse(row.Cells["CaseID"].Value.ToString());
-                using (FiremanSysEntities fse = new FiremanSysEntities())
+                try
                 {
-                    var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
-                    var team = fse.Teams.Where(t => t.team_id == fireCase.Selected_team).FirstOrDefault();
-                    if (fireCase.End_date_time_of_case == null)
+                    int id = int.Parse(row.Cells["CaseID"].Value.ToString());
+                    using (FiremanSysEntities fse = new FiremanSysEntities())
                     {
-                        if (team != null)
+                        var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
+                        var team = fse.Teams.Where(t => t.team_id == fireCase.Selected_team).FirstOrDefault();
+                        if (fireCase.End_date_time_of_case == null)
                         {
-                            team.is_team_busy = "Свободен";
-                            fse.Teams.Attach(team);
-                            fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                            if (team != null)
+                            {
+                                team.is_team_busy = "Свободен";
+                                fse.Teams.Attach(team);
+                                fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                                fse.SaveChanges();
+                            }
+                            fireCase.End_date_time_of_case = DateTime.Now;
                             fse.SaveChanges();
+                            EndCase endCase = new EndCase();
+                            endCase.ShowDialog();
+                            FormLayout.NavigateForms(this, new CasesView());
                         }
-                        fireCase.End_date_time_of_case = DateTime.Now;
-                        fse.SaveChanges();
-                        FormLayout.NavigateForms(this, new CasesView());
-                    }
-                    else
-                    {
-                        InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
-                        invalidRowSelected.ShowDialog();
+                        else
+                        {
+                            InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                            invalidRowSelected.ShowDialog();
+                        }
                     }
                 }
-            }
-            catch
-            {
-                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
-                invalidRowSelected.ShowDialog();
+                catch
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
             }
         }
     }

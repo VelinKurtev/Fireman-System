@@ -30,6 +30,7 @@ namespace Fireman_Systemn.View
         private void Add_Case_Load(object sender, EventArgs e)
         {
             FormLayout.FormLoad(this);
+            start_date_case_time_picker.Value = DateTime.Now;
         }
 
         private void btn_back_Click(object sender, EventArgs e)

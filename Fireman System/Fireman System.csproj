@@ -180,6 +180,12 @@
     <Compile Include="View\Pop-Ups\DeleteRow.Designer.cs">
       <DependentUpon>DeleteRow.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Pop-Ups\EndCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pop-Ups\EndCase.Designer.cs">
+      <DependentUpon>EndCase.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Pop-Ups\EnterValidData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Pop-Ups\DeleteRow.resx">
       <DependentUpon>DeleteRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pop-Ups\EndCase.resx">
+      <DependentUpon>EndCase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Pop-Ups\EnterValidData.resx">
       <DependentUpon>EnterValidData.cs</DependentUpon>
