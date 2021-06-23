@@ -36,11 +36,9 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_available_fuel = new System.Windows.Forms.Label();
             this.lbl_fuel_capacity = new System.Windows.Forms.Label();
             this.nud_available_water = new System.Windows.Forms.NumericUpDown();
-            this.nud_available_seats = new System.Windows.Forms.NumericUpDown();
             this.nud_water_capacity = new System.Windows.Forms.NumericUpDown();
             this.btn_edit_case = new System.Windows.Forms.Button();
             this.lbl_complex = new System.Windows.Forms.Label();
-            this.lbl_seats = new System.Windows.Forms.Label();
             this.lbl_town = new System.Windows.Forms.Label();
             this.lbl_model = new System.Windows.Forms.Label();
             this.txt_box_model = new System.Windows.Forms.TextBox();
@@ -52,7 +50,6 @@ namespace Fireman_Systemn.View.EditViews
             ((System.ComponentModel.ISupportInitialize)(this.nud_fuel_capacity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_available_fuel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_available_water)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_available_seats)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_water_capacity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,11 +65,9 @@ namespace Fireman_Systemn.View.EditViews
             this.gradientPanelFireTrucks.Controls.Add(this.lbl_available_fuel);
             this.gradientPanelFireTrucks.Controls.Add(this.lbl_fuel_capacity);
             this.gradientPanelFireTrucks.Controls.Add(this.nud_available_water);
-            this.gradientPanelFireTrucks.Controls.Add(this.nud_available_seats);
             this.gradientPanelFireTrucks.Controls.Add(this.nud_water_capacity);
             this.gradientPanelFireTrucks.Controls.Add(this.btn_edit_case);
             this.gradientPanelFireTrucks.Controls.Add(this.lbl_complex);
-            this.gradientPanelFireTrucks.Controls.Add(this.lbl_seats);
             this.gradientPanelFireTrucks.Controls.Add(this.lbl_town);
             this.gradientPanelFireTrucks.Controls.Add(this.lbl_model);
             this.gradientPanelFireTrucks.Controls.Add(this.txt_box_model);
@@ -93,7 +88,7 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_fuel_capacity.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_fuel_capacity.Location = new System.Drawing.Point(406, 163);
             this.nud_fuel_capacity.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -107,7 +102,7 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_available_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_available_fuel.Location = new System.Drawing.Point(405, 214);
             this.nud_available_fuel.Maximum = new decimal(new int[] {
-            500,
+            5000,
             0,
             0,
             0});
@@ -145,7 +140,7 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_available_water.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_available_water.Location = new System.Drawing.Point(179, 269);
             this.nud_available_water.Maximum = new decimal(new int[] {
-            10000,
+            100000,
             0,
             0,
             0});
@@ -153,36 +148,13 @@ namespace Fireman_Systemn.View.EditViews
             this.nud_available_water.Size = new System.Drawing.Size(169, 23);
             this.nud_available_water.TabIndex = 41;
             // 
-            // nud_available_seats
-            // 
-            this.nud_available_seats.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_available_seats.Location = new System.Drawing.Point(179, 321);
-            this.nud_available_seats.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.nud_available_seats.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_available_seats.Name = "nud_available_seats";
-            this.nud_available_seats.Size = new System.Drawing.Size(170, 23);
-            this.nud_available_seats.TabIndex = 40;
-            this.nud_available_seats.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // nud_water_capacity
             // 
             this.nud_water_capacity.DecimalPlaces = 2;
             this.nud_water_capacity.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_water_capacity.Location = new System.Drawing.Point(180, 214);
             this.nud_water_capacity.Maximum = new decimal(new int[] {
-            10000,
+            100000,
             0,
             0,
             0});
@@ -214,18 +186,6 @@ namespace Fireman_Systemn.View.EditViews
             this.lbl_complex.Size = new System.Drawing.Size(168, 23);
             this.lbl_complex.TabIndex = 23;
             this.lbl_complex.Text = "Вода в цистерната*";
-            // 
-            // lbl_seats
-            // 
-            this.lbl_seats.AutoSize = true;
-            this.lbl_seats.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_seats.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_seats.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_seats.Location = new System.Drawing.Point(175, 295);
-            this.lbl_seats.Name = "lbl_seats";
-            this.lbl_seats.Size = new System.Drawing.Size(89, 23);
-            this.lbl_seats.TabIndex = 21;
-            this.lbl_seats.Text = "Седалки*";
             // 
             // lbl_town
             // 
@@ -325,7 +285,6 @@ namespace Fireman_Systemn.View.EditViews
             ((System.ComponentModel.ISupportInitialize)(this.nud_fuel_capacity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_available_fuel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_available_water)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_available_seats)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_water_capacity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -341,11 +300,9 @@ namespace Fireman_Systemn.View.EditViews
         private System.Windows.Forms.Label lbl_available_fuel;
         private System.Windows.Forms.Label lbl_fuel_capacity;
         private System.Windows.Forms.NumericUpDown nud_available_water;
-        private System.Windows.Forms.NumericUpDown nud_available_seats;
         private System.Windows.Forms.NumericUpDown nud_water_capacity;
         private System.Windows.Forms.Button btn_edit_case;
         private System.Windows.Forms.Label lbl_complex;
-        private System.Windows.Forms.Label lbl_seats;
         private System.Windows.Forms.Label lbl_town;
         private System.Windows.Forms.Label lbl_model;
         private System.Windows.Forms.TextBox txt_box_model;

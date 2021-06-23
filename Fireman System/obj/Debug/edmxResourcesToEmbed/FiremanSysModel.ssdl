@@ -43,7 +43,6 @@
     <Property Name="fire_truck_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="model" Type="nvarchar(max)" Nullable="false" />
     <Property Name="water_capacity" Type="float" Nullable="false" />
-    <Property Name="staff_capacity" Type="float" Nullable="false" />
     <Property Name="available_water" Type="float" Nullable="false" />
     <Property Name="fuel_capacity" Type="float" Nullable="false" />
     <Property Name="available_fuel" Type="float" Nullable="false" />
@@ -55,7 +54,6 @@
     </Key>
     <Property Name="team_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="team_name" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="number_of_members" Type="int" Nullable="false" />
     <Property Name="choosen_fire_truck" Type="int" Nullable="false" />
     <Property Name="number_of_answered_cases" Type="int" Nullable="false" />
     <Property Name="is_team_active" Type="nvarchar(max)" Nullable="false" />

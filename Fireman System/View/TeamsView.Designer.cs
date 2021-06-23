@@ -43,7 +43,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.TeamID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TeamName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MembersCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SelectedFireTruck = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AnsweredCasesCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsTeamActive = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -105,7 +104,6 @@
             this.dgvTeams.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TeamID,
             this.TeamName,
-            this.MembersCount,
             this.SelectedFireTruck,
             this.AnsweredCasesCount,
             this.IsTeamActive,
@@ -224,13 +222,6 @@
             this.TeamName.Name = "TeamName";
             this.TeamName.Width = 101;
             // 
-            // MembersCount
-            // 
-            this.MembersCount.DataPropertyName = "number_of_members";
-            this.MembersCount.HeaderText = "Брой на членовете";
-            this.MembersCount.Name = "MembersCount";
-            this.MembersCount.Width = 127;
-            // 
             // SelectedFireTruck
             // 
             this.SelectedFireTruck.DataPropertyName = "choosen_fire_truck";
@@ -318,7 +309,6 @@
         private System.Windows.Forms.Button btn_add_team;
         private System.Windows.Forms.DataGridViewTextBoxColumn TeamID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TeamName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MembersCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn SelectedFireTruck;
         private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCasesCount;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsTeamActive;

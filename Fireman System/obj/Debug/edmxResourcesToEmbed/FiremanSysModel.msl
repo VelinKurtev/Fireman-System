@@ -45,7 +45,6 @@
           <ScalarProperty Name="fire_truck_id" ColumnName="fire_truck_id" />
           <ScalarProperty Name="model" ColumnName="model" />
           <ScalarProperty Name="water_capacity" ColumnName="water_capacity" />
-          <ScalarProperty Name="staff_capacity" ColumnName="staff_capacity" />
           <ScalarProperty Name="available_water" ColumnName="available_water" />
           <ScalarProperty Name="fuel_capacity" ColumnName="fuel_capacity" />
           <ScalarProperty Name="available_fuel" ColumnName="available_fuel" />
@@ -58,7 +57,6 @@
         <MappingFragment StoreEntitySet="Teams">
           <ScalarProperty Name="team_id" ColumnName="team_id" />
           <ScalarProperty Name="team_name" ColumnName="team_name" />
-          <ScalarProperty Name="number_of_members" ColumnName="number_of_members" />
           <ScalarProperty Name="choosen_fire_truck" ColumnName="choosen_fire_truck" />
           <ScalarProperty Name="number_of_answered_cases" ColumnName="number_of_answered_cases" />
           <ScalarProperty Name="is_team_active" ColumnName="is_team_active" />

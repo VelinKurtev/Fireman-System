@@ -15,7 +15,6 @@ namespace Fireman_Systemn.View.EditViews
             InitializeComponent();
             txt_box_model.Text = fireTruck.model;
             nud_water_capacity.Value = Convert.ToDecimal(fireTruck.water_capacity);
-            nud_available_seats.Value = Convert.ToInt32(fireTruck.staff_capacity);
             nud_available_water.Value = Convert.ToDecimal(fireTruck.available_water);
             nud_available_fuel.Value = Convert.ToDecimal(fireTruck.available_fuel);
             nud_fuel_capacity.Value = Convert.ToDecimal(fireTruck.fuel_capacity);
@@ -39,7 +38,6 @@ namespace Fireman_Systemn.View.EditViews
             {
                 oldFireTruck.model = txt_box_model.Text.Trim().ToString();
                 oldFireTruck.water_capacity = Convert.ToDouble(nud_water_capacity.Value);
-                oldFireTruck.staff_capacity = Convert.ToInt32(nud_available_seats.Value);
                 oldFireTruck.available_water = Convert.ToDouble(nud_available_water.Value);
                 oldFireTruck.fuel_capacity = Convert.ToDouble(nud_fuel_capacity.Value);
                 oldFireTruck.available_fuel = Convert.ToDouble(nud_available_fuel.Value);

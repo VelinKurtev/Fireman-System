@@ -45,7 +45,6 @@
     <Property Name="fire_truck_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="water_capacity" Type="Double" Nullable="false" />
-    <Property Name="staff_capacity" Type="Double" Nullable="false" />
     <Property Name="available_water" Type="Double" Nullable="false" />
     <Property Name="fuel_capacity" Type="Double" Nullable="false" />
     <Property Name="available_fuel" Type="Double" Nullable="false" />
@@ -58,7 +57,6 @@
     </Key>
     <Property Name="team_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="team_name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="number_of_members" Type="Int32" Nullable="false" />
     <Property Name="choosen_fire_truck" Type="Int32" Nullable="false" />
     <Property Name="number_of_answered_cases" Type="Int32" Nullable="false" />
     <Property Name="is_team_active" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />

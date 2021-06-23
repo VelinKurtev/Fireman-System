@@ -35,8 +35,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam = new Fireman_Systemn.GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_submit_team = new System.Windows.Forms.Button();
-            this.nud_employees_in_team = new System.Windows.Forms.NumericUpDown();
-            this.lbl_employees_in_team = new System.Windows.Forms.Label();
             this.lbl_select_truck = new System.Windows.Forms.Label();
             this.cb_choosen_fireTruck = new System.Windows.Forms.ComboBox();
             this.txt_box_team_name = new System.Windows.Forms.TextBox();
@@ -46,7 +44,6 @@ namespace Fireman_Systemn.View.AddViews
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.gradientPanelAddTeam.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_employees_in_team)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,8 +54,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.BottomColor = System.Drawing.Color.Empty;
             this.gradientPanelAddTeam.Controls.Add(this.pictureBox1);
             this.gradientPanelAddTeam.Controls.Add(this.btn_submit_team);
-            this.gradientPanelAddTeam.Controls.Add(this.nud_employees_in_team);
-            this.gradientPanelAddTeam.Controls.Add(this.lbl_employees_in_team);
             this.gradientPanelAddTeam.Controls.Add(this.lbl_select_truck);
             this.gradientPanelAddTeam.Controls.Add(this.cb_choosen_fireTruck);
             this.gradientPanelAddTeam.Controls.Add(this.txt_box_team_name);
@@ -85,33 +80,6 @@ namespace Fireman_Systemn.View.AddViews
             this.btn_submit_team.Name = "btn_submit_team";
             this.btn_submit_team.UseVisualStyleBackColor = false;
             this.btn_submit_team.Click += new System.EventHandler(this.btn_submit_team_Click);
-            // 
-            // nud_employees_in_team
-            // 
-            resources.ApplyResources(this.nud_employees_in_team, "nud_employees_in_team");
-            this.nud_employees_in_team.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nud_employees_in_team.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nud_employees_in_team.Name = "nud_employees_in_team";
-            this.nud_employees_in_team.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // lbl_employees_in_team
-            // 
-            resources.ApplyResources(this.lbl_employees_in_team, "lbl_employees_in_team");
-            this.lbl_employees_in_team.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_employees_in_team.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_employees_in_team.Name = "lbl_employees_in_team";
             // 
             // lbl_select_truck
             // 
@@ -171,7 +139,6 @@ namespace Fireman_Systemn.View.AddViews
             this.gradientPanelAddTeam.ResumeLayout(false);
             this.gradientPanelAddTeam.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_employees_in_team)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
@@ -181,8 +148,6 @@ namespace Fireman_Systemn.View.AddViews
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_submit_team;
-        private System.Windows.Forms.NumericUpDown nud_employees_in_team;
-        private System.Windows.Forms.Label lbl_employees_in_team;
         private System.Windows.Forms.Label lbl_select_truck;
         private System.Windows.Forms.ComboBox cb_choosen_fireTruck;
         private System.Windows.Forms.TextBox txt_box_team_name;

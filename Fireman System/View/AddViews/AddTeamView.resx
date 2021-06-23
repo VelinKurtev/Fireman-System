@@ -2749,63 +2749,6 @@
   <data name="&gt;&gt;btn_submit_team.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="nud_employees_in_team.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Rockwell, 9.75pt</value>
-  </data>
-  <data name="nud_employees_in_team.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 299</value>
-  </data>
-  <data name="nud_employees_in_team.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 23</value>
-  </data>
-  <data name="nud_employees_in_team.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;nud_employees_in_team.Name" xml:space="preserve">
-    <value>nud_employees_in_team</value>
-  </data>
-  <data name="&gt;&gt;nud_employees_in_team.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nud_employees_in_team.Parent" xml:space="preserve">
-    <value>gradientPanelAddTeam</value>
-  </data>
-  <data name="&gt;&gt;nud_employees_in_team.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbl_employees_in_team.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_employees_in_team.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Rockwell, 14.25pt, style=Bold</value>
-  </data>
-  <data name="lbl_employees_in_team.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_employees_in_team.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 273</value>
-  </data>
-  <data name="lbl_employees_in_team.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 23</value>
-  </data>
-  <data name="lbl_employees_in_team.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="lbl_employees_in_team.Text" xml:space="preserve">
-    <value>Служители в екип*</value>
-  </data>
-  <data name="&gt;&gt;lbl_employees_in_team.Name" xml:space="preserve">
-    <value>lbl_employees_in_team</value>
-  </data>
-  <data name="&gt;&gt;lbl_employees_in_team.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_employees_in_team.Parent" xml:space="preserve">
-    <value>gradientPanelAddTeam</value>
-  </data>
-  <data name="&gt;&gt;lbl_employees_in_team.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="lbl_select_truck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2816,7 +2759,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_select_truck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 213</value>
+    <value>252, 241</value>
   </data>
   <data name="lbl_select_truck.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 23</value>
@@ -2837,13 +2780,13 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_select_truck.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="cb_choosen_fireTruck.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 9pt</value>
   </data>
   <data name="cb_choosen_fireTruck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 239</value>
+    <value>256, 267</value>
   </data>
   <data name="cb_choosen_fireTruck.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 24</value>
@@ -2861,13 +2804,13 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;cb_choosen_fireTruck.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="txt_box_team_name.Font" type="System.Drawing.Font, System.Drawing">
     <value>Rockwell, 9.75pt</value>
   </data>
   <data name="txt_box_team_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 182</value>
+    <value>256, 210</value>
   </data>
   <data name="txt_box_team_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 23</value>
@@ -2885,7 +2828,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;txt_box_team_name.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="lbl_team_name.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2897,7 +2840,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_team_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 156</value>
+    <value>252, 184</value>
   </data>
   <data name="lbl_team_name.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 23</value>
@@ -2918,7 +2861,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_team_name.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="lbl_add_team.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -2957,7 +2900,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;lbl_add_team.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="btn_back.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft PhagsPa, 9.75pt, style=Bold</value>
@@ -2987,7 +2930,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;btn_back.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="pictureBoxLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4464,7 +4407,7 @@
     <value>gradientPanelAddTeam</value>
   </data>
   <data name="&gt;&gt;pictureBoxLogo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="gradientPanelAddTeam.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

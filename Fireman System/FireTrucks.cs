@@ -23,7 +23,6 @@ namespace Fireman_Systemn
         public int fire_truck_id { get; set; }
         public string model { get; set; }
         public double water_capacity { get; set; }
-        public double staff_capacity { get; set; }
         public double available_water { get; set; }
         public double fuel_capacity { get; set; }
         public double available_fuel { get; set; }

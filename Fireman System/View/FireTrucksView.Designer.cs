@@ -43,7 +43,6 @@
             this.FireTruckID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StaffCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WaterCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AvailableWater = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FuelCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -93,7 +92,6 @@
             this.FireTruckID,
             this.AnsweredCases,
             this.Model,
-            this.StaffCapacity,
             this.WaterCapacity,
             this.AvailableWater,
             this.FuelCapacity,
@@ -220,13 +218,6 @@
             this.Model.Name = "Model";
             this.Model.Width = 65;
             // 
-            // StaffCapacity
-            // 
-            this.StaffCapacity.DataPropertyName = "staff_capacity";
-            this.StaffCapacity.HeaderText = "Седалки";
-            this.StaffCapacity.Name = "StaffCapacity";
-            this.StaffCapacity.Width = 75;
-            // 
             // WaterCapacity
             // 
             this.WaterCapacity.DataPropertyName = "water_capacity";
@@ -298,7 +289,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FireTruckID;
         private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCases;
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StaffCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn WaterCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn AvailableWater;
         private System.Windows.Forms.DataGridViewTextBoxColumn FuelCapacity;

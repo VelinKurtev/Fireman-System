@@ -21,7 +21,6 @@ namespace Fireman_Systemn.View
             {
                 fireTruck.model = txt_box_model.Text.Trim().ToString();
                 fireTruck.water_capacity = Convert.ToDouble(nud_water_capacity.Value);
-                fireTruck.staff_capacity = Convert.ToInt32(nud_available_seats.Value);
                 fireTruck.available_water = Convert.ToDouble(nud_available_water.Value);
                 fireTruck.fuel_capacity = Convert.ToDouble(nud_fuel_capacity.Value);
                 fireTruck.available_fuel = Convert.ToDouble(nud_available_fuel.Value);

@@ -69,50 +69,44 @@ namespace Fireman_Systemn.View
 
                     if (team != null && fireTruck != null)
                     {
-                        ++team.number_of_answered_cases; 
-                        ++fireTruck.answered_cases;
-                        if (fireTruck.available_fuel >= Convert.ToDouble(nud_used_fuel.Value))
+                        
+                        if (fireTruck.available_fuel >= Convert.ToDouble(nud_used_fuel.Value) && fireTruck.available_water >= Convert.ToDouble(nud_Used_water_resources.Value))
                         {
                             fireTruck.available_fuel = fireTruck.available_fuel - Convert.ToDouble(nud_used_fuel.Value);
+                            fireTruck.available_water = fireTruck.available_water - Convert.ToDouble(nud_Used_water_resources.Value);
+                            ++team.number_of_answered_cases;
+                            ++fireTruck.answered_cases;
+                            team.is_team_busy = "Зает";
+
+                            fse.Teams.Attach(team);
+                            fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                            fse.SaveChanges();
+
+                            fse.FireTrucks.Attach(fireTruck);
+                            fse.Entry(fireTruck).State = System.Data.Entity.EntityState.Modified;
+                            fse.SaveChanges();
+
+                            foreach (var employee in team.Employees)
+                            {
+                                ++employee.number_of_answered_cases;
+
+                                fse.Employees.Attach(employee);
+                                fse.Entry(employee).State = System.Data.Entity.EntityState.Modified;
+                                fse.SaveChanges();
+                            }
+                            CaseController.Insert(Case);
+                            SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                            successfullyAddedData.ShowDialog();
+                            FormLayout.NavigateForms(this, new CasesView());
                         }
                         else
                         {
-                            //pop-up
-                        }
-
-                        if (fireTruck.available_water >= Convert.ToDouble(nud_Used_water_resources.Value))
-                        {
-                            fireTruck.available_water = fireTruck.available_water - Convert.ToDouble(nud_Used_water_resources.Value);
-                        }
-
-                        team.is_team_busy = "Зает";
-                       
-                        fse.Teams.Attach(team);
-                        fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
-                        fse.SaveChanges();
-
-                        fse.FireTrucks.Attach(fireTruck);
-                        fse.Entry(fireTruck).State = System.Data.Entity.EntityState.Modified;
-                        fse.SaveChanges();
-
-                        foreach (var employee in team.Employees)
-                        {
-                            ++employee.number_of_answered_cases;
-
-                            fse.Employees.Attach(employee);
-                            fse.Entry(employee).State = System.Data.Entity.EntityState.Modified;
-                            fse.SaveChanges();
+                            EnterValidData enterValidDataException = new EnterValidData();
+                            enterValidDataException.ShowDialog();
                         }
                     }
                 }
-
-                CaseController.Insert(Case);
-                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
-                successfullyAddedData.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
             }
-
         }
-
     }
 }
