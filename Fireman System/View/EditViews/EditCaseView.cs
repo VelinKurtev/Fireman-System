@@ -12,6 +12,7 @@ namespace Fireman_Systemn.View.EditViews
 
         Cases oldCase;
         CasesController CaseController = new CasesController();
+
         public CaseView(Cases Case)
         {
             InitializeComponent();
