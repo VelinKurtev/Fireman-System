@@ -1,12 +1,5 @@
 ﻿using Fireman_Systemn.Controller;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View
@@ -22,7 +15,6 @@ namespace Fireman_Systemn.View
         private void btn_back_Click(object sender, EventArgs e)
         {
             FormLayout.NavigateForms(this, new EmployeesView());
-
         }
 
         private void EmployeesByCaseView_Load(object sender, EventArgs e)

@@ -1,13 +1,8 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View.AddViews
@@ -46,12 +41,8 @@ namespace Fireman_Systemn.View.AddViews
                 Employee.personal_phone_number = Convert.ToInt32(txt_box_personalNum.Text);
                 Employee.email = txt_box_email.Text.Trim().ToString();
                 Employee.choosen_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
-                Employee.business_trip_start_date = DateTimeStartBuisnessTrip.Value;
-                Employee.buisiness_trip_end_date = DateTimeEndBuisnessTrip.Value;
-                Employee.vacation_start_date = DateTimeStartVacation.Value;
-                Employee.vacation_end_date = DateTimeEndVacation.Value;
                 
-                if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0  || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || txt_box_personalNum.TextLength > 10 ||!txt_box_email.Text.Contains('@'))
+                if (txt_box_personalNum.TextLength > 10 || !txt_box_email.Text.Contains('@'))
                 {
                     EnterValidData enterValidDataException = new EnterValidData();
                     enterValidDataException.ShowDialog();

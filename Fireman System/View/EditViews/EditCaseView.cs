@@ -1,23 +1,19 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View.EditViews
 {
-    public partial class EditCaseView : Form
+    public partial class CaseView : Form
     {
 
         Cases oldCase;
         CasesController CaseController = new CasesController();
-        public EditCaseView(Cases Case)
+
+        public CaseView(Cases Case)
         {
             InitializeComponent();
 
@@ -31,7 +27,14 @@ namespace Fireman_Systemn.View.EditViews
             nud_Apartment.Value = Convert.ToInt32(Case.Apartment);
             nud_used_fuel.Value = Convert.ToDecimal(Case.Used_fuel);
             nud_Used_water_resources.Value = Convert.ToDecimal(Case.Used_water_resources);
-            end_date_case_time_picker.Value = Case.End_date_time_of_case;
+            if (Case.End_date_time_of_case == null)
+            {
+                end_date_case_time_picker.Value = DateTime.Now;
+            }
+            else
+            {
+                end_date_case_time_picker.Value = (DateTime)Case.End_date_time_of_case;
+            }
             start_date_case_time_picker.Value = Case.Date_time_of_case;
             txt_box_complex.Text = Case.Neighborhood;
 
@@ -80,13 +83,11 @@ namespace Fireman_Systemn.View.EditViews
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
             }
             else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
             }
             else
             {

@@ -37,8 +37,6 @@
             this.lbl_used_water_resources = new System.Windows.Forms.Label();
             this.nud_Used_water_resources = new System.Windows.Forms.NumericUpDown();
             this.btn_submit_case = new System.Windows.Forms.Button();
-            this.end_date_case_time_picker = new System.Windows.Forms.DateTimePicker();
-            this.lbl_end_date_of_case = new System.Windows.Forms.Label();
             this.start_date_case_time_picker = new System.Windows.Forms.DateTimePicker();
             this.lbl_start_date_of_Case = new System.Windows.Forms.Label();
             this.cb_choosen_team = new System.Windows.Forms.ComboBox();
@@ -82,8 +80,6 @@
             this.gradientPanelAddCases.Controls.Add(this.lbl_used_water_resources);
             this.gradientPanelAddCases.Controls.Add(this.nud_Used_water_resources);
             this.gradientPanelAddCases.Controls.Add(this.btn_submit_case);
-            this.gradientPanelAddCases.Controls.Add(this.end_date_case_time_picker);
-            this.gradientPanelAddCases.Controls.Add(this.lbl_end_date_of_case);
             this.gradientPanelAddCases.Controls.Add(this.start_date_case_time_picker);
             this.gradientPanelAddCases.Controls.Add(this.lbl_start_date_of_Case);
             this.gradientPanelAddCases.Controls.Add(this.cb_choosen_team);
@@ -119,7 +115,7 @@
             // 
             this.nud_used_fuel.DecimalPlaces = 2;
             this.nud_used_fuel.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_used_fuel.Location = new System.Drawing.Point(576, 183);
+            this.nud_used_fuel.Location = new System.Drawing.Point(576, 131);
             this.nud_used_fuel.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nud_used_fuel.Maximum = new decimal(new int[] {
             1000,
@@ -136,7 +132,7 @@
             this.lbl_used_fuel.BackColor = System.Drawing.Color.Transparent;
             this.lbl_used_fuel.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_used_fuel.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_used_fuel.Location = new System.Drawing.Point(572, 157);
+            this.lbl_used_fuel.Location = new System.Drawing.Point(572, 105);
             this.lbl_used_fuel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_used_fuel.Name = "lbl_used_fuel";
             this.lbl_used_fuel.Size = new System.Drawing.Size(165, 23);
@@ -177,7 +173,7 @@
             this.lbl_used_water_resources.BackColor = System.Drawing.Color.Transparent;
             this.lbl_used_water_resources.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_used_water_resources.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_used_water_resources.Location = new System.Drawing.Point(572, 105);
+            this.lbl_used_water_resources.Location = new System.Drawing.Point(357, 368);
             this.lbl_used_water_resources.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_used_water_resources.Name = "lbl_used_water_resources";
             this.lbl_used_water_resources.Size = new System.Drawing.Size(224, 23);
@@ -188,7 +184,7 @@
             // 
             this.nud_Used_water_resources.DecimalPlaces = 2;
             this.nud_Used_water_resources.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_Used_water_resources.Location = new System.Drawing.Point(576, 131);
+            this.nud_Used_water_resources.Location = new System.Drawing.Point(361, 394);
             this.nud_Used_water_resources.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nud_Used_water_resources.Maximum = new decimal(new int[] {
             1000,
@@ -213,32 +209,6 @@
             this.btn_submit_case.Text = "Добави ";
             this.btn_submit_case.UseVisualStyleBackColor = false;
             this.btn_submit_case.Click += new System.EventHandler(this.btn_submit_case_Click);
-            // 
-            // end_date_case_time_picker
-            // 
-            this.end_date_case_time_picker.CalendarFont = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end_date_case_time_picker.CustomFormat = "dd MMMM yyyy HH:mm";
-            this.end_date_case_time_picker.Font = new System.Drawing.Font("Rockwell", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.end_date_case_time_picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.end_date_case_time_picker.Location = new System.Drawing.Point(361, 390);
-            this.end_date_case_time_picker.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.end_date_case_time_picker.Name = "end_date_case_time_picker";
-            this.end_date_case_time_picker.Size = new System.Drawing.Size(167, 20);
-            this.end_date_case_time_picker.TabIndex = 33;
-            this.end_date_case_time_picker.Value = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
-            // 
-            // lbl_end_date_of_case
-            // 
-            this.lbl_end_date_of_case.AutoSize = true;
-            this.lbl_end_date_of_case.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_end_date_of_case.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_end_date_of_case.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_end_date_of_case.Location = new System.Drawing.Point(356, 364);
-            this.lbl_end_date_of_case.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_end_date_of_case.Name = "lbl_end_date_of_case";
-            this.lbl_end_date_of_case.Size = new System.Drawing.Size(216, 23);
-            this.lbl_end_date_of_case.TabIndex = 32;
-            this.lbl_end_date_of_case.Text = "Край на произшествието*";
             // 
             // start_date_case_time_picker
             // 
@@ -559,8 +529,6 @@
         private System.Windows.Forms.Label lbl_used_water_resources;
         private System.Windows.Forms.NumericUpDown nud_Used_water_resources;
         private System.Windows.Forms.Button btn_submit_case;
-        private System.Windows.Forms.DateTimePicker end_date_case_time_picker;
-        private System.Windows.Forms.Label lbl_end_date_of_case;
         private System.Windows.Forms.DateTimePicker start_date_case_time_picker;
         private System.Windows.Forms.Label lbl_start_date_of_Case;
         private System.Windows.Forms.ComboBox cb_choosen_team;

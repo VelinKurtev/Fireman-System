@@ -38,10 +38,11 @@ D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.EnterValidData.r
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.SuccessfullyAddedData.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddTeamView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.InvalidRowSelected.resources
-D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditCaseView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditTeamView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.AddViews.AddEmployeeView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.DeleteRow.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditEmployeeView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.EditFireTruckView.resources
 D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EmployeesByCaseView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.EditViews.CaseView.resources
+D:\GitHub\Fireman System\obj\Debug\Fireman_Systemn.View.Pop_Ups.EndCase.resources

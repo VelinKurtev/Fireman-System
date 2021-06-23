@@ -2,7 +2,7 @@
 
 namespace Fireman_Systemn.View.EditViews
 {
-    partial class EditCaseView
+    partial class CaseView
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Fireman_Systemn.View.EditViews
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditCaseView));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaseView));
             this.gradientPanelAddCase = new Fireman_Systemn.GradientPanel();
             this.gradientPanelAddCases = new Fireman_Systemn.GradientPanel();
             this.nud_used_fuel = new System.Windows.Forms.NumericUpDown();

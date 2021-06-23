@@ -50,7 +50,7 @@ namespace Fireman_Systemn.View
                     DeleteRow deleteRow = new DeleteRow();
                     deleteRow.ShowDialog();
                 }
-                catch 
+                catch
                 {
                     InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                     invalidRowSelected.ShowDialog();

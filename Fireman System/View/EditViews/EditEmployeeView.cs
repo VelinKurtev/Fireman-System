@@ -1,13 +1,7 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View.EditViews
@@ -28,10 +22,6 @@ namespace Fireman_Systemn.View.EditViews
             txt_box_homeAddress.Text = employee.home_address;
             txt_box_personalNum.Text = Convert.ToString(employee.personal_phone_number);
             txt_box_email.Text = employee.email;
-            DateTimeStartBuisnessTrip.Value = employee.business_trip_start_date.Value;
-            DateTimeEndBuisnessTrip.Value = employee.buisiness_trip_end_date.Value;
-            DateTimeStartVacation.Value = employee.vacation_start_date.Value;
-            DateTimeEndVacation.Value = employee.vacation_end_date.Value;
             
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
@@ -65,12 +55,8 @@ namespace Fireman_Systemn.View.EditViews
                     oldEmployee.personal_phone_number = Convert.ToInt32(txt_box_personalNum.Text);
                     oldEmployee.email = txt_box_email.Text.Trim().ToString();
                     oldEmployee.choosen_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
-                    oldEmployee.business_trip_start_date = DateTimeStartBuisnessTrip.Value;
-                    oldEmployee.buisiness_trip_end_date = DateTimeEndBuisnessTrip.Value;
-                    oldEmployee.vacation_start_date = DateTimeStartVacation.Value;
-                    oldEmployee.vacation_end_date = DateTimeEndVacation.Value;
 
-                    if (DateTime.Compare(DateTimeStartVacation.Value, DateTimeEndVacation.Value) > 0 || DateTime.Compare(DateTimeStartBuisnessTrip.Value, DateTimeEndBuisnessTrip.Value) > 0 || txt_box_personalNum.TextLength > 10 || !txt_box_email.Text.Contains('@'))
+                    if (txt_box_personalNum.TextLength > 10 || !txt_box_email.Text.Contains('@'))
                     {
                         EnterValidData enterValidDataException = new EnterValidData();
                         enterValidDataException.ShowDialog();

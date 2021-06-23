@@ -1,13 +1,7 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View.EditViews
@@ -20,7 +14,6 @@ namespace Fireman_Systemn.View.EditViews
         {
             InitializeComponent();
             txt_box_team_name.Text = Team.team_name;
-            nud_employees_in_team.Value = Convert.ToInt32(Team.number_of_members);
             cb_activity.SelectedItem = Team.is_team_active;
             cb_buisiness.SelectedItem = Team.is_team_busy;
             
@@ -50,7 +43,6 @@ namespace Fireman_Systemn.View.EditViews
             using (FiremanSysEntities fse = new FiremanSysEntities())
             {
                 oldTeam.team_name = txt_box_team_name.Text;
-                oldTeam.number_of_members = Convert.ToInt32(nud_employees_in_team.Value);
                 oldTeam.is_team_active = cb_activity.SelectedItem.ToString();
                 oldTeam.is_team_busy = cb_buisiness.SelectedItem.ToString();
                 oldTeam.choosen_fire_truck = Convert.ToInt32(cb_choosen_fireTruck.SelectedValue);

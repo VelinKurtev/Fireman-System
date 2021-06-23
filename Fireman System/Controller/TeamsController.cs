@@ -24,7 +24,6 @@ namespace Fireman_Systemn.Controller
                 fse.Teams.Add(Team);
                 fse.SaveChanges();
 
-                //var count = fse.Cases.Where(c => c.Teams == TeamId);
             }
         }
 

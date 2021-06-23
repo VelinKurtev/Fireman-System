@@ -1,9 +1,9 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
+
 namespace Fireman_Systemn.View
 {
     public partial class Add_Case_View : Form
@@ -30,6 +30,7 @@ namespace Fireman_Systemn.View
         private void Add_Case_Load(object sender, EventArgs e)
         {
             FormLayout.FormLoad(this);
+            start_date_case_time_picker.Value = DateTime.Now;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -50,33 +51,63 @@ namespace Fireman_Systemn.View
             Case.Dangerous_substances_info = txt_box_dangerous_substances.Text.Trim().ToString();
             Case.Selected_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
             Case.Date_time_of_case = start_date_case_time_picker.Value;
-            Case.End_date_time_of_case = end_date_case_time_picker.Value;
             Case.Used_water_resources = Convert.ToDouble(nud_Used_water_resources.Value);
             Case.Used_fuel = Convert.ToDouble(nud_used_fuel.Value);
 
-            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty || cb_choosen_team.SelectedItem == null)
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-            }
-            else if (DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) > 0 || DateTime.Compare(start_date_case_time_picker.Value, end_date_case_time_picker.Value) == 0)
-            {
-                EnterValidData enterValidDataException = new EnterValidData();
-                enterValidDataException.ShowDialog();
-            }
-            else if (nud_Used_water_resources.Value > )
+            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || 
+                txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty || 
+                cb_choosen_team.SelectedItem == null)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
             }
             else
             {
-                CaseController.Insert(Case);
-                SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
-                successfullyAddedData.ShowDialog();
-                FormLayout.NavigateForms(this, new CasesView());
+                using (FiremanSysEntities fse = new FiremanSysEntities())
+                {
+                    var team = fse.Teams.Where(t => t.team_id == Case.Selected_team).FirstOrDefault();
+                    var fireTruck = fse.FireTrucks.Where(c => c.fire_truck_id == team.choosen_fire_truck).FirstOrDefault();
+
+                    if (team != null && fireTruck != null)
+                    {
+                        
+                        if (fireTruck.available_fuel >= Convert.ToDouble(nud_used_fuel.Value) && fireTruck.available_water >= Convert.ToDouble(nud_Used_water_resources.Value))
+                        {
+                            fireTruck.available_fuel = fireTruck.available_fuel - Convert.ToDouble(nud_used_fuel.Value);
+                            fireTruck.available_water = fireTruck.available_water - Convert.ToDouble(nud_Used_water_resources.Value);
+                            ++team.number_of_answered_cases;
+                            ++fireTruck.answered_cases;
+                            team.is_team_busy = "Зает";
+
+                            fse.Teams.Attach(team);
+                            fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                            fse.SaveChanges();
+
+                            fse.FireTrucks.Attach(fireTruck);
+                            fse.Entry(fireTruck).State = System.Data.Entity.EntityState.Modified;
+                            fse.SaveChanges();
+
+                            foreach (var employee in team.Employees)
+                            {
+                                ++employee.number_of_answered_cases;
+
+                                fse.Employees.Attach(employee);
+                                fse.Entry(employee).State = System.Data.Entity.EntityState.Modified;
+                                fse.SaveChanges();
+                            }
+                            CaseController.Insert(Case);
+                            SuccessfullyAddedData successfullyAddedData = new SuccessfullyAddedData();
+                            successfullyAddedData.ShowDialog();
+                            FormLayout.NavigateForms(this, new CasesView());
+                        }
+                        else
+                        {
+                            EnterValidData enterValidDataException = new EnterValidData();
+                            enterValidDataException.ShowDialog();
+                        }
+                    }
+                }
             }
         }
-
     }
 }

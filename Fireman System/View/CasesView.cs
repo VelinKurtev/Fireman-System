@@ -10,6 +10,7 @@ namespace Fireman_Systemn.View
     public partial class CasesView : Form
     {
         CasesController CasesController = new CasesController();
+        Cases Case = new Cases();
         public CasesView()
         {
             InitializeComponent();
@@ -55,13 +56,13 @@ namespace Fireman_Systemn.View
                     DeleteRow deleteRow = new DeleteRow();
                     deleteRow.ShowDialog();
                 }
-                catch 
+                catch
                 {
                     InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
                     invalidRowSelected.ShowDialog();
                     FormLayout.NavigateForms(this, new CasesView());
                 }
-                
+
             }
 
         }
@@ -81,10 +82,56 @@ namespace Fireman_Systemn.View
                 using (FiremanSysEntities fse = new FiremanSysEntities())
                 {
                     var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
-                    FormLayout.NavigateForms(this, new EditCaseView(fireCase));
+                    FormLayout.NavigateForms(this, new CaseView(fireCase));
                 }
             }
         }
 
+        private void btn_end_case_Click(object sender, EventArgs e)
+        {
+            var row = dgvCases.CurrentRow;
+            if (row == null)
+            {
+                InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                invalidRowSelected.ShowDialog();
+            }
+            else
+            {
+                try
+                {
+                    int id = int.Parse(row.Cells["CaseID"].Value.ToString());
+                    using (FiremanSysEntities fse = new FiremanSysEntities())
+                    {
+                        var fireCase = fse.Cases.Where(c => c.case_id == id).FirstOrDefault();
+                        var team = fse.Teams.Where(t => t.team_id == fireCase.Selected_team).FirstOrDefault();
+                        if (fireCase.End_date_time_of_case == null)
+                        {
+                            if (team != null)
+                            {
+                                team.is_team_busy = "Свободен";
+                                fse.Teams.Attach(team);
+                                fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
+                                fse.SaveChanges();
+                            }
+                            fireCase.End_date_time_of_case = DateTime.Now;
+                            fse.SaveChanges();
+                            EndCase endCase = new EndCase();
+                            endCase.ShowDialog();
+                            FormLayout.NavigateForms(this, new CasesView());
+                        }
+                        else
+                        {
+                            InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                            invalidRowSelected.ShowDialog();
+                        }
+                    }
+                }
+                catch
+                {
+                    InvalidRowSelected invalidRowSelected = new InvalidRowSelected();
+                    invalidRowSelected.ShowDialog();
+                }
+            }
+        }
     }
 }

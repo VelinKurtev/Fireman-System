@@ -35,13 +35,12 @@
             this.gradientPanelFireTrucks = new Fireman_Systemn.GradientPanel();
             this.dgvFireTrucks = new System.Windows.Forms.DataGridView();
             this.FireTruckID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WaterCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StaffCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AvailableWater = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FuelCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AvailableFuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotWantedTeamColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_delete_fire_truck = new System.Windows.Forms.Button();
             this.btn_update_table = new System.Windows.Forms.Button();
@@ -91,13 +90,12 @@
             this.dgvFireTrucks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvFireTrucks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FireTruckID,
+            this.AnsweredCases,
             this.Model,
             this.WaterCapacity,
-            this.StaffCapacity,
             this.AvailableWater,
             this.FuelCapacity,
             this.AvailableFuel,
-            this.AnsweredCases,
             this.NotWantedTeamColumn});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -128,6 +126,13 @@
             this.FireTruckID.Name = "FireTruckID";
             this.FireTruckID.Width = 111;
             // 
+            // AnsweredCases
+            // 
+            this.AnsweredCases.DataPropertyName = "answered_cases";
+            this.AnsweredCases.HeaderText = "Приети случаи";
+            this.AnsweredCases.Name = "AnsweredCases";
+            this.AnsweredCases.Width = 106;
+            // 
             // Model
             // 
             this.Model.DataPropertyName = "model";
@@ -138,23 +143,16 @@
             // WaterCapacity
             // 
             this.WaterCapacity.DataPropertyName = "water_capacity";
-            this.WaterCapacity.HeaderText = "Воден резервоар";
+            this.WaterCapacity.HeaderText = "Воден капацитет";
             this.WaterCapacity.Name = "WaterCapacity";
-            this.WaterCapacity.Width = 120;
-            // 
-            // StaffCapacity
-            // 
-            this.StaffCapacity.DataPropertyName = "staff_capacity";
-            this.StaffCapacity.HeaderText = "Седалки";
-            this.StaffCapacity.Name = "StaffCapacity";
-            this.StaffCapacity.Width = 75;
+            this.WaterCapacity.Width = 118;
             // 
             // AvailableWater
             // 
             this.AvailableWater.DataPropertyName = "available_water";
-            this.AvailableWater.HeaderText = "Вода в цистерната";
+            this.AvailableWater.HeaderText = "Налична вода";
             this.AvailableWater.Name = "AvailableWater";
-            this.AvailableWater.Width = 127;
+            this.AvailableWater.Width = 102;
             // 
             // FuelCapacity
             // 
@@ -169,13 +167,6 @@
             this.AvailableFuel.HeaderText = "Налично гориво";
             this.AvailableFuel.Name = "AvailableFuel";
             this.AvailableFuel.Width = 113;
-            // 
-            // AnsweredCases
-            // 
-            this.AnsweredCases.DataPropertyName = "answered_cases";
-            this.AnsweredCases.HeaderText = "Отговорени случаи";
-            this.AnsweredCases.Name = "AnsweredCases";
-            this.AnsweredCases.Width = 129;
             // 
             // NotWantedTeamColumn
             // 
@@ -296,13 +287,12 @@
         private System.Windows.Forms.Button btn_add_fire_truck;
         private System.Windows.Forms.DataGridView dgvFireTrucks;
         private System.Windows.Forms.DataGridViewTextBoxColumn FireTruckID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCases;
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
         private System.Windows.Forms.DataGridViewTextBoxColumn WaterCapacity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StaffCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn AvailableWater;
         private System.Windows.Forms.DataGridViewTextBoxColumn FuelCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn AvailableFuel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AnsweredCases;
         private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedTeamColumn;
     }
 }
