@@ -1,13 +1,8 @@
 ﻿using Fireman_Systemn.Controller;
 using Fireman_Systemn.View.Pop_Ups;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fireman_Systemn.View.AddViews
@@ -47,8 +42,7 @@ namespace Fireman_Systemn.View.AddViews
                 Employee.email = txt_box_email.Text.Trim().ToString();
                 Employee.choosen_team = Convert.ToInt32(cb_choosen_team.SelectedValue);
                 
-                
-                if (txt_box_personalNum.TextLength > 10 ||!txt_box_email.Text.Contains('@'))
+                if (txt_box_personalNum.TextLength > 10 || !txt_box_email.Text.Contains('@'))
                 {
                     EnterValidData enterValidDataException = new EnterValidData();
                     enterValidDataException.ShowDialog();

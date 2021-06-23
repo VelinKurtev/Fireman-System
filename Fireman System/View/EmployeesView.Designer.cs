@@ -31,28 +31,24 @@
             this.btn_firemen_by_case = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
-            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AmountOfAnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChoosenTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HomeAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonalPhoneNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StartDateVacation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EndDateVacation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BuisinessTripStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BuisinessTripEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NotWantedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_add_employee = new System.Windows.Forms.Button();
             this.btn_delete_employee = new System.Windows.Forms.Button();
             this.btn_update_employee = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_back = new System.Windows.Forms.Button();
             this.lbl_employees = new System.Windows.Forms.Label();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChoosenTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HomeAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PersonalPhoneNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AmountOfAnsweredCases = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NotWantedColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gradientPanelEmployees.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_firemen_by_case)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployees)).BeginInit();
@@ -118,20 +114,16 @@
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EmployeeID,
-            this.AmountOfAnsweredCases,
-            this.ChoosenTeam,
             this.FirstName,
             this.MiddleName,
             this.LastName,
-            this.Age,
             this.Rank,
+            this.Age,
+            this.ChoosenTeam,
             this.HomeAddress,
             this.PersonalPhoneNum,
             this.Email,
-            this.StartDateVacation,
-            this.EndDateVacation,
-            this.BuisinessTripStartDate,
-            this.BuisinessTripEndDate,
+            this.AmountOfAnsweredCases,
             this.NotWantedColumn});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -155,119 +147,6 @@
             this.dgvEmployees.RowHeadersWidth = 20;
             this.dgvEmployees.Size = new System.Drawing.Size(538, 376);
             this.dgvEmployees.TabIndex = 16;
-            // 
-            // EmployeeID
-            // 
-            this.EmployeeID.DataPropertyName = "employee_id";
-            this.EmployeeID.HeaderText = "ИД на пожарникар";
-            this.EmployeeID.Name = "EmployeeID";
-            this.EmployeeID.Width = 129;
-            // 
-            // AmountOfAnsweredCases
-            // 
-            this.AmountOfAnsweredCases.DataPropertyName = "number_of_answered_cases";
-            this.AmountOfAnsweredCases.HeaderText = "Брой приети случаи";
-            this.AmountOfAnsweredCases.Name = "AmountOfAnsweredCases";
-            this.AmountOfAnsweredCases.Width = 132;
-            // 
-            // ChoosenTeam
-            // 
-            this.ChoosenTeam.DataPropertyName = "choosen_team";
-            this.ChoosenTeam.HeaderText = "Избран отбор";
-            this.ChoosenTeam.Name = "ChoosenTeam";
-            this.ChoosenTeam.Width = 102;
-            // 
-            // FirstName
-            // 
-            this.FirstName.DataPropertyName = "first_name";
-            this.FirstName.HeaderText = "Име";
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Width = 54;
-            // 
-            // MiddleName
-            // 
-            this.MiddleName.DataPropertyName = "middle_name";
-            this.MiddleName.HeaderText = "Презиме";
-            this.MiddleName.Name = "MiddleName";
-            this.MiddleName.Width = 78;
-            // 
-            // LastName
-            // 
-            this.LastName.DataPropertyName = "last_name";
-            this.LastName.HeaderText = "Фамилия";
-            this.LastName.Name = "LastName";
-            this.LastName.Width = 81;
-            // 
-            // Age
-            // 
-            this.Age.DataPropertyName = "age";
-            this.Age.HeaderText = "Години";
-            this.Age.Name = "Age";
-            this.Age.Width = 68;
-            // 
-            // Rank
-            // 
-            this.Rank.DataPropertyName = "rank";
-            this.Rank.HeaderText = "Чин";
-            this.Rank.Name = "Rank";
-            this.Rank.Width = 52;
-            // 
-            // HomeAddress
-            // 
-            this.HomeAddress.DataPropertyName = "home_address";
-            this.HomeAddress.HeaderText = "Домашен адрес";
-            this.HomeAddress.Name = "HomeAddress";
-            this.HomeAddress.Width = 114;
-            // 
-            // PersonalPhoneNum
-            // 
-            this.PersonalPhoneNum.DataPropertyName = "personal_phone_number";
-            this.PersonalPhoneNum.HeaderText = "Личен телефон";
-            this.PersonalPhoneNum.Name = "PersonalPhoneNum";
-            this.PersonalPhoneNum.Width = 109;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "email";
-            this.Email.HeaderText = "Имейл";
-            this.Email.Name = "Email";
-            this.Email.Width = 66;
-            // 
-            // StartDateVacation
-            // 
-            this.StartDateVacation.DataPropertyName = "vacation_start_date";
-            this.StartDateVacation.HeaderText = "Начална дата на ваканцията";
-            this.StartDateVacation.Name = "StartDateVacation";
-            this.StartDateVacation.Width = 178;
-            // 
-            // EndDateVacation
-            // 
-            this.EndDateVacation.DataPropertyName = "vacation_end_date";
-            this.EndDateVacation.HeaderText = "Крайна дата на ваканцията";
-            this.EndDateVacation.Name = "EndDateVacation";
-            this.EndDateVacation.Width = 172;
-            // 
-            // BuisinessTripStartDate
-            // 
-            this.BuisinessTripStartDate.DataPropertyName = "business_trip_start_date";
-            this.BuisinessTripStartDate.HeaderText = "Начало на Командировка";
-            this.BuisinessTripStartDate.Name = "BuisinessTripStartDate";
-            this.BuisinessTripStartDate.Width = 162;
-            // 
-            // BuisinessTripEndDate
-            // 
-            this.BuisinessTripEndDate.DataPropertyName = "buisiness_trip_end_date";
-            this.BuisinessTripEndDate.HeaderText = "Крайна дата командировка";
-            this.BuisinessTripEndDate.Name = "BuisinessTripEndDate";
-            this.BuisinessTripEndDate.Width = 172;
-            // 
-            // NotWantedColumn
-            // 
-            this.NotWantedColumn.DataPropertyName = "Teams";
-            this.NotWantedColumn.HeaderText = "NotWantedColumn";
-            this.NotWantedColumn.Name = "NotWantedColumn";
-            this.NotWantedColumn.Visible = false;
-            this.NotWantedColumn.Width = 127;
             // 
             // btn_add_employee
             // 
@@ -346,6 +225,91 @@
             this.lbl_employees.Text = "Пожарникари";
             this.lbl_employees.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // EmployeeID
+            // 
+            this.EmployeeID.DataPropertyName = "employee_id";
+            this.EmployeeID.HeaderText = "ИД на пожарникар";
+            this.EmployeeID.Name = "EmployeeID";
+            this.EmployeeID.Width = 129;
+            // 
+            // FirstName
+            // 
+            this.FirstName.DataPropertyName = "first_name";
+            this.FirstName.HeaderText = "Име";
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Width = 54;
+            // 
+            // MiddleName
+            // 
+            this.MiddleName.DataPropertyName = "middle_name";
+            this.MiddleName.HeaderText = "Презиме";
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Width = 78;
+            // 
+            // LastName
+            // 
+            this.LastName.DataPropertyName = "last_name";
+            this.LastName.HeaderText = "Фамилия";
+            this.LastName.Name = "LastName";
+            this.LastName.Width = 81;
+            // 
+            // Rank
+            // 
+            this.Rank.DataPropertyName = "rank";
+            this.Rank.HeaderText = "Чин";
+            this.Rank.Name = "Rank";
+            this.Rank.Width = 52;
+            // 
+            // Age
+            // 
+            this.Age.DataPropertyName = "age";
+            this.Age.HeaderText = "Години";
+            this.Age.Name = "Age";
+            this.Age.Width = 68;
+            // 
+            // ChoosenTeam
+            // 
+            this.ChoosenTeam.DataPropertyName = "choosen_team";
+            this.ChoosenTeam.HeaderText = "Избран отбор";
+            this.ChoosenTeam.Name = "ChoosenTeam";
+            this.ChoosenTeam.Width = 102;
+            // 
+            // HomeAddress
+            // 
+            this.HomeAddress.DataPropertyName = "home_address";
+            this.HomeAddress.HeaderText = "Домашен адрес";
+            this.HomeAddress.Name = "HomeAddress";
+            this.HomeAddress.Width = 114;
+            // 
+            // PersonalPhoneNum
+            // 
+            this.PersonalPhoneNum.DataPropertyName = "personal_phone_number";
+            this.PersonalPhoneNum.HeaderText = "Личен телефон";
+            this.PersonalPhoneNum.Name = "PersonalPhoneNum";
+            this.PersonalPhoneNum.Width = 109;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "email";
+            this.Email.HeaderText = "Имейл";
+            this.Email.Name = "Email";
+            this.Email.Width = 66;
+            // 
+            // AmountOfAnsweredCases
+            // 
+            this.AmountOfAnsweredCases.DataPropertyName = "number_of_answered_cases";
+            this.AmountOfAnsweredCases.HeaderText = "Брой приети случаи";
+            this.AmountOfAnsweredCases.Name = "AmountOfAnsweredCases";
+            this.AmountOfAnsweredCases.Width = 132;
+            // 
+            // NotWantedColumn
+            // 
+            this.NotWantedColumn.DataPropertyName = "Teams";
+            this.NotWantedColumn.HeaderText = "NotWantedColumn";
+            this.NotWantedColumn.Name = "NotWantedColumn";
+            this.NotWantedColumn.Visible = false;
+            this.NotWantedColumn.Width = 127;
+            // 
             // EmployeesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -376,23 +340,19 @@
         private System.Windows.Forms.Button btn_update_employee;
         private System.Windows.Forms.Button btn_add_employee;
         private System.Windows.Forms.DataGridView dgvEmployees;
+        private System.Windows.Forms.PictureBox btn_firemen_by_case;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AmountOfAnsweredCases;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ChoosenTeam;
         private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn MiddleName;
         private System.Windows.Forms.DataGridViewTextBoxColumn LastName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rank;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ChoosenTeam;
         private System.Windows.Forms.DataGridViewTextBoxColumn HomeAddress;
         private System.Windows.Forms.DataGridViewTextBoxColumn PersonalPhoneNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StartDateVacation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EndDateVacation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BuisinessTripStartDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BuisinessTripEndDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AmountOfAnsweredCases;
         private System.Windows.Forms.DataGridViewTextBoxColumn NotWantedColumn;
-        private System.Windows.Forms.PictureBox btn_firemen_by_case;
-        private System.Windows.Forms.Button button1;
     }
 }

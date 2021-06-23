@@ -22,7 +22,6 @@ namespace Fireman_Systemn.View
         private void btn_back_Click(object sender, EventArgs e)
         {
             FormLayout.NavigateForms(this, new EmployeesView());
-
         }
 
         private void EmployeesByCaseView_Load(object sender, EventArgs e)

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Fireman_Systemn.Controller;
@@ -53,7 +52,9 @@ namespace Fireman_Systemn.View
             Case.Used_water_resources = Convert.ToDouble(nud_Used_water_resources.Value);
             Case.Used_fuel = Convert.ToDouble(nud_used_fuel.Value);
 
-            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty || cb_choosen_team.SelectedItem == null)
+            if (txt_box_region.Text == string.Empty || txt_box_town.Text == string.Empty || 
+                txt_box_street.Text == string.Empty || txt_box_type_of_case.Text == string.Empty || 
+                cb_choosen_team.SelectedItem == null)
             {
                 EnterValidData enterValidDataException = new EnterValidData();
                 enterValidDataException.ShowDialog();
@@ -67,11 +68,24 @@ namespace Fireman_Systemn.View
 
                     if (team != null && fireTruck != null)
                     {
-                        ++team.number_of_answered_cases; //pre-post increment, in this case using pre increment is better.
+                        ++team.number_of_answered_cases; 
                         ++fireTruck.answered_cases;
+                        if (fireTruck.available_fuel >= Convert.ToDouble(nud_used_fuel.Value))
+                        {
+                            fireTruck.available_fuel = fireTruck.available_fuel - Convert.ToDouble(nud_used_fuel.Value);
+                        }
+                        else
+                        {
+                            //pop-up
+                        }
 
-                        //i could create TeamsController instance to use .Update method, but its impossible because we are in a scope of ` using (FiremanSysEntities fse = new FiremanSysEntities())` so using instance of the same class will just crash
-                        //if u want to make the code cleaner, add a function called `GetTeamById` for example in the class
+                        if (fireTruck.available_water >= Convert.ToDouble(nud_Used_water_resources.Value))
+                        {
+                            fireTruck.available_water = fireTruck.available_water - Convert.ToDouble(nud_Used_water_resources.Value);
+                        }
+
+                        team.is_team_busy = "Зает";
+                       
                         fse.Teams.Attach(team);
                         fse.Entry(team).State = System.Data.Entity.EntityState.Modified;
                         fse.SaveChanges();
@@ -89,10 +103,6 @@ namespace Fireman_Systemn.View
                             fse.SaveChanges();
                         }
                     }
-                    else
-                    {
-                        //maybe make error here, but this should be impossible to fail
-                    }
                 }
 
                 CaseController.Insert(Case);
@@ -100,7 +110,7 @@ namespace Fireman_Systemn.View
                 successfullyAddedData.ShowDialog();
                 FormLayout.NavigateForms(this, new CasesView());
             }
-            
+
         }
 
     }
